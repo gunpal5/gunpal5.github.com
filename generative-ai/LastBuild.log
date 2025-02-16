@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.12.21.0" projectFile="D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\docs\docs.shfbproj" started="16-02-2025 11:52:02">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2024.12.21.0" projectFile="D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs\docs.shfbproj" started="16-02-2025 17:34:01">
 <buildStep step="Initializing">
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
 Locating components in the following folder(s):
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\docs
+    D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs
     C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins
     C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components
 Using framework reflection data for &#39;.NET Core/.NET Standard/.NET 5.0+&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NET&#39;
@@ -11,6 +11,9 @@ Using presentation style &#39;Default2022&#39; located in &#39;C:\Program Files 
 Loading and initializing plug-ins...
 Website Table of Contents Generator Version 2024.12.21.0
 Copyright &#169; 2006-2024, Eric Woodruff, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
 </buildStep>
@@ -29,7 +32,7 @@ Source: D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI\
 
 Parsing project files
     Multi-targeted projects were found.  The common target framework &#39;net6.0&#39; will be used.  Override using the TargetFramework property on the documentation sources.
-    Found assembly &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Auth.dll&#39; (.NETCoreApp 6.0)
+    Found assembly &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Authenticators.dll&#39; (.NETCoreApp 6.0)
     Found assembly &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Microsoft\bin\Debug\net6.0\GenerativeAI.Microsoft.dll&#39; (.NETCoreApp 6.0)
     Found assembly &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Tools\bin\Debug\net6.0\GenerativeAI.Tools.dll&#39; (.NETCoreApp 6.0)
     Found assembly &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Web\bin\Debug\net6.0\GenerativeAI.Web.dll&#39; (.NETCoreApp 6.0)
@@ -223,435 +226,248 @@ References to include:
     WindowsBase
 
 Copying XML comments files
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI\bin\Debug\net6.0\GenerativeAI.xml -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.xml
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Web\bin\Debug\net6.0\GenerativeAI.Web.xml -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Web.xml
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Tools\bin\Debug\net6.0\GenerativeAI.Tools.xml -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Tools.xml
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Microsoft\bin\Debug\net6.0\GenerativeAI.Microsoft.xml -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Microsoft.xml
-    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Auth.xml -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Auth.xml
+    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI\bin\Debug\net6.0\GenerativeAI.xml -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.xml
+    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Web\bin\Debug\net6.0\GenerativeAI.Web.xml -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Web.xml
+    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Tools\bin\Debug\net6.0\GenerativeAI.Tools.xml -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Tools.xml
+    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Microsoft\bin\Debug\net6.0\GenerativeAI.Microsoft.xml -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Microsoft.xml
+    D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Authenticators.xml -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Authenticators.xml
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0080
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
-[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
-Build started 16-02-2025 11:52:03.
+[C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe - GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
+Build started 16-02-2025 17:34:02.
 
-Project &quot;D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj&quot; on node 1 (default targets).
+Project &quot;D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
 GenerateRefInfo:
   Microsoft.Build (v17.12.6+db5f6012cb7f6e2dd7066c50c573c0d352713407)
   c Microsoft Corporation. All rights reserved.
-MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Auth.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
-MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Microsoft\bin\Debug\net6.0\GenerativeAI.Microsoft.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
-MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Tools\bin\Debug\net6.0\GenerativeAI.Tools.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
-MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Web\bin\Debug\net6.0\GenerativeAI.Web.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
-MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI\bin\Debug\net6.0\GenerativeAI.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj]
+MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Auth\bin\Debug\net6.0\GenerativeAI.Authenticators.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
+MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Microsoft\bin\Debug\net6.0\GenerativeAI.Microsoft.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
+MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Tools\bin\Debug\net6.0\GenerativeAI.Tools.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
+MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI.Web\bin\Debug\net6.0\GenerativeAI.Web.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
+MRefBuilder : warning : The program database (PDB) file associated with &#39;D:\GitHub\Google_GenerativeAI2.0_2\Google_GenerativeAI\src\GenerativeAI\bin\Debug\net6.0\GenerativeAI.dll&#39; does not exist or could not be loaded.  Source context information is unavailable. [D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj]
   Loaded 5 assemblies for reflection and 189 dependency assemblies.
   Using framework redirect &#39;System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39; in place of &#39;System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39;
-  Source code location not found for GenerativeAI.ApiVersions
-  Source code location not found for GenerativeAI.BaseModel
-  Source code location not found for GenerativeAI.BaseUrls
-  Source code location not found for GenerativeAI.ChatSession
-  Source code location not found for GenerativeAI.ContentExtensions
-  Source code location not found for GenerativeAI.EmbeddingModel
-  Source code location not found for GenerativeAI.EnvironmentVariables
-  Source code location not found for GenerativeAI.FilesConstants
-  Source code location not found for GenerativeAI.FunctionCallExtensions
-  Source code location not found for GenerativeAI.GeminiModel
-  Source code location not found for GenerativeAI.GenAI
-  Source code location not found for GenerativeAI.GenerateContentRequestExtensions
-  Source code location not found for GenerativeAI.GenerateContentResponseExtensions
-  Source code location not found for GenerativeAI.GenerativeModel
-  Source code location not found for GenerativeAI.GenerativeModelTasks
-  Source code location not found for GenerativeAI.GoogleAi
-  Source code location not found for GenerativeAI.GoogleAICredentials
-  Source code location not found for GenerativeAI.GoogleAIModels
-  Source code location not found for GenerativeAI.GoogleAIModels+Experimental
-  Source code location not found for GenerativeAI.GoogleAIPlatformAdapter
-  Source code location not found for GenerativeAI.IContentRequest_Extensions
-  Source code location not found for GenerativeAI.IGenerativeAI
   Source code location not found for GenerativeAI.IGenerativeModel
-  Source code location not found for GenerativeAI.InlineMimeTypes
   Source code location not found for GenerativeAI.MarkdownCodeExtractorExtension
-  Source code location not found for GenerativeAI.RequestExtensions
-  Source code location not found for GenerativeAI.Roles
-  Source code location not found for GenerativeAI.StringExtensions
-  Source code location not found for GenerativeAI.SupportedEmbedingModels
-  Source code location not found for GenerativeAI.VertexAI
-  Source code location not found for GenerativeAI.VertexAIModel
-  Source code location not found for GenerativeAI.VertexAIModels
-  Source code location not found for GenerativeAI.VertexAIModels+Codey
-  Source code location not found for GenerativeAI.VertexAIModels+Embeddings
-  Source code location not found for GenerativeAI.VertexAIModels+Gemini
-  Source code location not found for GenerativeAI.VertexAIModels+Gemma
-  Source code location not found for GenerativeAI.VertexAIModels+Imagen
-  Source code location not found for GenerativeAI.VertexAIModels+MedLM
-  Source code location not found for GenerativeAI.VertextPlatformAdapter
-  Source code location not found for GenerativeAI.Authenticators.BaseAuthenticator
-  Source code location not found for GenerativeAI.Authenticators.GoogleCloudAdcAuthenticator
-  Source code location not found for GenerativeAI.Clients.BaseClient
   Source code location not found for GenerativeAI.Clients.CachingClient
-  Source code location not found for GenerativeAI.Clients.ChunkClient
-  Source code location not found for GenerativeAI.Clients.CorporaClient
-  Source code location not found for GenerativeAI.Clients.CorpusPermissionClient
   Source code location not found for GenerativeAI.Clients.DocumentsClient
   Source code location not found for GenerativeAI.Clients.FileClient
-  Source code location not found for GenerativeAI.Clients.ModelClient
-  Source code location not found for GenerativeAI.Core.ApiBase
   Source code location not found for GenerativeAI.Core.AuthTokens
   Source code location not found for GenerativeAI.Core.BaseParams
   Source code location not found for GenerativeAI.Core.ClientSecrets
-  Source code location not found for GenerativeAI.Core.CodeBlock
-  Source code location not found for GenerativeAI.Core.CredentialConfiguration
-  Source code location not found for GenerativeAI.Core.FileValidator
-  Source code location not found for GenerativeAI.Core.FunctionCallingBehaviour
-  Source code location not found for GenerativeAI.Core.ICredentials
-  Source code location not found for GenerativeAI.Core.IFunctionTool
-  Source code location not found for GenerativeAI.Core.IGenerativeModel
-  Source code location not found for GenerativeAI.Core.IGoogleAuthenticator
-  Source code location not found for GenerativeAI.Core.IPlatformAdapter
-  Source code location not found for GenerativeAI.Core.JsonBlock
   Source code location not found for GenerativeAI.Core.MimeTypeMap
-  Source code location not found for GenerativeAI.Core.ModelParams
-  Source code location not found for GenerativeAI.Core.ProgressStreamContent
-  Source code location not found for GenerativeAI.Core.RequestUrl
-  Source code location not found for GenerativeAI.Exceptions.ApiException
-  Source code location not found for GenerativeAI.Exceptions.FileTooLargeException
-  Source code location not found for GenerativeAI.Exceptions.GenerativeAIException
-  Source code location not found for GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator
-  Source code location not found for GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator
-  Source code location not found for GenerativeAI.Logging.AuthentictorLogMessage
-  Source code location not found for GenerativeAI.Microsoft.GenerativeAIChatClient
   Using automatic redirect &#39;Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39; in place of &#39;Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51&#39;
   Source code location not found for GenerativeAI.Microsoft.Extensions.AbstractionMapper
-  Source code location not found for GenerativeAI.Tools.GenericFunctionTool
-  Source code location not found for GenerativeAI.Types.AnswerStyle
-  Source code location not found for GenerativeAI.Types.AttributionSourceId
-  Source code location not found for GenerativeAI.Types.BatchCreateChunksRequest
-  Source code location not found for GenerativeAI.Types.BatchCreateChunksResponse
-  Source code location not found for GenerativeAI.Types.BatchDeleteChunksRequest
   Source code location not found for GenerativeAI.Types.BatchEmbedContentRequest
-  Source code location not found for GenerativeAI.Types.BatchEmbedContentsResponse
-  Source code location not found for GenerativeAI.Types.BatchUpdateChunksRequest
-  Source code location not found for GenerativeAI.Types.BatchUpdateChunksResponse
-  Source code location not found for GenerativeAI.Types.Blob
-  Source code location not found for GenerativeAI.Types.BlockReason
-  Source code location not found for GenerativeAI.Types.CachedContent
-  Source code location not found for GenerativeAI.Types.Candidate
-  Source code location not found for GenerativeAI.Types.Chunk
-  Source code location not found for GenerativeAI.Types.ChunkData
   Source code location not found for GenerativeAI.Types.ChunkState
-  Source code location not found for GenerativeAI.Types.CitationMetadata
-  Source code location not found for GenerativeAI.Types.CitationSource
-  Source code location not found for GenerativeAI.Types.CodeExecutionResult
-  Source code location not found for GenerativeAI.Types.CodeExecutionTool
-  Source code location not found for GenerativeAI.Types.Condition
-  Source code location not found for GenerativeAI.Types.Content
-  Source code location not found for GenerativeAI.Types.ContentEmbedding
-  Source code location not found for GenerativeAI.Types.Corpus
   Source code location not found for GenerativeAI.Types.CountTokensRequest
   Source code location not found for GenerativeAI.Types.CountTokensResponse
-  Source code location not found for GenerativeAI.Types.CreateChunkRequest
-  Source code location not found for GenerativeAI.Types.CustomMetadata
-  Source code location not found for GenerativeAI.Types.Dataset
-  Source code location not found for GenerativeAI.Types.DeleteChunkRequest
-  Source code location not found for GenerativeAI.Types.Document
-  Source code location not found for GenerativeAI.Types.Duration
   Source code location not found for GenerativeAI.Types.DurationJsonConverter
-  Source code location not found for GenerativeAI.Types.DynamicRetrievalConfig
-  Source code location not found for GenerativeAI.Types.DynamicRetrievalMode
-  Source code location not found for GenerativeAI.Types.EmbedContentRequest
-  Source code location not found for GenerativeAI.Types.EmbedContentResponse
-  Source code location not found for GenerativeAI.Types.ExecutableCode
   Source code location not found for GenerativeAI.Types.FileData
   Source code location not found for GenerativeAI.Types.FileState
-  Source code location not found for GenerativeAI.Types.FinishReason
-  Source code location not found for GenerativeAI.Types.FunctionCall
-  Source code location not found for GenerativeAI.Types.FunctionCallingConfig
-  Source code location not found for GenerativeAI.Types.FunctionCallingMode
-  Source code location not found for GenerativeAI.Types.FunctionDeclaration
-  Source code location not found for GenerativeAI.Types.FunctionResponse
-  Source code location not found for GenerativeAI.Types.GenerateAnswerRequest
-  Source code location not found for GenerativeAI.Types.GenerateAnswerResponse
-  Source code location not found for GenerativeAI.Types.GenerateContentRequest
-  Source code location not found for GenerativeAI.Types.GenerateContentRequestForCountToken
-  Source code location not found for GenerativeAI.Types.GenerateContentResponse
-  Source code location not found for GenerativeAI.Types.GenerationConfig
-  Source code location not found for GenerativeAI.Types.GoogleSearchRetrievalTool
-  Source code location not found for GenerativeAI.Types.GoogleSearchTool
-  Source code location not found for GenerativeAI.Types.GranteeType
-  Source code location not found for GenerativeAI.Types.GroundingAttribution
-  Source code location not found for GenerativeAI.Types.GroundingChunk
-  Source code location not found for GenerativeAI.Types.GroundingMetadata
   Source code location not found for GenerativeAI.Types.GroundingPassage
-  Source code location not found for GenerativeAI.Types.GroundingPassageId
-  Source code location not found for GenerativeAI.Types.GroundingPassages
-  Source code location not found for GenerativeAI.Types.GroundingSource
-  Source code location not found for GenerativeAI.Types.GroundingSupport
-  Source code location not found for GenerativeAI.Types.HarmBlockThreshold
-  Source code location not found for GenerativeAI.Types.HarmCategory
-  Source code location not found for GenerativeAI.Types.HarmProbability
-  Source code location not found for GenerativeAI.Types.Hyperparameters
-  Source code location not found for GenerativeAI.Types.IContentsRequest
-  Source code location not found for GenerativeAI.Types.InputFeedback
-  Source code location not found for GenerativeAI.Types.Language
   Source code location not found for GenerativeAI.Types.ListCachedContentsResponse
-  Source code location not found for GenerativeAI.Types.ListChunksResponse
-  Source code location not found for GenerativeAI.Types.ListCorporaResponse
-  Source code location not found for GenerativeAI.Types.ListDocumentsResponse
-  Source code location not found for GenerativeAI.Types.ListFilesResponse
   Source code location not found for GenerativeAI.Types.ListModelsResponse
-  Source code location not found for GenerativeAI.Types.ListPermissionsResponse
-  Source code location not found for GenerativeAI.Types.ListTunedModelsResponse
-  Source code location not found for GenerativeAI.Types.LogprobsCandidate
-  Source code location not found for GenerativeAI.Types.LogprobsResult
-  Source code location not found for GenerativeAI.Types.MetadataFilter
-  Source code location not found for GenerativeAI.Types.Modality
-  Source code location not found for GenerativeAI.Types.ModalityTokenCount
-  Source code location not found for GenerativeAI.Types.Model
-  Source code location not found for GenerativeAI.Types.Operator
-  Source code location not found for GenerativeAI.Types.Outcome
-  Source code location not found for GenerativeAI.Types.Part
-  Source code location not found for GenerativeAI.Types.Permission
-  Source code location not found for GenerativeAI.Types.PrebuiltVoiceConfig
-  Source code location not found for GenerativeAI.Types.PromptFeedback
-  Source code location not found for GenerativeAI.Types.QueryCorpusRequest
-  Source code location not found for GenerativeAI.Types.QueryCorpusResponse
-  Source code location not found for GenerativeAI.Types.QueryDocumentRequest
-  Source code location not found for GenerativeAI.Types.QueryDocumentResponse
-  Source code location not found for GenerativeAI.Types.RelevantChunk
   Source code location not found for GenerativeAI.Types.RemoteFile
-  Source code location not found for GenerativeAI.Types.RetrievalMetadata
-  Source code location not found for GenerativeAI.Types.Role
-  Source code location not found for GenerativeAI.Types.SafetyRating
-  Source code location not found for GenerativeAI.Types.SafetySetting
-  Source code location not found for GenerativeAI.Types.Schema
-  Source code location not found for GenerativeAI.Types.SchemaType
-  Source code location not found for GenerativeAI.Types.SearchEntryPoint
-  Source code location not found for GenerativeAI.Types.Segment
-  Source code location not found for GenerativeAI.Types.SemanticRetrieverChunk
   Source code location not found for GenerativeAI.Types.SemanticRetrieverConfig
-  Source code location not found for GenerativeAI.Types.Source
-  Source code location not found for GenerativeAI.Types.SpeechConfig
-  Source code location not found for GenerativeAI.Types.Status
-  Source code location not found for GenerativeAI.Types.StringList
-  Source code location not found for GenerativeAI.Types.TaskType
-  Source code location not found for GenerativeAI.Types.Timestamp
   Source code location not found for GenerativeAI.Types.TimestampJsonConverter
-  Source code location not found for GenerativeAI.Types.Tool
-  Source code location not found for GenerativeAI.Types.ToolConfig
-  Source code location not found for GenerativeAI.Types.TopCandidates
-  Source code location not found for GenerativeAI.Types.TunedModel
-  Source code location not found for GenerativeAI.Types.TunedModelSource
-  Source code location not found for GenerativeAI.Types.TuningExample
-  Source code location not found for GenerativeAI.Types.TuningExamples
-  Source code location not found for GenerativeAI.Types.TuningSnapshot
-  Source code location not found for GenerativeAI.Types.TuningState
-  Source code location not found for GenerativeAI.Types.TuningTask
-  Source code location not found for GenerativeAI.Types.UpdateChunkRequest
   Source code location not found for GenerativeAI.Types.UploadFileInformation
-  Source code location not found for GenerativeAI.Types.UploadFileRequest
-  Source code location not found for GenerativeAI.Types.UploadFileResponse
-  Source code location not found for GenerativeAI.Types.UsageMetadata
-  Source code location not found for GenerativeAI.Types.VideoMetadata
-  Source code location not found for GenerativeAI.Types.VoiceConfig
-  Source code location not found for GenerativeAI.Types.Web
-  Source code location not found for GenerativeAI.Utility.MarkdownExtractor
-  Source code location not found for GenerativeAI.Web.GenerativeAIOptions
-  Source code location not found for GenerativeAI.Web.GenerativeAIService
   Source code location not found for GenerativeAI.Web.IGenerativeAIOptions
   Source code location not found for GenerativeAI.Web.IGenerativeAiService
-  Source code location not found for GenerativeAI.Web.ServiceCollectionExtension
-  Wrote information on 13 namespaces, 213 types, and 1075 members
+  Wrote information on 12 namespaces, 213 types, and 1076 members
   Merging duplicate type and member information
   Merged 0 duplicate type(s) and 0 duplicate member(s)
-Done Building Project &quot;D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerateRefInfo-027d84a8-4a2a-4058-918e-b991709b3ca7.proj&quot; (default targets).
-    Last step completed in 00:00:00.7453
+Done Building Project &quot;D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerateRefInfo-1dc81002-0fe0-4cd2-b9f6-ff65e87bbd4c.proj&quot; (default targets).
+    Last step completed in 00:00:04.1125
 </buildStep>
 <buildStep step="ApplyDocumentModel">
 Applying document model to reflection output...
-    Last step completed in 00:00:00.0561
+    Last step completed in 00:00:00.0750
 </buildStep>
 <buildStep step="AddNamespaceGroups">
 Adding namespace group entries...
 Added 1 namespace group entries
-    Last step completed in 00:00:00.0365
+    Last step completed in 00:00:00.0410
 </buildStep>
 <buildStep step="AddApiTopicFilenames">
 Adding topic filenames to API members...
-    Last step completed in 00:00:00.0435
+    Last step completed in 00:00:00.0440
 </buildStep>
 <buildStep step="GenerateApiTopicManifest">
 Generating API topic manifest...
-    Last step completed in 00:00:00.0170
+    Last step completed in 00:00:00.0210
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.4550
+    Last step completed in 00:00:00.4145
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
-Reflection information will be retrieved from &#39;D:\GitHub\Google_GenerativeAI2.0\asfdasf\reflection.xml&#39;
+Reflection information will be retrieved from &#39;D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\reflection.xml&#39;
 Indexing C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.0\ref\net9.0\*.xml
 Indexing C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\9.0.0\ref\net9.0\*.xml
 Indexing C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\9.0.0\ref\net9.0\*.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.DependencyInjection.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Logging.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Json.More.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\JsonPointer.Net.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\JsonSchema.Net.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Humanizer.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\JsonSchema.Net.Generation.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Configuration.Binder.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Options.ConfigurationExtensions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Options.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Configuration.Abstractions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\CSharpToJsonSchema.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.Pipelines.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Bcl.AsyncInterfaces.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Logging.Abstractions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.DependencyInjection.Abstractions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.Caching.Abstractions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.AI.Abstractions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Extensions.AI.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Xml.XPath.XDocument.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Xml.XPath.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Xml.XmlSerializer.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Xml.XDocument.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Xml.ReaderWriter.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Web.HttpUtility.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Transactions.Local.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.ThreadPool.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.Thread.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.Tasks.Parallel.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.Tasks.Dataflow.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.Overlapped.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Threading.Channels.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Text.RegularExpressions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Text.Json.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Text.Encodings.Web.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Text.Encoding.Extensions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Text.Encoding.CodePages.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Principal.Windows.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.X509Certificates.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.OpenSsl.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.Encoding.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.Csp.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.Cng.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Cryptography.Algorithms.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.Claims.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Security.AccessControl.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Serialization.Xml.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Serialization.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Serialization.Json.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Serialization.Formatters.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Numerics.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Loader.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.Intrinsics.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.InteropServices.RuntimeInformation.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.InteropServices.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.CompilerServices.VisualC.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Runtime.CompilerServices.Unsafe.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Resources.Writer.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.TypeExtensions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.Metadata.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.Emit.Lightweight.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.Emit.ILGeneration.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.Emit.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Reflection.DispatchProxy.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ObjectModel.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.WebSockets.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.WebSockets.Client.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.WebProxy.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.WebHeaderCollection.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.WebClient.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Sockets.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.ServicePoint.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Security.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Requests.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Ping.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.NetworkInformation.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.NameResolution.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Mail.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.HttpListener.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Http.Json.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Net.Http.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Memory.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Linq.Queryable.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Linq.Parallel.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Linq.Expressions.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Linq.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.Pipes.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.Pipes.AccessControl.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.MemoryMappedFiles.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.IsolatedStorage.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.FileSystem.Watcher.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.FileSystem.DriveInfo.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.FileSystem.AccessControl.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.Compression.ZipFile.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.IO.Compression.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Formats.Asn1.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Drawing.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.Tracing.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.TraceSource.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.TextWriterTraceListener.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.StackTrace.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.Process.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.FileVersionInfo.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.DiagnosticSource.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Diagnostics.Contracts.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Data.Common.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Console.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ComponentModel.TypeConverter.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ComponentModel.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ComponentModel.EventBasedAsync.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ComponentModel.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.ComponentModel.Annotations.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Collections.Specialized.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Collections.NonGeneric.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Collections.Immutable.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Collections.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Collections.Concurrent.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\netstandard.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Win32.Registry.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.Win32.Primitives.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.VisualBasic.Core.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Microsoft.CSharp.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.CodeDom.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\System.Management.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Newtonsoft.Json.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Google.Apis.Core.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Google.Apis.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\Google.Apis.Auth.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Web.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Tools.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Microsoft.xml
-Indexing D:\GitHub\Google_GenerativeAI2.0\asfdasf\GenerativeAI.Auth.xml
-Indexed 139836 members in 424 file(s).  139 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.DependencyInjection.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Logging.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Json.More.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\JsonPointer.Net.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\JsonSchema.Net.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Humanizer.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\JsonSchema.Net.Generation.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Configuration.Binder.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Options.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Configuration.Abstractions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\CSharpToJsonSchema.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.Pipelines.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Bcl.AsyncInterfaces.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Logging.Abstractions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.Caching.Abstractions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.AI.Abstractions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Extensions.AI.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Xml.XPath.XDocument.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Xml.XPath.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Xml.XmlSerializer.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Xml.XDocument.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Xml.ReaderWriter.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Web.HttpUtility.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Transactions.Local.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.ThreadPool.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.Thread.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.Tasks.Parallel.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.Tasks.Dataflow.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.Overlapped.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Threading.Channels.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Text.RegularExpressions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Text.Json.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Text.Encodings.Web.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Text.Encoding.Extensions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Text.Encoding.CodePages.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Principal.Windows.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.X509Certificates.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.OpenSsl.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.Encoding.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.Csp.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.Cng.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Cryptography.Algorithms.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.Claims.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Security.AccessControl.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Serialization.Xml.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Serialization.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Serialization.Json.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Serialization.Formatters.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Numerics.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Loader.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.Intrinsics.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.InteropServices.RuntimeInformation.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.InteropServices.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.CompilerServices.VisualC.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Runtime.CompilerServices.Unsafe.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Resources.Writer.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.TypeExtensions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.Metadata.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.Emit.Lightweight.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.Emit.ILGeneration.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.Emit.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Reflection.DispatchProxy.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ObjectModel.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.WebSockets.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.WebSockets.Client.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.WebProxy.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.WebHeaderCollection.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.WebClient.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Sockets.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.ServicePoint.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Security.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Requests.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Ping.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.NetworkInformation.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.NameResolution.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Mail.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.HttpListener.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Http.Json.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Net.Http.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Memory.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Linq.Queryable.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Linq.Parallel.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Linq.Expressions.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Linq.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.Pipes.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.Pipes.AccessControl.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.MemoryMappedFiles.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.IsolatedStorage.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.FileSystem.Watcher.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.FileSystem.DriveInfo.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.FileSystem.AccessControl.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.Compression.ZipFile.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.IO.Compression.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Formats.Asn1.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Drawing.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.Tracing.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.TraceSource.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.TextWriterTraceListener.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.StackTrace.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.Process.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.FileVersionInfo.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.DiagnosticSource.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Diagnostics.Contracts.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Data.Common.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Console.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ComponentModel.TypeConverter.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ComponentModel.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ComponentModel.EventBasedAsync.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ComponentModel.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.ComponentModel.Annotations.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Collections.Specialized.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Collections.NonGeneric.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Collections.Immutable.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Collections.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Collections.Concurrent.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\netstandard.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Win32.Registry.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.Win32.Primitives.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.VisualBasic.Core.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Microsoft.CSharp.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.CodeDom.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\System.Management.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Newtonsoft.Json.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Google.Apis.Core.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Google.Apis.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Google.Apis.Auth.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Web.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Tools.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Microsoft.xml
+Indexing D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\GenerativeAI.Authenticators.xml
+Indexed 139835 members in 424 file(s).  139 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 SHFB: Warning GID0004: No comments found for member &#39;M:GenerativeAI.ChatSession.PrepareRequest(GenerativeAI.Types.GenerateContentRequest)&#39;
-Documentation merged successfully.  Merged comments were saved in &#39;D:\GitHub\Google_GenerativeAI2.0\asfdasf\_InheritedDocs_.xml&#39;.
-    Last step completed in 00:00:01.0206
+Documentation merged successfully.  Merged comments were saved in &#39;D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\_InheritedDocs_.xml&#39;.
+    Last step completed in 00:00:01.0089
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -660,24 +476,24 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file for API content...
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.0255
+    Last step completed in 00:00:00.0360
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-    Last step completed in 00:00:00.3124
+    Last step completed in 00:00:00.3401
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
-D:\GitHub\Google_GenerativeAI2.0\asfdasf\BuildAssembler.config
+D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\BuildAssembler.config
   Updating reference topic configurations.
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Added configuration for &#39;API Token Resolution&#39; before &#39;Show Missing Documentation Component&#39; (instance 1)
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0120
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
@@ -1005,6 +821,27 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.Googl
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleCloudAdcAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleCloudAdcAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;token&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleCloudAdcAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.Authenticators.GoogleOAuthAuthenticator] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.#ctor(System.String)] Missing &lt;param name=&quot;credentialFile&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;token&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.#ctor(System.String)] Missing &lt;param name=&quot;credentialFile&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;serviceAccountEmail&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;certificate&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;passphrase&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;token&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Authenticators.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:GenerativeAI.Clients] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.Clients.BaseClient] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Clients.BaseClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)] Missing &lt;param name=&quot;platform&quot;/&gt; documentation
@@ -1194,33 +1031,13 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Exceptions.FileTooLa
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Exceptions.GenerativeAIException.#ctor(System.String,System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Exceptions.GenerativeAIException.#ctor(System.String,System.String)] Missing &lt;param name=&quot;details&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [P:GenerativeAI.Exceptions.GenerativeAIException.Details] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [N:GenerativeAI.GoogleAuth] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.#ctor(System.String)] Missing &lt;param name=&quot;credentialFile&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;token&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleOAuthAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.#ctor(System.String)] Missing &lt;param name=&quot;credentialFile&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;serviceAccountEmail&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;certificate&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.#ctor(System.String,System.String,System.String)] Missing &lt;param name=&quot;passphrase&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.GetAccessTokenAsync(System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;token&quot;/&gt; documentation
-SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.GoogleAuth.GoogleServiceAccountAuthenticator.RefreshAccessTokenAsync(GenerativeAI.Core.AuthTokens,System.Threading.CancellationToken)] Missing &lt;param name=&quot;cancellationToken&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:GenerativeAI.Logging] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [N:GenerativeAI.Microsoft] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [T:GenerativeAI.Microsoft.GenerativeAIChatClient] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String)] Missing &lt;param name=&quot;adapter&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String)] Missing &lt;param name=&quot;modelName&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(System.String,System.String)] Missing &lt;param name=&quot;apiKey&quot;/&gt; documentation
+SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(System.String,System.String)] Missing &lt;param name=&quot;modelName&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.CompleteAsync(System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)] Missing &lt;summary&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.CompleteAsync(System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)] Missing &lt;returns&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Microsoft.GenerativeAIChatClient.CompleteAsync(System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)] Missing &lt;param name=&quot;chatMessages&quot;/&gt; documentation
@@ -1345,55 +1162,55 @@ SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Web.ServiceCollectio
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Web.ServiceCollectionExtension.ConfigureGenerativeAI(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{GenerativeAI.Web.GenerativeAIOptions})] Missing &lt;param name=&quot;services&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [M:GenerativeAI.Web.ServiceCollectionExtension.ConfigureGenerativeAI(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{GenerativeAI.Web.GenerativeAIOptions})] Missing &lt;param name=&quot;setupAction&quot;/&gt; documentation
 SHFB: Warning BE0066: ShowMissingComponent: [G:GenerativeAI.Microsoft] Missing &lt;summary&gt; documentation
-Processed 1603 topic(s)
-660 warning(s)
+Processed 1604 topic(s)
+661 warning(s)
 CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 13 of 15.
 CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 11 of 30.
-SaveComponent: Waiting for the document writer task to finish (98 Website API file(s) remaining)...
+SaveComponent: Waiting for the document writer task to finish (97 Website API file(s) remaining)...
 <plugIn name="Website Table of Contents Generator" behavior="After" priority="1000">
 Generating TOC fragment files
-</plugIn>    Last step completed in 00:00:07.4989
+</plugIn>    Last step completed in 00:00:08.1029
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\bulma.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css.map -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\bulma.css.map
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\bulma.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\font-awesome.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\font-awesome.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ja-JP.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\ja-JP.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ko-KR.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\ko-KR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\presentationStyle.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\presentationStyle.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\vs.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\vs.min.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-CN.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\zh-CN.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-TW.css -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\css\zh-TW.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\icons\favicon.ico -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\icons\favicon.ico
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\clipboard.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\scripts\clipboard.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\highlight.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\scripts\highlight.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\jquery-3.5.1.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\scripts\jquery-3.5.1.min.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\presentationStyle.js -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\scripts\presentationStyle.js
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-brands-400.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-brands-400.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-regular-400.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-regular-400.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-solid-900.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-solid-900.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-v4compatibility.ttf
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\webfonts\fa-v4compatibility.woff2
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\GeneralError.html -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\GeneralError.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\index.html -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\index.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\PageNotFound.html -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\PageNotFound.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\search.html -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\search.html
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.aspx -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\SearchHelp.aspx
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\SearchHelp.inc.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\SearchHelp.php
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; D:\GitHub\Google_GenerativeAI2.0\asfdasf\Output\Website\Web.Config
-    Last step completed in 00:00:00.0350
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\bulma.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.css.map -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\bulma.css.map
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\bulma.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\bulma.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\font-awesome.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\font-awesome.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\font-awesome.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ja-JP.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\ko-KR.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\presentationStyle.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\presentationStyle.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\vs.min.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\vs.min.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-CN.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\css\zh-TW.css -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\css\zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\icons\favicon.ico -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\clipboard.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\highlight.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\scripts\highlight.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\jquery-3.5.1.min.js -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\scripts\jquery-3.5.1.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\scripts\presentationStyle.js -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\scripts\presentationStyle.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-brands-400.ttf
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-brands-400.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-brands-400.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-regular-400.ttf
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-regular-400.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-regular-400.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-solid-900.ttf
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-solid-900.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-solid-900.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.ttf -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-v4compatibility.ttf
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\webfonts\fa-v4compatibility.woff2 -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\webfonts\fa-v4compatibility.woff2
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\GeneralError.html -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\GeneralError.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\index.html -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\PageNotFound.html -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\PageNotFound.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\search.html -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.aspx -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.inc.php -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\SearchHelp.php -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\Default2022\RootWebsiteContent\Web.Config -&gt; D:\GitHub\Google_GenerativeAI2.0_2\Documents\docs2\Output\Website\Web.Config
+    Last step completed in 00:00:00.0410
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
-    Last step completed in 00:00:00.3774
+    Last step completed in 00:00:00.3952
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -1402,16 +1219,16 @@ Copied 500 files
 Copied 1000 files
 Copied 1500 files
 Copied 2000 files
-Copied 2134 files for the website content
-    Last step completed in 00:00:01.1316
+Copied 2135 files for the website content
+    Last step completed in 00:00:01.2855
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.2103
+    Last step completed in 00:00:00.2340
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 16-02-2025 11:52:15.  Total time: 00:00:12.8677
+Build completed successfully at 16-02-2025 17:34:18.  Total time: 00:00:17.1395
 
 </buildStep>
 </shfbBuild>
