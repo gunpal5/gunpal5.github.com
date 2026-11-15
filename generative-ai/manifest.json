@@ -93,7 +93,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Authenticators",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"73\">Authenticators for Google Cloud credentials: Application Default Credentials, OAuth and service accounts. The\nadvanced authenticators are in the <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"74\">Google_GenerativeAI.Auth</code> package.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -499,7 +499,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Clients",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"34\">Low-level REST clients for individual API resources: files, models, caching, batch, File Search stores,\nInteractions, tuning, webhooks, ephemeral auth tokens, agent APIs and semantic retrieval.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -793,7 +793,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Core",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"41\">Core abstractions shared by the SDK: the <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"41\">ApiBase</code> HTTP layer, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"41\">IPlatformAdapter</code> and <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"41\">IGoogleAuthenticator</code>,\nfunction tool interfaces (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"42\">IFunctionTool</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"42\">GoogleFunctionTool</code>), <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"42\">FunctionCallingBehaviour</code> and credential types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -905,7 +905,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Exceptions",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"48\">Exceptions thrown by the SDK. <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"48\">ApiException</code> carries the parsed API error (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"48\">ErrorCode</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"48\">ErrorStatus</code>,\n<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"49\">ErrorMessage</code>); <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"49\">VertexAIException</code> reports failed Vertex AI long-running operations.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1227,7 +1227,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Helpers",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"55\">Helpers for building JSON Lines input files for batch jobs.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1437,7 +1437,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Live.Events",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"134\">Event argument types raised by the Live API clients.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1465,7 +1465,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Live.Extensions",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"140\">Extension methods for creating Live API clients from generative models.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1493,7 +1493,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Live.Helper",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"146\">Audio helpers for the Live API, such as adding WAV headers to PCM audio.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1577,7 +1577,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Live.Logging",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"152\">Source-generated logging messages used by the Live API clients.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1647,7 +1647,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Live",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"127\">Real-time APIs over WebSockets (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"127\">Google_GenerativeAI.Live</code> package): <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"127\">MultiModalLiveClient</code> for the Multimodal Live\nAPI and <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"128\">LiveMusicClient</code> for Lyria RealTime music generation, with their events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1675,7 +1675,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Logging",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"61\">Source-generated logging messages used by the core SDK.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1745,7 +1745,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Microsoft.Extensions",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"113\">Conversions between <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"113\">Microsoft.Extensions.AI</code> types (messages, contents, options, tools) and Gemini request and\nresponse types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1815,7 +1815,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Microsoft",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"106\"><code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"106\">Microsoft.Extensions.AI</code> implementations (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"106\">Google_GenerativeAI.Microsoft</code> package): <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"106\">GenerativeAIChatClient</code>\n(<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"107\">IChatClient</code>), <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"107\">GenerativeAIEmbeddingGenerator</code> and the image generators.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1955,7 +1955,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Tools.Extensions",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"94\">Extension methods for converting OpenAPI schemas into Gemini function declarations.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1997,7 +1997,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Tools.Helpers",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"100\">Helpers for generating function schemas from .NET methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2053,7 +2053,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Tools.Mcp",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"87\">Model Context Protocol (MCP) integration: <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"87\">McpTool</code> exposes the tools of any MCP server to Gemini, and\n<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"88\">McpTransportFactory</code> creates stdio and HTTP transports.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2109,7 +2109,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Tools",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"80\">Function calling tools (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"80\">Google_GenerativeAI.Tools</code> package): <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"80\">QuickTool</code> for wrapping delegates, generic tool\ncollections and support for source-generated tools.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3467,7 +3467,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Types.Converters",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"28\">JSON converters used by the SDK's types, such as tolerant enum converters and <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"28\">DateOnly</code> / <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"28\">TimeOnly</code> converters.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -10103,7 +10103,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Types.RagEngine",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"21\">Vertex AI RAG Engine: <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"21\">VertexRagManager</code>, RAG corpora and files, import and upload configuration, retrieval settings\nand the RAG Engine configuration (Serverless or Spanner mode).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -12945,7 +12945,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Types",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"13\">Request and response types (DTOs) for the Gemini API and Vertex AI: content, parts, generation and tool configuration,\nthe Live API messages (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"14\">LiveClientMessage</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"14\">LiveServerMessage</code>), batch, caching, files, File Search, Interactions,\ntuning, webhooks and agent API types. Names and JSON property names follow the official REST API and python-genai.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -12987,7 +12987,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Utility",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"67\">Utilities for extracting code and JSON blocks from Markdown and describing .NET types for prompts.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -13253,7 +13253,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI.Web",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"120\">ASP.NET Core integration (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"120\">Google_GenerativeAI.Web</code> package): <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"120\">AddGenerativeAI</code> dependency injection,\n<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"121\">GenerativeAIOptions</code> and <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"121\">IGenerativeAiService</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -13267,7 +13267,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "GenerativeAI",
-      "Summary": null
+      "Summary": "\n<p sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"5\">Entry points of the core SDK (<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"5\">Google_GenerativeAI</code> package): the <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"5\">GoogleAi</code> (Gemini API) and <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"5\">VertexAI</code> platforms\nand their adapters, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"6\">GenerativeModel</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"6\">ChatSession</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"6\">EmbeddingModel</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"6\">VideoGenerationModel</code>, the model constants\n(<code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"7\">GoogleAIModels</code>, <code sourcefile=\"namespaces/namespaces.md\" sourcestartlinenumber=\"7\">VertexAIModels</code>) and the extension methods for building requests and reading responses.</p>\n"
     },
     {
       "type": "Toc",
