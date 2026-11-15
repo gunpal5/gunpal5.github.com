@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AgentApiClientBase | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AgentApiClientBase | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Shared plumbing of the clients of the agent-related Gemini API resources (Voices, Agents, Environments, Triggers, Credentials and Decisions), which — like the Interactions API — use snake_case JSON and live directly under the API version ({base}/{version}/{collection}, or .../projects/{project}/locations/{location}/{collection} on Vertex AI).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_AgentApiClientBase.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.AgentApiClientBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.AgentApiClientBase">
+
+
+
+  <h1 id="GenerativeAI_Clients_AgentApiClientBase" data-uid="GenerativeAI.Clients.AgentApiClientBase" class="text-break">
+Class AgentApiClientBase  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Shared plumbing of the clients of the agent-related Gemini API resources (Voices, Agents, Environments, Triggers,
+Credentials and Decisions), which — like the Interactions API — use snake_case JSON and live directly under the API
+version (<code>{base}/{version}/{collection}</code>, or <code>.../projects/{project}/locations/{location}/{collection}</code>
+on Vertex AI).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AgentApiClientBase : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">AgentApiClientBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.Clients.AgentsClient.html">AgentsClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.CredentialsClient.html">CredentialsClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.DecisionsClient.html">DecisionsClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.EnvironmentsClient.html">EnvironmentsClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.TriggersClient.html">TriggersClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.VoicesClient.html">VoicesClient</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase__ctor_" data-uid="GenerativeAI.Clients.AgentApiClientBase.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.AgentApiClientBase.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  AgentApiClientBase(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html">AgentApiClientBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AgentApiClientBase(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter (Google AI or Vertex AI).</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_Options_" data-uid="GenerativeAI.Clients.AgentApiClientBase.Options*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_Options" data-uid="GenerativeAI.Clients.AgentApiClientBase.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the serializer options, which must be initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JsonSerializerOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_BuildQuery_" data-uid="GenerativeAI.Clients.AgentApiClientBase.BuildQuery*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_BuildQuery_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___" data-uid="GenerativeAI.Clients.AgentApiClientBase.BuildQuery(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+  BuildQuery(IEnumerable&lt;KeyValuePair&lt;string, string?&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a query string (<code>?a=1&amp;b=2</code>) from name/value pairs, skipping <code>null</code> values. Values are
+URL-encoded; repeated names are allowed (form style, exploded arrays).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string BuildQuery(IEnumerable&lt;KeyValuePair&lt;string, string?&gt;&gt; parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd><p>The parameters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The query string, or an empty string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_DeserializeJson_" data-uid="GenerativeAI.Clients.AgentApiClientBase.DeserializeJson*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_DeserializeJson__1_System_String_" data-uid="GenerativeAI.Clients.AgentApiClientBase.DeserializeJson``1(System.String)">
+  DeserializeJson&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes <code class="paramref">json</code> with the source-generated metadata of <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T DeserializeJson&lt;T&gt;(string json) where T : new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The JSON.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The value (a default instance for an empty body).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_FormatBool_" data-uid="GenerativeAI.Clients.AgentApiClientBase.FormatBool*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_FormatBool_System_Nullable_System_Boolean__" data-uid="GenerativeAI.Clients.AgentApiClientBase.FormatBool(System.Nullable{System.Boolean})">
+  FormatBool(bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Formats a boolean query value (<code>true</code> / <code>false</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string? FormatBool(bool? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>The value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The formatted value, or <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_GetCollectionUrl_" data-uid="GenerativeAI.Clients.AgentApiClientBase.GetCollectionUrl*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_GetCollectionUrl_System_String_" data-uid="GenerativeAI.Clients.AgentApiClientBase.GetCollectionUrl(System.String)">
+  GetCollectionUrl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the URL of a collection, e.g. <code>https://generativelanguage.googleapis.com/v1beta/voices</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetCollectionUrl(string collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_GetResourceUrl_" data-uid="GenerativeAI.Clients.AgentApiClientBase.GetResourceUrl*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_GetResourceUrl_System_String_System_String_" data-uid="GenerativeAI.Clients.AgentApiClientBase.GetResourceUrl(System.String,System.String)">
+  GetResourceUrl(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the URL of a resource in a collection. A <code>{collection}/</code> prefix on <code class="paramref">id</code> is accepted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetResourceUrl(string collection, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection name.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_NormalizeId_" data-uid="GenerativeAI.Clients.AgentApiClientBase.NormalizeId*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_NormalizeId_System_String_System_String_" data-uid="GenerativeAI.Clients.AgentApiClientBase.NormalizeId(System.String,System.String)">
+  NormalizeId(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an optional <code>{collection}/</code> prefix from <code class="paramref">id</code> and validates it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string NormalizeId(string collection, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection name.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The bare ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_PageParameters_" data-uid="GenerativeAI.Clients.AgentApiClientBase.PageParameters*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_PageParameters_System_Nullable_System_Int32__System_String_" data-uid="GenerativeAI.Clients.AgentApiClientBase.PageParameters(System.Nullable{System.Int32},System.String)">
+  PageParameters(int?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates the <code>page_size</code> / <code>page_token</code> query parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static List&lt;KeyValuePair&lt;string, string?&gt;&gt; PageParameters(int? pageSize, string? pageToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The page size.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The page token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd><p>The parameters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_PaginateAsync_" data-uid="GenerativeAI.Clients.AgentApiClientBase.PaginateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_PaginateAsync__2_System_Func_System_String_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0_System_String__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.AgentApiClientBase.PaginateAsync``2(System.Func{System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``0,System.String},System.Threading.CancellationToken)">
+  PaginateAsync&lt;TPage, TItem&gt;(Func&lt;string?, CancellationToken, Task&lt;TPage&gt;&gt;, Func&lt;TPage, IEnumerable&lt;TItem&gt;?&gt;, Func&lt;TPage, string?&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all items of a paged list, following <code>next_page_token</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IAsyncEnumerable&lt;TItem&gt; PaginateAsync&lt;TPage, TItem&gt;(Func&lt;string?, CancellationToken, Task&lt;TPage&gt;&gt; fetchPage, Func&lt;TPage, IEnumerable&lt;TItem&gt;?&gt; getItems, Func&lt;TPage, string?&gt; getNextPageToken, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fetchPage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TPage&gt;&gt;</dt>
+    <dd><p>Fetches a page for a page token.</p>
+</dd>
+    <dt><code>getItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TPage, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</dt>
+    <dd><p>Gets the items of a page.</p>
+</dd>
+    <dt><code>getNextPageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TPage, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Gets the next page token of a page.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;TItem&gt;</dt>
+    <dd><p>The items.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TPage</code></dt>
+    <dd><p>The page type.</p>
+</dd>
+    <dt><code>TItem</code></dt>
+    <dd><p>The item type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_ReadContentAsStringAsync_" data-uid="GenerativeAI.Clients.AgentApiClientBase.ReadContentAsStringAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_ReadContentAsStringAsync_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.AgentApiClientBase.ReadContentAsStringAsync(System.Net.Http.HttpContent,System.Threading.CancellationToken)">
+  ReadContentAsStringAsync(HttpContent, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads an HTTP content as a string, honoring <code class="paramref">cancellationToken</code> where supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Task&lt;string&gt; ReadContentAsStringAsync(HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent">HttpContent</a></dt>
+    <dd><p>The content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The content as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_SendRawAsync_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRawAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_SendRawAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRawAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
+  SendRawAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a request and returns the raw (successful) response; the caller disposes it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;HttpResponseMessage&gt; SendRawAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd><p>The request. Authorization is added by this method.</p>
+</dd>
+    <dt><code>completionOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpcompletionoption">HttpCompletionOption</a></dt>
+    <dd><p>When the operation should complete.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a>&gt;</dt>
+    <dd><p>The response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRequestAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync__1_System_Net_Http_HttpMethod_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRequestAsync``1(System.Net.Http.HttpMethod,System.String,System.Threading.CancellationToken)">
+  SendRequestAsync&lt;TResponse&gt;(HttpMethod, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a request without a body and deserializes the JSON response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TResponse&gt; SendRequestAsync&lt;TResponse&gt;(HttpMethod method, string url, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>The HTTP method.</p>
+</dd>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URL.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
+    <dd><p>The response.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResponse</code></dt>
+    <dd><p>The response type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRequestAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync__2_System_Net_Http_HttpMethod_System_String___0_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.AgentApiClientBase.SendRequestAsync``2(System.Net.Http.HttpMethod,System.String,``0,System.Threading.CancellationToken)">
+  SendRequestAsync&lt;TRequest, TResponse&gt;(HttpMethod, string, TRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a request with a JSON body and deserializes the JSON response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TResponse&gt; SendRequestAsync&lt;TRequest, TResponse&gt;(HttpMethod method, string url, TRequest body, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd><p>The HTTP method.</p>
+</dd>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URL.</p>
+</dd>
+    <dt><code>body</code> <span class="xref">TRequest</span></dt>
+    <dd><p>The request body.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
+    <dd><p>The response.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd><p>The request body type.</p>
+</dd>
+    <dt><code>TResponse</code></dt>
+    <dd><p>The response type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/AgentApiClientBase.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

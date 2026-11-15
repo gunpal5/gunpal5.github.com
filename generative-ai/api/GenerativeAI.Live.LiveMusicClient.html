@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LiveMusicClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LiveMusicClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="[Experimental] A client for real-time music generation with Lyria RealTime over the Gemini API Live Music WebSocket endpoint (BidiGenerateMusic).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Live_LiveMusicClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Live.LiveMusicClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Live.LiveMusicClient">
+
+
+
+  <h1 id="GenerativeAI_Live_LiveMusicClient" data-uid="GenerativeAI.Live.LiveMusicClient" class="text-break">
+Class LiveMusicClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Live.html">Live</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.Live.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>[Experimental] A client for real-time music generation with Lyria RealTime over the Gemini API Live Music
+WebSocket endpoint (<code>BidiGenerateMusic</code>).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LiveMusicClient : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LiveMusicClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="GenerativeAI_Live_LiveMusicClient_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Typical usage: <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_">ConnectAsync(bool, CancellationToken)</a>, then <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_SetWeightedPromptsAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_WeightedPrompt__System_Threading_CancellationToken_">SetWeightedPromptsAsync(IEnumerable&lt;WeightedPrompt&gt;, CancellationToken)</a>
+and optionally <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_SetMusicGenerationConfigAsync_GenerativeAI_Types_LiveMusicGenerationConfig_System_Threading_CancellationToken_">SetMusicGenerationConfigAsync(LiveMusicGenerationConfig, CancellationToken)</a>, then <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_PlayAsync_System_Threading_CancellationToken_">PlayAsync(CancellationToken)</a>. Audio arrives through
+<a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_AudioChunkReceived">AudioChunkReceived</a> as raw 16-bit PCM (48 kHz stereo by default). Prompts and config can be changed
+while playing to steer the music. Live Music is only available on the Gemini API (not Vertex AI).</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient__ctor_" data-uid="GenerativeAI.Live.LiveMusicClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Live.LiveMusicClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,Microsoft.Extensions.Logging.ILogger)">
+  LiveMusicClient(IPlatformAdapter, string, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html">LiveMusicClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LiveMusicClient(IPlatformAdapter platformAdapter, string modelName = &quot;models/lyria-realtime-exp&quot;, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platformAdapter</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The Gemini API platform adapter (a <a class="xref" href="GenerativeAI.GoogleAIPlatformAdapter.html">GoogleAIPlatformAdapter</a>) that provides the API key.</p>
+</dd>
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model to use. Defaults to <a class="xref" href="GenerativeAI.GoogleAIModels.Music.html#GenerativeAI_GoogleAIModels_Music_LyriaRealtimeExp">LyriaRealtimeExp</a>.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>An optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The platform adapter is not a Gemini API adapter (Live Music is not supported on Vertex AI).</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient__ctor_" data-uid="GenerativeAI.Live.LiveMusicClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient__ctor_System_String_System_String_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Live.LiveMusicClient.#ctor(System.String,System.String,Microsoft.Extensions.Logging.ILogger)">
+  LiveMusicClient(string?, string, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html">LiveMusicClient</a> class with a Gemini API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LiveMusicClient(string? apiKey, string modelName = &quot;models/lyria-realtime-exp&quot;, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Gemini API key. When null, the <code>GOOGLE_API_KEY</code> environment variable is used.</p>
+</dd>
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model to use. Defaults to <a class="xref" href="GenerativeAI.GoogleAIModels.Music.html#GenerativeAI_GoogleAIModels_Music_LyriaRealtimeExp">LyriaRealtimeExp</a>.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>An optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_DefaultChannels" data-uid="GenerativeAI.Live.LiveMusicClient.DefaultChannels">
+  DefaultChannels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default number of channels of Lyria RealTime audio output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultChannels = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_DefaultSampleRate" data-uid="GenerativeAI.Live.LiveMusicClient.DefaultSampleRate">
+  DefaultSampleRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default sample rate of Lyria RealTime audio output, in Hz.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultSampleRate = 48000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_ApiVersion_" data-uid="GenerativeAI.Live.LiveMusicClient.ApiVersion*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ApiVersion" data-uid="GenerativeAI.Live.LiveMusicClient.ApiVersion">
+  ApiVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the API version used in the WebSocket URL. Defaults to <code>v1alpha</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_Client_" data-uid="GenerativeAI.Live.LiveMusicClient.Client*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_Client" data-uid="GenerativeAI.Live.LiveMusicClient.Client">
+  Client
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the WebSocket client used for the current connection, or null when not connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebsocketClient? Client { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IWebsocketClient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_IsSetupComplete_" data-uid="GenerativeAI.Live.LiveMusicClient.IsSetupComplete*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_IsSetupComplete" data-uid="GenerativeAI.Live.LiveMusicClient.IsSetupComplete">
+  IsSetupComplete
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether the server has acknowledged the setup message on the current connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSetupComplete { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_ModelName_" data-uid="GenerativeAI.Live.LiveMusicClient.ModelName*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ModelName" data-uid="GenerativeAI.Live.LiveMusicClient.ModelName">
+  ModelName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the fully qualified model name sent in the setup message (for example <code>models/lyria-realtime-exp</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModelName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_RestoreStateOnReconnect_" data-uid="GenerativeAI.Live.LiveMusicClient.RestoreStateOnReconnect*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_RestoreStateOnReconnect" data-uid="GenerativeAI.Live.LiveMusicClient.RestoreStateOnReconnect">
+  RestoreStateOnReconnect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether, after the underlying WebSocket reconnects, the client re-sends the setup message and then
+restores the last weighted prompts, generation config and (if playing) the <code>PLAY</code> signal. Defaults to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RestoreStateOnReconnect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SetupTimeout_" data-uid="GenerativeAI.Live.LiveMusicClient.SetupTimeout*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SetupTimeout" data-uid="GenerativeAI.Live.LiveMusicClient.SetupTimeout">
+  SetupTimeout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets how long <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_">ConnectAsync(bool, CancellationToken)</a> waits for the server's <code>setupComplete</code> message.
+Defaults to 30 seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan SetupTimeout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_WebsocketClientFactory_" data-uid="GenerativeAI.Live.LiveMusicClient.WebsocketClientFactory*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_WebsocketClientFactory" data-uid="GenerativeAI.Live.LiveMusicClient.WebsocketClientFactory">
+  WebsocketClientFactory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional factory that <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_">ConnectAsync(bool, CancellationToken)</a> uses to create the WebSocket client instead of the default
+reconnecting <span class="xref">Websocket.Client.WebsocketClient</span>. It receives the Live Music endpoint URL (which already contains the
+API key as the <code>key</code> query parameter) and must return a client that has not been started;
+<a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_">ConnectAsync(bool, CancellationToken)</a> subscribes to it and then calls <span class="xref">Websocket.Client.IWebsocketClient.Start()</span>.
+Useful for custom transports, proxies and unit testing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;string, IWebsocketClient&gt;? WebsocketClientFactory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">IWebsocketClient</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_ConnectAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.ConnectAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.ConnectAsync(System.Boolean,System.Threading.CancellationToken)">
+  ConnectAsync(bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connects to the Live Music endpoint and sends the setup message with the model name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ConnectAsync(bool waitForSetupComplete = true, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>waitForSetupComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true (the default), waits until the server acknowledges the setup with <code>setupComplete</code>
+(or <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_SetupTimeout">SetupTimeout</a> elapses) before returning, as the protocol requires before sending other messages.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel waiting for the setup acknowledgement.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></dt>
+    <dd><p>The server did not acknowledge the setup within <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_SetupTimeout">SetupTimeout</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_DisconnectAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.DisconnectAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_DisconnectAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.DisconnectAsync(System.Threading.CancellationToken)">
+  DisconnectAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the WebSocket connection and releases its resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DisconnectAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_Dispose_" data-uid="GenerativeAI.Live.LiveMusicClient.Dispose*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_Dispose" data-uid="GenerativeAI.Live.LiveMusicClient.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnects and releases the resources used by the <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html">LiveMusicClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_Dispose_" data-uid="GenerativeAI.Live.LiveMusicClient.Dispose*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_Dispose_System_Boolean_" data-uid="GenerativeAI.Live.LiveMusicClient.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases the resources used by the <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html">LiveMusicClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true to release managed resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_GetLiveMusicUrl_" data-uid="GenerativeAI.Live.LiveMusicClient.GetLiveMusicUrl*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_GetLiveMusicUrl" data-uid="GenerativeAI.Live.LiveMusicClient.GetLiveMusicUrl">
+  GetLiveMusicUrl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds the Live Music WebSocket URL, including the API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLiveMusicUrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The WebSocket URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_PauseAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.PauseAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_PauseAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.PauseAsync(System.Threading.CancellationToken)">
+  PauseAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses music generation (<code>{&quot;playbackControl&quot;:&quot;PAUSE&quot;}</code>). Use <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_PlayAsync_System_Threading_CancellationToken_">PlayAsync(CancellationToken)</a> to resume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PauseAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_PlayAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.PlayAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_PlayAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.PlayAsync(System.Threading.CancellationToken)">
+  PlayAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts (or resumes) music generation (<code>{&quot;playbackControl&quot;:&quot;PLAY&quot;}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PlayAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_ResetContextAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.ResetContextAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ResetContextAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.ResetContextAsync(System.Threading.CancellationToken)">
+  ResetContextAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the generation context without stopping the music; prompts and config are retained
+(<code>{&quot;playbackControl&quot;:&quot;RESET_CONTEXT&quot;}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ResetContextAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SendAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SendAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SendAsync_GenerativeAI_Types_LiveMusicClientMessage_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SendAsync(GenerativeAI.Types.LiveMusicClientMessage,System.Threading.CancellationToken)">
+  SendAsync(LiveMusicClientMessage, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a raw client message over the WebSocket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendAsync(LiveMusicClientMessage message, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="GenerativeAI.Types.LiveMusicClientMessage.html">LiveMusicClientMessage</a></dt>
+    <dd><p>The message to send.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>The client is not connected.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SendPlaybackControlAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SendPlaybackControlAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SendPlaybackControlAsync_GenerativeAI_Types_LiveMusicPlaybackControl_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SendPlaybackControlAsync(GenerativeAI.Types.LiveMusicPlaybackControl,System.Threading.CancellationToken)">
+  SendPlaybackControlAsync(LiveMusicPlaybackControl, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a playback control signal (<code>{&quot;playbackControl&quot;:&quot;...&quot;}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendPlaybackControlAsync(LiveMusicPlaybackControl playbackControl, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playbackControl</code> <a class="xref" href="GenerativeAI.Types.LiveMusicPlaybackControl.html">LiveMusicPlaybackControl</a></dt>
+    <dd><p>The playback control signal.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SendSetupAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SendSetupAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SendSetupAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SendSetupAsync(System.Threading.CancellationToken)">
+  SendSetupAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends the setup message (<code>{&quot;setup&quot;:{&quot;model&quot;:&quot;models/...&quot;}}</code>). Called by <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ConnectAsync_System_Boolean_System_Threading_CancellationToken_">ConnectAsync(bool, CancellationToken)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendSetupAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SetMusicGenerationConfigAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SetMusicGenerationConfigAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SetMusicGenerationConfigAsync_GenerativeAI_Types_LiveMusicGenerationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SetMusicGenerationConfigAsync(GenerativeAI.Types.LiveMusicGenerationConfig,System.Threading.CancellationToken)">
+  SetMusicGenerationConfigAsync(LiveMusicGenerationConfig, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the music generation config (<code>{&quot;musicGenerationConfig&quot;:{...}}</code>). Changes to <code>bpm</code> or
+<code>scale</code> take full effect after <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_ResetContextAsync_System_Threading_CancellationToken_">ResetContextAsync(CancellationToken)</a> (or stop/play).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetMusicGenerationConfigAsync(LiveMusicGenerationConfig config, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.LiveMusicGenerationConfig.html">LiveMusicGenerationConfig</a></dt>
+    <dd><p>The music generation config.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SetWeightedPromptsAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SetWeightedPromptsAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SetWeightedPromptsAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_WeightedPrompt__System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SetWeightedPromptsAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.WeightedPrompt},System.Threading.CancellationToken)">
+  SetWeightedPromptsAsync(IEnumerable&lt;WeightedPrompt&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the weighted prompts that steer the music (<code>{&quot;clientContent&quot;:{&quot;weightedPrompts&quot;:[...]}}</code>).
+Weights must not be 0; the server normalizes the weights of all prompts in the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetWeightedPromptsAsync(IEnumerable&lt;WeightedPrompt&gt; prompts, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.WeightedPrompt.html">WeightedPrompt</a>&gt;</dt>
+    <dd><p>The weighted prompts.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_SetWeightedPromptsAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.SetWeightedPromptsAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SetWeightedPromptsAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.SetWeightedPromptsAsync(System.String,System.Threading.CancellationToken)">
+  SetWeightedPromptsAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a single text prompt with weight 1.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetWeightedPromptsAsync(string text, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text prompt.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_StopAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.StopAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_StopAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.StopAsync(System.Threading.CancellationToken)">
+  StopAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops music generation and resets the context while retaining prompts and config
+(<code>{&quot;playbackControl&quot;:&quot;STOP&quot;}</code>). Use <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_PlayAsync_System_Threading_CancellationToken_">PlayAsync(CancellationToken)</a> to restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StopAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Live_LiveMusicClient_WaitForSetupCompleteAsync_" data-uid="GenerativeAI.Live.LiveMusicClient.WaitForSetupCompleteAsync*"></a>
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_WaitForSetupCompleteAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Live.LiveMusicClient.WaitForSetupCompleteAsync(System.Threading.CancellationToken)">
+  WaitForSetupCompleteAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Waits until the server acknowledges the setup message on the current connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task WaitForSetupCompleteAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the wait.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes when <code>setupComplete</code> has been received.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></dt>
+    <dd><p>The server did not acknowledge the setup within <a class="xref" href="GenerativeAI.Live.LiveMusicClient.html#GenerativeAI_Live_LiveMusicClient_SetupTimeout">SetupTimeout</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_AudioChunkReceived" data-uid="GenerativeAI.Live.LiveMusicClient.AudioChunkReceived">
+  AudioChunkReceived
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the server sends an audio chunk. Raised once per chunk, in order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;LiveMusicAudioChunkReceivedEventArgs&gt;? AudioChunkReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="GenerativeAI.Live.LiveMusicAudioChunkReceivedEventArgs.html">LiveMusicAudioChunkReceivedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ClientCreated" data-uid="GenerativeAI.Live.LiveMusicClient.ClientCreated">
+  ClientCreated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs after the WebSocket client is created, before the connection is started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ClientCreatedEventArgs&gt;? ClientCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="GenerativeAI.Live.ClientCreatedEventArgs.html">ClientCreatedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_Connected" data-uid="GenerativeAI.Live.LiveMusicClient.Connected">
+  Connected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the WebSocket connection is established (before setup is acknowledged).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? Connected</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_Disconnected" data-uid="GenerativeAI.Live.LiveMusicClient.Disconnected">
+  Disconnected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the WebSocket connection is closed. When the server sent a close reason,
+the event args are an <a class="xref" href="GenerativeAI.Live.Events.ErrorMessageEventArgs.html">ErrorMessageEventArgs</a> carrying it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? Disconnected</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_ErrorOccurred" data-uid="GenerativeAI.Live.LiveMusicClient.ErrorOccurred">
+  ErrorOccurred
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when an error happens while connecting, sending or processing messages
+(including exceptions thrown by event handlers).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ErrorEventArgs&gt;? ErrorOccurred</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.erroreventargs">ErrorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_FilteredPromptReceived" data-uid="GenerativeAI.Live.LiveMusicClient.FilteredPromptReceived">
+  FilteredPromptReceived
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the server reports that a prompt was filtered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;LiveMusicFilteredPromptEventArgs&gt;? FilteredPromptReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="GenerativeAI.Live.LiveMusicFilteredPromptEventArgs.html">LiveMusicFilteredPromptEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_MessageReceived" data-uid="GenerativeAI.Live.LiveMusicClient.MessageReceived">
+  MessageReceived
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs for every message received from the server, after the specific events have been raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;LiveMusicMessageReceivedEventArgs&gt;? MessageReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="GenerativeAI.Live.LiveMusicMessageReceivedEventArgs.html">LiveMusicMessageReceivedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="GenerativeAI_Live_LiveMusicClient_SetupCompleted" data-uid="GenerativeAI.Live.LiveMusicClient.SetupCompleted">
+  SetupCompleted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when the server acknowledges the setup message (<code>setupComplete</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? SetupCompleted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://ai.google.dev/gemini-api/docs/music-generation">See Official API Documentation</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Live/Models/LiveMusicClient.cs/#L26" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

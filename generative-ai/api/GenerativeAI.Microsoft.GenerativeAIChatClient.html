@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GenerativeAIChatClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GenerativeAIChatClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Microsoft_GenerativeAIChatClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Microsoft.GenerativeAIChatClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient">
+
+
+
+  <h1 id="GenerativeAI_Microsoft_GenerativeAIChatClient" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient" class="text-break">
+Class GenerativeAIChatClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Microsoft.html">Microsoft</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.Microsoft.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GenerativeAIChatClient : IChatClient, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GenerativeAIChatClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IChatClient</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient__ctor_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_System_Boolean_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,System.Boolean)">
+  GenerativeAIChatClient(IPlatformAdapter, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeAIChatClient(IPlatformAdapter adapter, string modelName = &quot;models/gemini-3.8-flash&quot;, bool autoCallFunction = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>adapter</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd></dd>
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>autoCallFunction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient__ctor_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient__ctor_System_String_System_String_System_Boolean_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.#ctor(System.String,System.String,System.Boolean)">
+  GenerativeAIChatClient(string, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeAIChatClient(string apiKey, string modelName = &quot;models/gemini-3.8-flash&quot;, bool autoCallFunction = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>autoCallFunction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_AutoCallFunction_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.AutoCallFunction*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_AutoCallFunction" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.AutoCallFunction">
+  AutoCallFunction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the function calls in the generative AI chat client
+are automatically invoked without requiring explicit user input.
+Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoCallFunction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Microsoft_GenerativeAIChatClient_AutoCallFunction_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When set to false, the function calls are handled manually, providing flexibility for scenarios
+where explicit user control over function invocation is required or when using M.E.A.I.'s
+FunctionInvokingChatClient.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_model_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.model*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_model" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.model">
+  model
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the underlying GenerativeModel instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeModel model { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.GenerativeModel.html">GenerativeModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_Dispose_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.Dispose*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_Dispose" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetResponseAsync_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetResponseAsync*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetResponseAsync_System_Collections_Generic_IEnumerable_Microsoft_Extensions_AI_ChatMessage__Microsoft_Extensions_AI_ChatOptions_System_Threading_CancellationToken_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)">
+  GetResponseAsync(IEnumerable&lt;ChatMessage&gt;, ChatOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends chat messages and returns the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ChatResponse&gt; GetResponseAsync(IEnumerable&lt;ChatMessage&gt; messages, ChatOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ChatMessage</span>&gt;</dt>
+    <dd><p>The sequence of chat messages to send.</p>
+</dd>
+    <dt><code>options</code> <span class="xref">ChatOptions</span></dt>
+    <dd><p>The chat options with which to configure the request.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to monitor for cancellation requests. The default is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">ChatResponse</span>&gt;</dt>
+    <dd><p>The response messages generated by the client.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">messages</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetService_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetService*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetService_System_Type_System_Object_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetService(System.Type,System.Object)">
+  GetService(Type, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asks the <span class="xref">Microsoft.Extensions.AI.IChatClient</span> for an object of the specified type <code class="paramref">serviceType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? GetService(Type serviceType, object? serviceKey = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of object being requested.</p>
+</dd>
+    <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>An optional key that can be used to help identify the target service.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The found object, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetService_System_Type_System_Object__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The purpose of this method is to allow for the retrieval of strongly typed services that might be provided by the <span class="xref">Microsoft.Extensions.AI.IChatClient</span>,
+including itself or any services it might be wrapping. For example, to access the <span class="xref">Microsoft.Extensions.AI.ChatClientMetadata</span> for the instance,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">GetService(Type, object)</a> may be used to request it.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">serviceType</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetStreamingResponseAsync_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetStreamingResponseAsync*"></a>
+
+  <h3 id="GenerativeAI_Microsoft_GenerativeAIChatClient_GetStreamingResponseAsync_System_Collections_Generic_IEnumerable_Microsoft_Extensions_AI_ChatMessage__Microsoft_Extensions_AI_ChatOptions_System_Threading_CancellationToken_" data-uid="GenerativeAI.Microsoft.GenerativeAIChatClient.GetStreamingResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)">
+  GetStreamingResponseAsync(IEnumerable&lt;ChatMessage&gt;, ChatOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends chat messages and streams the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;ChatResponseUpdate&gt; GetStreamingResponseAsync(IEnumerable&lt;ChatMessage&gt; messages, ChatOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ChatMessage</span>&gt;</dt>
+    <dd><p>The sequence of chat messages to send.</p>
+</dd>
+    <dt><code>options</code> <span class="xref">ChatOptions</span></dt>
+    <dd><p>The chat options with which to configure the request.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to monitor for cancellation requests. The default is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<span class="xref">ChatResponseUpdate</span>&gt;</dt>
+    <dd><p>The response messages generated by the client.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">messages</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI.Microsoft/GenerativeAIChatClient.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ContentExtensions | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ContentExtensions | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Provides extension methods for the  class, allowing operations such as adding parts, handling inline and remote files, adding text, and extracting code or JSON blocks.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_ContentExtensions.md&amp;value=---%0Auid%3A%20GenerativeAI.ContentExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.ContentExtensions">
+
+
+
+  <h1 id="GenerativeAI_ContentExtensions" data-uid="GenerativeAI.ContentExtensions" class="text-break">
+Class ContentExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides extension methods for the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> class, allowing operations such as
+adding parts, handling inline and remote files, adding text, and extracting code or JSON blocks.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ContentExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ContentExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_ContentExtensions_AddInlineData_" data-uid="GenerativeAI.ContentExtensions.AddInlineData*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddInlineData_GenerativeAI_Types_Content_System_String_System_String_" data-uid="GenerativeAI.ContentExtensions.AddInlineData(GenerativeAI.Types.Content,System.String,System.String)">
+  AddInlineData(Content, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds inline data (for images, audio, etc.) as a new <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> to this <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddInlineData(this Content content, string data, string mimeType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> to which the inline data will be added.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base64-encoded data to include.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type of the data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddInlineFile_" data-uid="GenerativeAI.ContentExtensions.AddInlineFile*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddInlineFile_GenerativeAI_Types_Content_System_String_System_String_" data-uid="GenerativeAI.ContentExtensions.AddInlineFile(GenerativeAI.Types.Content,System.String,System.String)">
+  AddInlineFile(Content, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a file as inline base64-encoded data to the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddInlineFile(this Content content, string filePath, string role)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The content to add the file to.</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the file to add.</p>
+</dd>
+    <dt><code>role</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The role parameter (currently unused but kept for interface compatibility).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when content is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddPart_" data-uid="GenerativeAI.ContentExtensions.AddPart*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddPart_GenerativeAI_Types_Content_GenerativeAI_Types_Part_" data-uid="GenerativeAI.ContentExtensions.AddPart(GenerativeAI.Types.Content,GenerativeAI.Types.Part)">
+  AddPart(Content, Part)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a single <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> to this <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPart(this Content content, Part part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> to which the <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> will be added.</p>
+</dd>
+    <dt><code>part</code> <a class="xref" href="GenerativeAI.Types.Part.html">Part</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddParts_" data-uid="GenerativeAI.ContentExtensions.AddParts*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddParts_GenerativeAI_Types_Content_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__" data-uid="GenerativeAI.ContentExtensions.AddParts(GenerativeAI.Types.Content,System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part})">
+  AddParts(Content, IEnumerable&lt;Part&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds multiple <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> objects to this <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddParts(this Content content, IEnumerable&lt;Part&gt; parts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> to which the <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> objects will be added.</p>
+</dd>
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>The collection of <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> objects to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddRemoteFile_" data-uid="GenerativeAI.ContentExtensions.AddRemoteFile*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddRemoteFile_GenerativeAI_Types_Content_GenerativeAI_Types_RemoteFile_" data-uid="GenerativeAI.ContentExtensions.AddRemoteFile(GenerativeAI.Types.Content,GenerativeAI.Types.RemoteFile)">
+  AddRemoteFile(Content, RemoteFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a remote file to the <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> using its URL and MIME type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddRemoteFile(this Content request, RemoteFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> to which the remote file will be added.</p>
+</dd>
+    <dt><code>file</code> <a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a> to be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddRemoteFile_" data-uid="GenerativeAI.ContentExtensions.AddRemoteFile*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddRemoteFile_GenerativeAI_Types_Content_System_String_System_String_" data-uid="GenerativeAI.ContentExtensions.AddRemoteFile(GenerativeAI.Types.Content,System.String,System.String)">
+  AddRemoteFile(Content, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a remote file reference as a new <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> to this <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddRemoteFile(this Content content, string fileUri, string mimeType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> to which the remote file reference will be added.</p>
+</dd>
+    <dt><code>fileUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URL of the remote file.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type of the remote file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_AddText_" data-uid="GenerativeAI.ContentExtensions.AddText*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_AddText_GenerativeAI_Types_Content_System_String_" data-uid="GenerativeAI.ContentExtensions.AddText(GenerativeAI.Types.Content,System.String)">
+  AddText(Content, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a single text <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> to this <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddText(this Content content, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> instance.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_ExtractCodeBlocks_" data-uid="GenerativeAI.ContentExtensions.ExtractCodeBlocks*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_ExtractCodeBlocks_GenerativeAI_Types_Content_" data-uid="GenerativeAI.ContentExtensions.ExtractCodeBlocks(GenerativeAI.Types.Content)">
+  ExtractCodeBlocks(Content)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts all <a class="xref" href="GenerativeAI.Core.CodeBlock.html">CodeBlock</a> from the text <a class="xref" href="GenerativeAI.Types.Part.html">Parts</a> of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CodeBlock&gt; ExtractCodeBlocks(this Content content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> from which to extract code blocks.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Core.CodeBlock.html">CodeBlock</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="GenerativeAI.Core.CodeBlock.html">CodeBlock</a> instances found within the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_ExtractJsonBlocks_" data-uid="GenerativeAI.ContentExtensions.ExtractJsonBlocks*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_ExtractJsonBlocks_GenerativeAI_Types_Content_" data-uid="GenerativeAI.ContentExtensions.ExtractJsonBlocks(GenerativeAI.Types.Content)">
+  ExtractJsonBlocks(Content)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Extracts all JSON string from the text <a class="xref" href="GenerativeAI.Types.Part.html">Parts</a> of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;JsonBlock&gt; ExtractJsonBlocks(this Content content)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> from which to extract code blocks.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Core.JsonBlock.html">JsonBlock</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="GenerativeAI.Core.CodeBlock.html">CodeBlock</a> instances found within the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_ContentExtensions_ToObject_" data-uid="GenerativeAI.ContentExtensions.ToObject*"></a>
+
+  <h3 id="GenerativeAI_ContentExtensions_ToObject__1_GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.ContentExtensions.ToObject``1(GenerativeAI.Types.Content,System.Text.Json.JsonSerializerOptions)">
+  ToObject&lt;T&gt;(Content, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the JSON content of a <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> object into an instance of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T? ToObject&lt;T&gt;(this Content content, JsonSerializerOptions? options = null) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> object containing JSON data to be converted.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a> to customize the deserialization process, or null to use default options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>An instance of type <code class="typeparamref">T</code> if conversion succeeds, or null if no valid JSON data is found or deserialization fails.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The target type to which the JSON content will be deserialized. Must be a class.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_ContentExtensions_ToObject__1_GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For NativeAOT/Trimming JsonSerializerOptions are required, you can ignore it if you have already specified a resolver in <code></code></p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Extensions/ContentExtensions.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

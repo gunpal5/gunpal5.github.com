@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RequestUrl | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RequestUrl | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Represents a request URL for interacting with a generative AI service.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Core_RequestUrl.md&amp;value=---%0Auid%3A%20GenerativeAI.Core.RequestUrl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Core.RequestUrl">
+
+
+
+  <h1 id="GenerativeAI_Core_RequestUrl" data-uid="GenerativeAI.Core.RequestUrl" class="text-break">
+Class RequestUrl  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a request URL for interacting with a generative AI service.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RequestUrl</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RequestUrl</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Core_RequestUrl__ctor_" data-uid="GenerativeAI.Core.RequestUrl.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl__ctor_System_String_System_String_System_String_System_Boolean_System_String_System_String_" data-uid="GenerativeAI.Core.RequestUrl.#ctor(System.String,System.String,System.String,System.Boolean,System.String,System.String)">
+  RequestUrl(string, string, string, bool, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Core.RequestUrl.html">RequestUrl</a> class with the specified parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestUrl(string model, string task, string apiKey, bool stream, string baseUrl, string version = &quot;v1&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model identifier for the request.</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The task associated with the request.</p>
+</dd>
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API key used for authentication.</p>
+</dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A value indicating whether the request should use streaming.</p>
+</dd>
+    <dt><code>baseUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base URL for the API endpoint.</p>
+</dd>
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The version of the API to be used. Defaults to &quot;v1&quot;.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Core_RequestUrl_ApiKey_" data-uid="GenerativeAI.Core.RequestUrl.ApiKey*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_ApiKey" data-uid="GenerativeAI.Core.RequestUrl.ApiKey">
+  ApiKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the API key used for authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiKey { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_BaseUrl_" data-uid="GenerativeAI.Core.RequestUrl.BaseUrl*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_BaseUrl" data-uid="GenerativeAI.Core.RequestUrl.BaseUrl">
+  BaseUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the base URL for the API endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BaseUrl { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_Model_" data-uid="GenerativeAI.Core.RequestUrl.Model*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_Model" data-uid="GenerativeAI.Core.RequestUrl.Model">
+  Model
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the model identifier for the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Model { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_Stream_" data-uid="GenerativeAI.Core.RequestUrl.Stream*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_Stream" data-uid="GenerativeAI.Core.RequestUrl.Stream">
+  Stream
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the request should use streaming.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stream { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_Task_" data-uid="GenerativeAI.Core.RequestUrl.Task*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_Task" data-uid="GenerativeAI.Core.RequestUrl.Task">
+  Task
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the task associated with the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Task { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_Version_" data-uid="GenerativeAI.Core.RequestUrl.Version*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_Version" data-uid="GenerativeAI.Core.RequestUrl.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the version of the API to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Core_RequestUrl_ToString_" data-uid="GenerativeAI.Core.RequestUrl.ToString*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_ToString" data-uid="GenerativeAI.Core.RequestUrl.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the request data to its string representation, with a placeholder for the API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string representation of the request URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Core_RequestUrl_ToString_" data-uid="GenerativeAI.Core.RequestUrl.ToString*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_ToString_System_String_" data-uid="GenerativeAI.Core.RequestUrl.ToString(System.String)">
+  ToString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the request data to its string representation, using the specified API key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string apiKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API key to include in the URL.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string representation of the request URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="GenerativeAI_Core_RequestUrl_op_Implicit_" data-uid="GenerativeAI.Core.RequestUrl.op_Implicit*"></a>
+
+  <h3 id="GenerativeAI_Core_RequestUrl_op_Implicit_GenerativeAI_Core_RequestUrl__System_String" data-uid="GenerativeAI.Core.RequestUrl.op_Implicit(GenerativeAI.Core.RequestUrl)~System.String">
+  implicit operator string(RequestUrl)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an implicit conversion from a RequestUrl instance to its string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string(RequestUrl d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="GenerativeAI.Core.RequestUrl.html">RequestUrl</a></dt>
+    <dd><p>The RequestUrl instance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Core/RequestUrl.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

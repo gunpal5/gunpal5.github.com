@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WebhooksClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WebhooksClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A client for the Gemini Webhooks API (/webhooks): register endpoints that receive event notifications for batch jobs, interactions and video generation instead of polling, ping them and rotate their signing secrets.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_WebhooksClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.WebhooksClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.WebhooksClient">
+
+
+
+  <h1 id="GenerativeAI_Clients_WebhooksClient" data-uid="GenerativeAI.Clients.WebhooksClient" class="text-break">
+Class WebhooksClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A client for the Gemini Webhooks API (<code>/webhooks</code>): register endpoints that receive event notifications
+for batch jobs, interactions and video generation instead of polling, ping them and rotate their signing secrets.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebhooksClient : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">WebhooksClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="GenerativeAI_Clients_WebhooksClient_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The wire format follows python-genai's generated webhooks client (snake_case field and query parameter names).
+Requests go to <code>{base}/{version}/webhooks</code> on the Gemini Developer API and to
+<code>{base}/{version}/projects/{project}/locations/{location}/webhooks</code> on Vertex AI.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient__ctor_" data-uid="GenerativeAI.Clients.WebhooksClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.WebhooksClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  WebhooksClient(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Clients.WebhooksClient.html">WebhooksClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhooksClient(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter (Google AI or Vertex AI).</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_CreateAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.CreateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_CreateAsync_GenerativeAI_Types_CreateWebhookRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.CreateAsync(GenerativeAI.Types.CreateWebhookRequest,System.Threading.CancellationToken)">
+  CreateAsync(CreateWebhookRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new webhook (<code>POST /webhooks</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Webhook&gt; CreateAsync(CreateWebhookRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.CreateWebhookRequest.html">CreateWebhookRequest</a></dt>
+    <dd><p>The webhook definition; <a class="xref" href="GenerativeAI.Types.CreateWebhookRequest.html#GenerativeAI_Types_CreateWebhookRequest_Uri">Uri</a> and
+<a class="xref" href="GenerativeAI.Types.CreateWebhookRequest.html#GenerativeAI_Types_CreateWebhookRequest_SubscribedEvents">SubscribedEvents</a> are required.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a>&gt;</dt>
+    <dd><p>The created webhook. <a class="xref" href="GenerativeAI.Types.Webhook.html#GenerativeAI_Types_Webhook_NewSigningSecret">NewSigningSecret</a> is only populated in this response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_CreateAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.CreateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_CreateAsync_System_String_System_Collections_Generic_IEnumerable_System_String__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.CreateAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Threading.CancellationToken)">
+  CreateAsync(string, IEnumerable&lt;string&gt;, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new webhook (<code>POST /webhooks</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Webhook&gt; CreateAsync(string uri, IEnumerable&lt;string&gt; subscribedEvents, string? name = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URI to which webhook events will be sent.</p>
+</dd>
+    <dt><code>subscribedEvents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The events to subscribe to (see <a class="xref" href="GenerativeAI.Types.WebhookEvents.html">WebhookEvents</a>).</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional user-provided name of the webhook.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a>&gt;</dt>
+    <dd><p>The created webhook. <a class="xref" href="GenerativeAI.Types.Webhook.html#GenerativeAI_Types_Webhook_NewSigningSecret">NewSigningSecret</a> is only populated in this response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_DeleteAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.DeleteAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+  DeleteAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a webhook (<code>DELETE /webhooks/{id}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The webhook ID (a <code>webhooks/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes when the webhook has been deleted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_GetAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.GetAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_GetAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.GetAsync(System.String,System.Threading.CancellationToken)">
+  GetAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a webhook (<code>GET /webhooks/{id}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Webhook&gt; GetAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The webhook ID (a <code>webhooks/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a>&gt;</dt>
+    <dd><p>The webhook.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_GetWebhooksUrl_" data-uid="GenerativeAI.Clients.WebhooksClient.GetWebhooksUrl*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_GetWebhooksUrl" data-uid="GenerativeAI.Clients.WebhooksClient.GetWebhooksUrl">
+  GetWebhooksUrl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the URL of the webhooks collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetWebhooksUrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_ListAllAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.ListAllAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_ListAllAsync_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.ListAllAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+  ListAllAsync(int?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all webhooks, fetching subsequent pages as needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;Webhook&gt; ListAllAsync(int? pageSize = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Optional page size used for each request.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a>&gt;</dt>
+    <dd><p>An async sequence of every webhook.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_ListAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.ListAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_ListAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.ListAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListAsync(int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists webhooks, one page at a time (<code>GET /webhooks</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;WebhookListResponse&gt; ListAsync(int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of webhooks to return (the service defaults to 50, max 1000).</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.WebhookListResponse.html#GenerativeAI_Types_WebhookListResponse_NextPageToken">NextPageToken</a> from a previous call.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.WebhookListResponse.html">WebhookListResponse</a>&gt;</dt>
+    <dd><p>One page of webhooks.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_PingAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.PingAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_PingAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.PingAsync(System.String,System.Threading.CancellationToken)">
+  PingAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a ping event to a webhook (<code>POST /webhooks/{id}:ping</code>), e.g. to test the endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;WebhookPingResponse&gt; PingAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The webhook ID (a <code>webhooks/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.WebhookPingResponse.html">WebhookPingResponse</a>&gt;</dt>
+    <dd><p>The (currently empty) ping response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_RotateSigningSecretAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.RotateSigningSecretAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_RotateSigningSecretAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.RotateSigningSecretAsync(System.String,System.String,System.Threading.CancellationToken)">
+  RotateSigningSecretAsync(string, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a new signing secret for a webhook (<code>POST /webhooks/{id}:rotateSigningSecret</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;WebhookRotateSigningSecretResponse&gt; RotateSigningSecretAsync(string id, string? revocationBehavior = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The webhook ID (a <code>webhooks/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>revocationBehavior</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional revocation behavior for the previous signing secrets
+(see <a class="xref" href="GenerativeAI.Types.WebhookRevocationBehaviors.html">WebhookRevocationBehaviors</a>).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.WebhookRotateSigningSecretResponse.html">WebhookRotateSigningSecretResponse</a>&gt;</dt>
+    <dd><p>The response holding the newly generated secret.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_WebhooksClient_UpdateAsync_" data-uid="GenerativeAI.Clients.WebhooksClient.UpdateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_WebhooksClient_UpdateAsync_System_String_GenerativeAI_Types_WebhookUpdate_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.WebhooksClient.UpdateAsync(System.String,GenerativeAI.Types.WebhookUpdate,System.String,System.Threading.CancellationToken)">
+  UpdateAsync(string, WebhookUpdate, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates a webhook (<code>PATCH /webhooks/{id}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Webhook&gt; UpdateAsync(string id, WebhookUpdate update, string? updateMask = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The webhook ID (a <code>webhooks/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>update</code> <a class="xref" href="GenerativeAI.Types.WebhookUpdate.html">WebhookUpdate</a></dt>
+    <dd><p>The fields to update; unset (<code>null</code>) fields are not sent.</p>
+</dd>
+    <dt><code>updateMask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional comma-separated list of fields to update, sent as the <code>update_mask</code>
+query parameter (e.g. <code>&quot;uri,subscribed_events&quot;</code>).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a>&gt;</dt>
+    <dd><p>The updated webhook.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://ai.google.dev/gemini-api/docs/webhooks">See Official API Documentation</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/WebhooksClient.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

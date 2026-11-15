@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GeminiModel | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GeminiModel | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="The GeminiModel class is a specialized implementation of the GenerativeModel, designed to provide capabilities for generative AI tasks. It supports multiple constructors for flexibility, allowing users to configure the model according to their specific requirements, including platform, API key, configuration, safety settings, and various other parameters.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_GeminiModel.md&amp;value=---%0Auid%3A%20GenerativeAI.GeminiModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.GeminiModel">
+
+
+
+  <h1 id="GenerativeAI_GeminiModel" data-uid="GenerativeAI.GeminiModel" class="text-break">
+Class GeminiModel  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.GenerateContent.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The GeminiModel class is a specialized implementation of the GenerativeModel, designed to provide
+capabilities for generative AI tasks. It supports multiple constructors for flexibility, allowing users
+to configure the model according to their specific requirements, including platform, API key, configuration,
+safety settings, and various other parameters.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GeminiModel : GenerativeModel, IGenerativeModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a></div>
+      <div><a class="xref" href="GenerativeAI.GenerativeModel.html">GenerativeModel</a></div>
+      <div><span class="xref">GeminiModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.IGenerativeModel.html">IGenerativeModel</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_SystemInstruction">GenerativeModel.SystemInstruction</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_Model">GenerativeModel.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_Config">GenerativeModel.Config</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_SafetySettings">GenerativeModel.SafetySettings</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CachedContent">GenerativeModel.CachedContent</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CachingClient">GenerativeModel.CachingClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_ValidateGenerateContentRequest_GenerativeAI_Types_GenerateContentRequest_">GenerativeModel.ValidateGenerateContentRequest(GenerateContentRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_PrepareRequest_GenerativeAI_Types_GenerateContentRequest_">GenerativeModel.PrepareRequest(GenerateContentRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_AddCachedContent_GenerativeAI_Types_GenerateContentRequest_">GenerativeModel.AddCachedContent(GenerateContentRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_AdjustJsonMode_GenerativeAI_Types_GenerateContentRequest_">GenerativeModel.AdjustJsonMode(GenerateContentRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StartChat_System_Collections_Generic_List_GenerativeAI_Types_Content__GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_">GenerativeModel.StartChat(List&lt;Content&gt;, GenerationConfig, ICollection&lt;SafetySetting&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StartChat_GenerativeAI_Types_ChatSessionBackUpData_System_Collections_Generic_List_GenerativeAI_Core_IFunctionTool__">GenerativeModel.StartChat(ChatSessionBackUpData, List&lt;IFunctionTool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseFileSearch_System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__System_String_">GenerativeModel.UseFileSearch(IEnumerable&lt;string&gt;, int?, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseFileSearch_System_String___">GenerativeModel.UseFileSearch(params string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateAnswerAsync_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_">GenerativeModel.GenerateAnswerAsync(GenerateAnswerRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_EnableAutomaticContinuation">GenerativeModel.EnableAutomaticContinuation</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_MaxContinuations">GenerativeModel.MaxContinuations</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateContentAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.GenerateContentAsync(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateContentAsync_System_String_System_Threading_CancellationToken_">GenerativeModel.GenerateContentAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateContentAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">GenerativeModel.GenerateContentAsync(string, string, string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_">GenerativeModel.GenerateContentAsync(IEnumerable&lt;Part&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StreamContentAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.StreamContentAsync(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StreamContentAsync_System_String_System_Threading_CancellationToken_">GenerativeModel.StreamContentAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StreamContentAsync_System_String_System_String_System_String_System_Threading_CancellationToken_">GenerativeModel.StreamContentAsync(string, string, string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StreamContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_">GenerativeModel.StreamContentAsync(IEnumerable&lt;Part&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_StreamContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Content__System_Threading_CancellationToken_">GenerativeModel.StreamContentAsync(IEnumerable&lt;Content&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CountTokensAsync_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_">GenerativeModel.CountTokensAsync(CountTokensRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CountTokensAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Content__System_Threading_CancellationToken_">GenerativeModel.CountTokensAsync(IEnumerable&lt;Content&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CountTokensAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_">GenerativeModel.CountTokensAsync(IEnumerable&lt;Part&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CountTokensAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.CountTokensAsync(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseJsonMode">GenerativeModel.UseJsonMode</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateObjectJsonSerializerOptions">GenerativeModel.GenerateObjectJsonSerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateContentAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.GenerateContentAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateObjectAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.GenerateObjectAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_String_System_Threading_CancellationToken_">GenerativeModel.GenerateObjectAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_">GenerativeModel.GenerateObjectAsync&lt;T&gt;(IEnumerable&lt;Part&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateEnumAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">GenerativeModel.GenerateEnumAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_String_System_Threading_CancellationToken_">GenerativeModel.GenerateEnumAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_">GenerativeModel.GenerateEnumAsync&lt;T&gt;(IEnumerable&lt;Part&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseGrounding">GenerativeModel.UseGrounding</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseGoogleSearch">GenerativeModel.UseGoogleSearch</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseCodeExecutionTool">GenerativeModel.UseCodeExecutionTool</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_RetrievalTool">GenerativeModel.RetrievalTool</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_FunctionCallingBehaviour">GenerativeModel.FunctionCallingBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_DefaultSearchTool">GenerativeModel.DefaultSearchTool</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_DefaultGoogleSearchRetrieval">GenerativeModel.DefaultGoogleSearchRetrieval</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_DefaultCodeExecutionTool">GenerativeModel.DefaultCodeExecutionTool</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_FunctionTools">GenerativeModel.FunctionTools</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_ToolConfig">GenerativeModel.ToolConfig</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_AddFunctionTool_GenerativeAI_Core_IFunctionTool_GenerativeAI_Types_ToolConfig_GenerativeAI_Core_FunctionCallingBehaviour_">GenerativeModel.AddFunctionTool(IFunctionTool, ToolConfig, FunctionCallingBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_AddFunctionTool_GenerativeAI_Core_GoogleFunctionTool_GenerativeAI_Types_ToolConfig_GenerativeAI_Core_FunctionCallingBehaviour_">GenerativeModel.AddFunctionTool(GoogleFunctionTool, ToolConfig, FunctionCallingBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_DisableFunctions">GenerativeModel.DisableFunctions()</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_EnableFunctions">GenerativeModel.EnableFunctions()</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CallFunctionAsync_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_System_Threading_CancellationToken_">GenerativeModel.CallFunctionAsync(GenerateContentRequest, GenerateContentResponse, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_CallFunctionStreamingAsync_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_System_Threading_CancellationToken_">GenerativeModel.CallFunctionStreamingAsync(GenerateContentRequest, GenerateContentResponse, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_BeforeRegeneration_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_">GenerativeModel.BeforeRegeneration(GenerateContentRequest, GenerateContentResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_UseVertexRetrievalTool_System_String_GenerativeAI_Types_RagEngine_RagRetrievalConfig_">GenerativeModel.UseVertexRetrievalTool(string, RagRetrievalConfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_String_">BaseModel.CheckBlockedResponse(GenerateContentResponse, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentStreamAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentStreamAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CountTokensAsync_System_String_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_">BaseModel.CountTokensAsync(string, CountTokensRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_BatchEmbedContentAsync_System_String_GenerativeAI_Types_BatchEmbedContentRequest_System_Threading_CancellationToken_">BaseModel.BatchEmbedContentAsync(string, BatchEmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_EmbedContentAsync_System_String_GenerativeAI_Types_EmbedContentRequest_System_Threading_CancellationToken_">BaseModel.EmbedContentAsync(string, EmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateAnswerAsync_System_String_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_">BaseModel.GenerateAnswerAsync(string, GenerateAnswerRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_Uri_">BaseModel.CheckBlockedResponse(GenerateContentResponse, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Live.Extensions.GenerativeModelExtensions.html#GenerativeAI_Live_Extensions_GenerativeModelExtensions_CreateMultiModalLiveClient_GenerativeAI_GenerativeModel_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_Microsoft_Extensions_Logging_ILogger_">GenerativeModelExtensions.CreateMultiModalLiveClient(GenerativeModel, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?, ILogger?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="GenerativeAI_GeminiModel_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class extends the functionality of the GenerativeModel and exposes additional configuration options,
+such as file management through the <a class="xref" href="GenerativeAI.Clients.FileClient.html">FileClient</a> property. The GeminiModel is intended to
+support diverse generative AI use-cases.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_GeminiModel__ctor_" data-uid="GenerativeAI.GeminiModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GeminiModel.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,GenerativeAI.Types.GenerationConfig,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GeminiModel(IPlatformAdapter, string, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeminiModel(IPlatformAdapter platform, string model, GenerationConfig? config = null, ICollection&lt;SafetySetting&gt;? safetySettings = null, string? systemInstruction = null, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd></dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GeminiModel__ctor_" data-uid="GenerativeAI.GeminiModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel__ctor_System_String_GenerativeAI_Core_ModelParams_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GeminiModel.#ctor(System.String,GenerativeAI.Core.ModelParams,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GeminiModel(string, ModelParams, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeminiModel(string apiKey, ModelParams modelParams, HttpClient? client = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>modelParams</code> <a class="xref" href="GenerativeAI.Core.ModelParams.html">ModelParams</a></dt>
+    <dd></dd>
+    <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_GeminiModel_Files_" data-uid="GenerativeAI.GeminiModel.Files*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_Files" data-uid="GenerativeAI.GeminiModel.Files">
+  Files
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a property to interact with files associated with the GeminiModel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileClient? Files { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.FileClient.html">FileClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GeminiModel_Files_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property is used to access and manage files through the FileClient, allowing
+operations such as uploading, retrieving, deleting, and listing files.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GeminiModel_TimeoutForFileStateCheck_" data-uid="GenerativeAI.GeminiModel.TimeoutForFileStateCheck*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_TimeoutForFileStateCheck" data-uid="GenerativeAI.GeminiModel.TimeoutForFileStateCheck">
+  TimeoutForFileStateCheck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.Files.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the timeout value, in seconds, used for checking the state of a uploaded file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TimeoutForFileStateCheck { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GeminiModel_TimeoutForFileStateCheck_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property determines the maximum duration to wait while verifying the state of operations related to files, such as uploads or processing.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_GeminiModel_AwaitForFileStateActive_" data-uid="GenerativeAI.GeminiModel.AwaitForFileStateActive*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_AwaitForFileStateActive_GenerativeAI_Types_RemoteFile_System_Int32_System_Threading_CancellationToken_" data-uid="GenerativeAI.GeminiModel.AwaitForFileStateActive(GenerativeAI.Types.RemoteFile,System.Int32,System.Threading.CancellationToken)">
+  AwaitForFileStateActive(RemoteFile, int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.Files.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Waits for a remote file to reach the &quot;Active&quot; state within a specified time limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AwaitForFileStateActive(RemoteFile file, int maxSeconds = 300, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a></dt>
+    <dd><p>The remote file whose state is being monitored.</p>
+</dd>
+    <dt><code>maxSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of seconds to wait for the file to become &quot;Active&quot;.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GeminiModel_GenerateContentAsync_" data-uid="GenerativeAI.GeminiModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_GenerateContentAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GeminiModel.GenerateContentAsync(System.String,System.String,System.Threading.CancellationToken)">
+  GenerateContentAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.GenerateContent.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously based on the given text prompt and the specified file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateContentResponse&gt; GenerateContentAsync(string prompt, string filePath, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The textual input used as the basis for content generation.</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the file that should be included in the content generation request.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> or null if the operation fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/vision">See Official Vision API Documentation</a></span></div>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/audio">See Official Audio API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GeminiModel_GetFileAsync_" data-uid="GenerativeAI.GeminiModel.GetFileAsync*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_GetFileAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GeminiModel.GetFileAsync(System.String,System.Threading.CancellationToken)">
+  GetFileAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.Files.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves metadata of a file asynchronously from the API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RemoteFile&gt; GetFileAsync(string fileId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the file whose metadata is to be retrieved.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a> object containing metadata details of the requested file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GeminiModel_StreamContentAsync_" data-uid="GenerativeAI.GeminiModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_StreamContentAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GeminiModel.StreamContentAsync(System.String,System.String,System.Threading.CancellationToken)">
+  StreamContentAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.GenerateContent.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams content generation asynchronously based on the provided text prompt, file path, and cancellation token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(string prompt, string filePath, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input text prompt used to guide the content generation process.</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The local file path</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests during the streaming process.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous enumerable of <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> instances representing the streamed content generation results.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/vision">See Official Vision API Documentation</a></span></div>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/audio">See Official Audio API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GeminiModel_UploadFileAsync_" data-uid="GenerativeAI.GeminiModel.UploadFileAsync*"></a>
+
+  <h3 id="GenerativeAI_GeminiModel_UploadFileAsync_System_String_System_Action_System_Double__System_Threading_CancellationToken_" data-uid="GenerativeAI.GeminiModel.UploadFileAsync(System.String,System.Action{System.Double},System.Threading.CancellationToken)">
+  UploadFileAsync(string, Action&lt;double&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.Files.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uploads a file asynchronously to the API and tracks its upload progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RemoteFile&gt; UploadFileAsync(string filePath, Action&lt;double&gt;? progressCallback, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The local path of the file to be uploaded.</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An optional callback to receive updates on upload progress as a percentage.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a> object representing the uploaded file on the API.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GoogleAIModel/GeminiModel.GenerateContent.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

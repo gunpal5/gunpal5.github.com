@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GenAI | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GenAI | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Represents the base class for generative AI services. This class provides a framework for generative AI capabilities, including the management of AI models, creation of generative and embedding models, and interacting with generative AI infrastructure.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_GenAI.md&amp;value=---%0Auid%3A%20GenerativeAI.GenAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.GenAI">
+
+
+
+  <h1 id="GenerativeAI_GenAI" data-uid="GenerativeAI.GenAI" class="text-break">
+Class GenAI  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the base class for generative AI services. This class provides a framework for generative AI capabilities, including
+the management of AI models, creation of generative and embedding models, and interacting with generative AI infrastructure.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GenAI</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GenAI</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.GoogleAi.html">GoogleAi</a></div>
+      <div><a class="xref" href="GenerativeAI.VertexAI.html">VertexAI</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_GenAI__ctor_" data-uid="GenerativeAI.GenAI.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GenAI__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GenAI.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GenAI(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.GenAI.html">GenAI</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GenAI(IPlatformAdapter platformAdapter, HttpClient? client = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platformAdapter</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter for API communication.</p>
+</dd>
+    <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client for API requests.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger for diagnostic output.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_GenAI_BatchClient_" data-uid="GenerativeAI.GenAI.BatchClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_BatchClient" data-uid="GenerativeAI.GenAI.BatchClient">
+  BatchClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the instance of the <a class="xref" href="GenerativeAI.GenAI.html#GenerativeAI_GenAI_BatchClient">BatchClient</a> class for batch processing operations.
+This property provides access to functionality for creating, managing, and monitoring batch jobs
+for content generation and embedding operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BatchClient BatchClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.BatchClient.html">BatchClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_HttpClient_" data-uid="GenerativeAI.GenAI.HttpClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_HttpClient" data-uid="GenerativeAI.GenAI.HttpClient">
+  HttpClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the underlying <a class="xref" href="GenerativeAI.GenAI.html#GenerativeAI_GenAI_HttpClient">HttpClient</a> instance used to perform HTTP requests
+to Google's AI platform. This property allows for custom configuration of network communication,
+including request headers, timeouts, and other HTTP-specific settings, enabling seamless
+interaction with Google's generative and embedding models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HttpClient? HttpClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_Logger_" data-uid="GenerativeAI.GenAI.Logger*"></a>
+
+  <h3 id="GenerativeAI_GenAI_Logger" data-uid="GenerativeAI.GenAI.Logger">
+  Logger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the logger instance used by the <a class="xref" href="GenerativeAI.GoogleAi.html">GoogleAi</a> class for logging diagnostic messages,
+errors, and other runtime information. This property provides a mechanism to track and debug
+the internal operations of the class and its related components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger? Logger { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_ModelClient_" data-uid="GenerativeAI.GenAI.ModelClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_ModelClient" data-uid="GenerativeAI.GenAI.ModelClient">
+  ModelClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the instance of the <a class="xref" href="GenerativeAI.GenAI.html#GenerativeAI_GenAI_ModelClient">ModelClient</a> class associated with the <a class="xref" href="GenerativeAI.GoogleAi.html">GoogleAi</a> instance.
+This property allows access to functionality for interacting with the Gemini API Models endpoint, enabling
+operations such as retrieving and listing AI models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelClient ModelClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.ModelClient.html">ModelClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_Platform_" data-uid="GenerativeAI.GenAI.Platform*"></a>
+
+  <h3 id="GenerativeAI_GenAI_Platform" data-uid="GenerativeAI.GenAI.Platform">
+  Platform
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the underlying platform adapter instance utilized by the <a class="xref" href="GenerativeAI.GoogleAi.html">GoogleAi</a> class.
+This property provides essential platform-specific functionality, such as URL generation,
+authorization handling, and API versioning, enabling seamless communication with Google's generative AI services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IPlatformAdapter Platform { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_GenAI_CreateAgentsClient_" data-uid="GenerativeAI.GenAI.CreateAgentsClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateAgentsClient" data-uid="GenerativeAI.GenAI.CreateAgentsClient">
+  CreateAgentsClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the managed Agents API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentsClient CreateAgentsClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.AgentsClient.html">AgentsClient</a></dt>
+    <dd><p>An <a class="xref" href="GenerativeAI.Clients.AgentsClient.html">AgentsClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateCredentialsClient_" data-uid="GenerativeAI.GenAI.CreateCredentialsClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateCredentialsClient" data-uid="GenerativeAI.GenAI.CreateCredentialsClient">
+  CreateCredentialsClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Credentials API (secrets used by agent environments).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CredentialsClient CreateCredentialsClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.CredentialsClient.html">CredentialsClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.CredentialsClient.html">CredentialsClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateDecisionsClient_" data-uid="GenerativeAI.GenAI.CreateDecisionsClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateDecisionsClient" data-uid="GenerativeAI.GenAI.CreateDecisionsClient">
+  CreateDecisionsClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Decisions API (structured yes/no, choice and score questions).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DecisionsClient CreateDecisionsClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.DecisionsClient.html">DecisionsClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.DecisionsClient.html">DecisionsClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateEmbeddingModel_" data-uid="GenerativeAI.GenAI.CreateEmbeddingModel*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateEmbeddingModel_System_String_" data-uid="GenerativeAI.GenAI.CreateEmbeddingModel(System.String)">
+  CreateEmbeddingModel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and initializes an embedding model for use in embedding-related AI tasks.
+The created model is configured with the provided model name and integrates with the underlying platform adapter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbeddingModel CreateEmbeddingModel(string modelName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the embedding model to initialize, used to identify the specific AI model for embeddings.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.EmbeddingModel.html">EmbeddingModel</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.EmbeddingModel.html">EmbeddingModel</a> initialized with the specified model name and platform configurations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateEnvironmentsClient_" data-uid="GenerativeAI.GenAI.CreateEnvironmentsClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateEnvironmentsClient" data-uid="GenerativeAI.GenAI.CreateEnvironmentsClient">
+  CreateEnvironmentsClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Environments API (agent sandbox environments and their workspace files).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentsClient CreateEnvironmentsClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.EnvironmentsClient.html">EnvironmentsClient</a></dt>
+    <dd><p>An <a class="xref" href="GenerativeAI.Clients.EnvironmentsClient.html">EnvironmentsClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateGenerativeModel_" data-uid="GenerativeAI.GenAI.CreateGenerativeModel*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateGenerativeModel_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_" data-uid="GenerativeAI.GenAI.CreateGenerativeModel(System.String,GenerativeAI.Types.GenerationConfig,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.String)">
+  CreateGenerativeModel(string, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and initializes a generative model for use with Google's generative AI platform.
+This method allows the specification of model configuration, safety settings,
+and system-level instructions for controlling model behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GenerativeModel CreateGenerativeModel(string modelName, GenerationConfig? config = null, ICollection&lt;SafetySetting&gt;? safetyRatings = null, string? systemInstruction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the generative model to initialize.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd><p>Optional configuration settings for generation,
+such as temperature, max tokens, or other generation parameters.</p>
+</dd>
+    <dt><code>safetyRatings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional safety settings to define behavior
+constraints or safety parameters for the generative model.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional system-wide instruction to apply
+when the model processes requests or generates responses.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.GenerativeModel.html">GenerativeModel</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.GenerativeModel.html">GenerativeModel</a> configured with the specified parameters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateImageModel_" data-uid="GenerativeAI.GenAI.CreateImageModel*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateImageModel_System_String_" data-uid="GenerativeAI.GenAI.CreateImageModel(System.String)">
+  CreateImageModel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and initializes an image generation model for use with the Imagen image generation API.
+This method configures the model to generate images based on provided prompts or inputs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImagenModel CreateImageModel(string modelName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the image generation model to initialize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.ImagenModel.html">ImagenModel</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Clients.ImagenModel.html">ImagenModel</a> configured for generating images using the specified model name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateInteractionsClient_" data-uid="GenerativeAI.GenAI.CreateInteractionsClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateInteractionsClient" data-uid="GenerativeAI.GenAI.CreateInteractionsClient">
+  CreateInteractionsClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Interactions API (stateful model and agent interactions such as Deep Research
+and Antigravity, with background execution, streaming and continuation).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionsClient CreateInteractionsClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.InteractionsClient.html">InteractionsClient</a></dt>
+    <dd><p>An <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html">InteractionsClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateTriggersClient_" data-uid="GenerativeAI.GenAI.CreateTriggersClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateTriggersClient" data-uid="GenerativeAI.GenAI.CreateTriggersClient">
+  CreateTriggersClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Triggers API (scheduled agent interactions).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriggersClient CreateTriggersClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.TriggersClient.html">TriggersClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.TriggersClient.html">TriggersClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateTuningClient_" data-uid="GenerativeAI.GenAI.CreateTuningClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateTuningClient" data-uid="GenerativeAI.GenAI.CreateTuningClient">
+  CreateTuningClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for model tuning (Vertex AI tuning jobs or Gemini API tuned models).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TuningClient CreateTuningClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.TuningClient.html">TuningClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.TuningClient.html">TuningClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateVoicesClient_" data-uid="GenerativeAI.GenAI.CreateVoicesClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateVoicesClient" data-uid="GenerativeAI.GenAI.CreateVoicesClient">
+  CreateVoicesClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Voices API (voice design, remixing and replication for text-to-speech).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoicesClient CreateVoicesClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.VoicesClient.html">VoicesClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.VoicesClient.html">VoicesClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_CreateWebhooksClient_" data-uid="GenerativeAI.GenAI.CreateWebhooksClient*"></a>
+
+  <h3 id="GenerativeAI_GenAI_CreateWebhooksClient" data-uid="GenerativeAI.GenAI.CreateWebhooksClient">
+  CreateWebhooksClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a client for the Webhooks API (event notifications for batch jobs, interactions and video
+generation, plus signing secret rotation).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhooksClient CreateWebhooksClient()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.WebhooksClient.html">WebhooksClient</a></dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Clients.WebhooksClient.html">WebhooksClient</a> that uses this instance's platform, HTTP client and logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_GetModelAsync_" data-uid="GenerativeAI.GenAI.GetModelAsync*"></a>
+
+  <h3 id="GenerativeAI_GenAI_GetModelAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenAI.GetModelAsync(System.String,System.Threading.CancellationToken)">
+  GetModelAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a specific AI model by its name asynchronously from the Google's AI platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Model&gt; GetModelAsync(string modelName, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique name of the model to retrieve.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Model.html">Model</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the requested model details as a <a class="xref" href="GenerativeAI.Types.Model.html">Model</a> object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_GetPlatformAdapter_" data-uid="GenerativeAI.GenAI.GetPlatformAdapter*"></a>
+
+  <h3 id="GenerativeAI_GenAI_GetPlatformAdapter" data-uid="GenerativeAI.GenAI.GetPlatformAdapter">
+  GetPlatformAdapter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the platform adapter associated with this instance.
+The platform adapter provides core functionalities, such as authorization,
+URL creation, and API version management, for interacting with the underlying platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPlatformAdapter GetPlatformAdapter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter instance implementing <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenAI_ListModelsAsync_" data-uid="GenerativeAI.GenAI.ListModelsAsync*"></a>
+
+  <h3 id="GenerativeAI_GenAI_ListModelsAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenAI.ListModelsAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListModelsAsync(int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously retrieves a list of AI models available in Google's AI platform.
+This method supports pagination to fetch models in batches using the specified page size
+and page token, enabling efficient handling of large model datasets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListModelsResponse&gt; ListModelsAsync(int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Optional parameter specifying the maximum number of models to retrieve per page. Defaults to null for the API's standard page size.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional parameter indicating the token for the next page of results, as provided in a previous response.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional parameter for propagating cancellation signals, allowing the operation to be canceled if needed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListModelsResponse.html">ListModelsResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, which contains a <a class="xref" href="GenerativeAI.Types.ListModelsResponse.html">ListModelsResponse</a> with the retrieved models and pagination details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GenAI.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

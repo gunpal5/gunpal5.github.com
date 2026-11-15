@@ -1,0 +1,2768 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GenerativeModel | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GenerativeModel | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A Generative AI Model that extends BaseModel">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_GenerativeModel.md&amp;value=---%0Auid%3A%20GenerativeAI.GenerativeModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.GenerativeModel">
+
+
+
+  <h1 id="GenerativeAI_GenerativeModel" data-uid="GenerativeAI.GenerativeModel" class="text-break">
+Class GenerativeModel  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A Generative AI Model that extends BaseModel</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GenerativeModel : BaseModel, IGenerativeModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a></div>
+      <div><span class="xref">GenerativeModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.IGenerativeModel.html">IGenerativeModel</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.ChatSession.html">ChatSession</a></div>
+      <div><a class="xref" href="GenerativeAI.GeminiModel.html">GeminiModel</a></div>
+      <div><a class="xref" href="GenerativeAI.VertexAIModel.html">VertexAIModel</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_String_">BaseModel.CheckBlockedResponse(GenerateContentResponse, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentStreamAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentStreamAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CountTokensAsync_System_String_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_">BaseModel.CountTokensAsync(string, CountTokensRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_BatchEmbedContentAsync_System_String_GenerativeAI_Types_BatchEmbedContentRequest_System_Threading_CancellationToken_">BaseModel.BatchEmbedContentAsync(string, BatchEmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_EmbedContentAsync_System_String_GenerativeAI_Types_EmbedContentRequest_System_Threading_CancellationToken_">BaseModel.EmbedContentAsync(string, EmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateAnswerAsync_System_String_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_">BaseModel.GenerateAnswerAsync(string, GenerateAnswerRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_Uri_">BaseModel.CheckBlockedResponse(GenerateContentResponse, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Live.Extensions.GenerativeModelExtensions.html#GenerativeAI_Live_Extensions_GenerativeModelExtensions_CreateMultiModalLiveClient_GenerativeAI_GenerativeModel_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_Microsoft_Extensions_Logging_ILogger_">GenerativeModelExtensions.CreateMultiModalLiveClient(GenerativeModel, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?, ILogger?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_GenerativeModel__ctor_" data-uid="GenerativeAI.GenerativeModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GenerativeModel.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,GenerativeAI.Types.GenerationConfig,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GenerativeModel(IPlatformAdapter, string?, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a generative AI model, providing functionality for text generation tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeModel(IPlatformAdapter platform, string? model, GenerationConfig? config = null, ICollection&lt;SafetySetting&gt;? safetySettings = null, string? systemInstruction = null, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter used for the generative AI model integration.</p>
+</dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name or identifier of the model to be used.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd><p>Optional configuration for text generation, including settings like temperature and max tokens.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional collection of safety settings to ensure content generation adheres to desired guidelines.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional instruction for the model, defining the initial prompt or system behavior.</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client for API communication.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger instance for diagnostic and logging purposes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Provides constructors for initializing the model with various configurations and integrates with platform-specific operations.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel__ctor_" data-uid="GenerativeAI.GenerativeModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel__ctor_System_String_GenerativeAI_Core_ModelParams_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GenerativeModel.#ctor(System.String,GenerativeAI.Core.ModelParams,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GenerativeModel(string, ModelParams, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a generative model designed for handling text generation tasks, offering a range of configurations
+and functionalities including platform-specific integration, safety settings, and optional system instructions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeModel(string apiKey, ModelParams modelParams, HttpClient? client = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API key required for authenticating requests with the target platform.</p>
+</dd>
+    <dt><code>modelParams</code> <a class="xref" href="GenerativeAI.Core.ModelParams.html">ModelParams</a></dt>
+    <dd><p>Model parameters to specify generation configuration, safety settings, and behavior customization.</p>
+</dd>
+    <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client for managing communication with the generative AI platform.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger instance to facilitate diagnostic logging and debugging.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel__ctor_System_String_GenerativeAI_Core_ModelParams_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This constructor allows the creation of an instance with default or user-specified configurations, streamlined for
+integration with external generative AI services. The underlying implementation leverages adapter-based architecture
+for modularity and scalability.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel__ctor_" data-uid="GenerativeAI.GenerativeModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel__ctor_System_String_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GenerativeModel.#ctor(System.String,System.String,GenerativeAI.Types.GenerationConfig,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  GenerativeModel(string, string?, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a generative AI model, extending base functionalities and supporting text generation tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerativeModel(string apiKey, string? model, GenerationConfig? config = null, ICollection&lt;SafetySetting&gt;? safetySettings = null, string? systemInstruction = null, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API key used for authenticating requests to the generative AI platform.</p>
+</dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional identifier or name of the model to be used. Defaults to system environment variables or a platform-specific default model if not provided.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd><p>Optional configuration for text generation to customize behavior, such as adjusting temperature or token limits.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional collection of safety settings to enforce content generation rules and guidelines.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional instruction defining the system's behavior, providing an initial context or prompt.</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client used for executing API communication with the generative platform.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger instance for tracking or debugging the model operations and interactions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel__ctor_System_String_System_String_GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a GenerativeModel instance, leveraging the Google AI platform adapter and enabling advanced text generation capabilities with configurable parameters.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_GenerativeModel_CachedContent_" data-uid="GenerativeAI.GenerativeModel.CachedContent*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CachedContent" data-uid="GenerativeAI.GenerativeModel.CachedContent">
+  CachedContent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets preloaded or previously generated content associated with the generative model.
+This property allows for the reuse of specific content, bypassing the need for regeneration,
+while ensuring alignment with the current model configuration and constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CachedContent? CachedContent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.CachedContent.html">CachedContent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CachingClient_" data-uid="GenerativeAI.GenerativeModel.CachingClient*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CachingClient" data-uid="GenerativeAI.GenerativeModel.CachingClient">
+  CachingClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the client used for managing cached content operations in the generative AI model.
+This property provides an interface for interacting with caching-related functionalities,
+such as creating, updating, retrieving, or deleting cached content. It helps manage content efficiently
+by leveraging the CachingClient within the model's context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CachingClient? CachingClient { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.CachingClient.html">CachingClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_Config_" data-uid="GenerativeAI.GenerativeModel.Config*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_Config" data-uid="GenerativeAI.GenerativeModel.Config">
+  Config
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the configuration for content generation.
+This property defines specific parameters, such as temperature and maximum output tokens,
+that influence the behavior and output of the generative model. It serves as a central
+customization point for tailoring the content creation process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerationConfig? Config { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_DefaultCodeExecutionTool_" data-uid="GenerativeAI.GenerativeModel.DefaultCodeExecutionTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_DefaultCodeExecutionTool" data-uid="GenerativeAI.GenerativeModel.DefaultCodeExecutionTool">
+  DefaultCodeExecutionTool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the default tool used for executing code in a generative AI context.
+This tool allows for dynamic code execution as part of the generative model’s operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool DefaultCodeExecutionTool { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_DefaultCodeExecutionTool_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The tool is automatically added to the available tools if no other code execution tool is specified.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_DefaultGoogleSearchRetrieval_" data-uid="GenerativeAI.GenerativeModel.DefaultGoogleSearchRetrieval*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_DefaultGoogleSearchRetrieval" data-uid="GenerativeAI.GenerativeModel.DefaultGoogleSearchRetrieval">
+  DefaultGoogleSearchRetrieval
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the default Google Search Retrieval tool configuration used within the generative model.
+This tool leverages dynamic retrieval capabilities to fetch real-time data and enhance model responses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool DefaultGoogleSearchRetrieval { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_DefaultGoogleSearchRetrieval_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Configured with a dynamic retrieval mode and threshold. Primarily used when no specific retrieval tool
+is provided in the request. Ensures the integration of up-to-date search results.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_DefaultSearchTool_" data-uid="GenerativeAI.GenerativeModel.DefaultSearchTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_DefaultSearchTool" data-uid="GenerativeAI.GenerativeModel.DefaultSearchTool">
+  DefaultSearchTool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the default tool configured for search-related operations in the generative model.
+By default, it utilizes a Google Search Tool for retrieving information to assist in content generation tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool DefaultSearchTool { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_DefaultSearchTool_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This tool is automatically added to the request tools if no other search tool is explicitly defined.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_EnableAutomaticContinuation_" data-uid="GenerativeAI.GenerativeModel.EnableAutomaticContinuation*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_EnableAutomaticContinuation" data-uid="GenerativeAI.GenerativeModel.EnableAutomaticContinuation">
+  EnableAutomaticContinuation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether to resume automatically when the API ends a response early with
+<a class="xref" href="GenerativeAI.Types.FinishReason.html#GenerativeAI_Types_FinishReason_CONTINUATION">CONTINUATION</a> and a continuation token (default true, as in the official SDKs).
+The follow-up responses are merged into one response (non-streaming) or streamed on (streaming).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableAutomaticContinuation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_FunctionCallingBehaviour_" data-uid="GenerativeAI.GenerativeModel.FunctionCallingBehaviour*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_FunctionCallingBehaviour" data-uid="GenerativeAI.GenerativeModel.FunctionCallingBehaviour">
+  FunctionCallingBehaviour
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the configuration settings for function calling behavior in the generative model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FunctionCallingBehaviour FunctionCallingBehaviour { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Core.FunctionCallingBehaviour.html">FunctionCallingBehaviour</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_FunctionCallingBehaviour_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property determines how the model interacts with functions, including enabling or disabling function calls,
+automatically calling functions, replying to functions, and handling incorrect function calls.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_FunctionTools_" data-uid="GenerativeAI.GenerativeModel.FunctionTools*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_FunctionTools" data-uid="GenerativeAI.GenerativeModel.FunctionTools">
+  FunctionTools
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a collection of function tools that can be utilized within the generative model.
+Function tools enable additional functionalities by allowing external or custom tools to be
+integrated into the model's processing pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IFunctionTool&gt; FunctionTools { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Core.IFunctionTool.html">IFunctionTool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_FunctionTools_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The tools provided via this property are managed and invoked based on the specified configurations
+and behaviours within the generative model. Tools are used during content generation to enhance
+or extend the model's capabilities.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateObjectJsonSerializerOptions_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectJsonSerializerOptions*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateObjectJsonSerializerOptions" data-uid="GenerativeAI.GenerativeModel.GenerateObjectJsonSerializerOptions">
+  GenerateObjectJsonSerializerOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the JSON serializer options to be used when generating objects as JSON outputs.
+These options configure the behavior of JSON serialization and deserialization
+for object generation in the context of JSON mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerOptions GenerateObjectJsonSerializerOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateObjectJsonSerializerOptions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For NativeAOT/Trimming GenerateObjectJsonSerializerOptions are required, you can ignore it if you have already specified a resolver in <code></code></p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_MaxContinuations_" data-uid="GenerativeAI.GenerativeModel.MaxContinuations*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_MaxContinuations" data-uid="GenerativeAI.GenerativeModel.MaxContinuations">
+  MaxContinuations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum number of follow-up requests made for one generation when
+<a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_EnableAutomaticContinuation">EnableAutomaticContinuation</a> is on (default 10).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxContinuations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_Model_" data-uid="GenerativeAI.GenerativeModel.Model*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_Model" data-uid="GenerativeAI.GenerativeModel.Model">
+  Model
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name or identifier of the model used for generative tasks.
+This property determines the specific model implementation to be used
+for content generation and other related operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Model { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_RetrievalTool_" data-uid="GenerativeAI.GenerativeModel.RetrievalTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_RetrievalTool" data-uid="GenerativeAI.GenerativeModel.RetrievalTool">
+  RetrievalTool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the retrieval tool configuration for the model, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool? RetrievalTool { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a></dt>
+    <dd><p>The retrieval tool that enables the model to access external data sources,
+or <code>null</code> if no retrieval tool is configured.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_SafetySettings_" data-uid="GenerativeAI.GenerativeModel.SafetySettings*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_SafetySettings" data-uid="GenerativeAI.GenerativeModel.SafetySettings">
+  SafetySettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the collection of safety settings that define constraints or limits
+on content generation. This property is used to enforce specified safety rules
+to ensure the generated content aligns with predetermined guidelines or restrictions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SafetySetting&gt;? SafetySettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_SystemInstruction_" data-uid="GenerativeAI.GenerativeModel.SystemInstruction*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_SystemInstruction" data-uid="GenerativeAI.GenerativeModel.SystemInstruction">
+  SystemInstruction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the system instruction used to guide the behavior of the generative model.
+This property defines the overarching context or guideline for content generation,
+shaping the responses produced by the model to align with specific requirements or objectives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? SystemInstruction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_ToolConfig_" data-uid="GenerativeAI.GenerativeModel.ToolConfig*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_ToolConfig" data-uid="GenerativeAI.GenerativeModel.ToolConfig">
+  ToolConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the configuration settings for a specific tool.
+Provides options to define the behavior and setup of tools, such as
+function calling configurations, to align with the requirements
+of the generative model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolConfig? ToolConfig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.ToolConfig.html">ToolConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseCodeExecutionTool_" data-uid="GenerativeAI.GenerativeModel.UseCodeExecutionTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseCodeExecutionTool" data-uid="GenerativeAI.GenerativeModel.UseCodeExecutionTool">
+  UseCodeExecutionTool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the code execution tool is enabled. The code execution tool facilitates the integration
+of code execution capabilities for processing specific requests and enhancing model functionalities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCodeExecutionTool { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_UseCodeExecutionTool_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use the Code Execution Tool for tasks requiring direct code evaluation or execution within the generative model.
+This feature is incompatible with JSON mode or cached content mode.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseGoogleSearch_" data-uid="GenerativeAI.GenerativeModel.UseGoogleSearch*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseGoogleSearch" data-uid="GenerativeAI.GenerativeModel.UseGoogleSearch">
+  UseGoogleSearch
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether the Google Search integration is enabled.
+This feature allows utilizing the Google Search Tool within the generative model
+for enhanced search and retrieval capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseGoogleSearch { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_UseGoogleSearch_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Enabling this property incorporates Google Search as a tool for the generative model,
+providing dynamic search support based on the requested content needs.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseGrounding_" data-uid="GenerativeAI.GenerativeModel.UseGrounding*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseGrounding" data-uid="GenerativeAI.GenerativeModel.UseGrounding">
+  UseGrounding
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether grounding is enabled. Grounding integrates external tools, such as Google Search Retrieval,
+to support specific generative model requests for enhanced content generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseGrounding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_UseGrounding_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use Google Search Tool for Latest Models</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseJsonMode_" data-uid="GenerativeAI.GenerativeModel.UseJsonMode*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseJsonMode" data-uid="GenerativeAI.GenerativeModel.UseJsonMode">
+  UseJsonMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether JSON mode is enabled. JSON mode adjusts the content generation response
+to specifically produce outputs in JSON format as defined in generation configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseJsonMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_UseJsonMode_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>JSON mode is incompatible with grounding, Google Search, and code execution tools.
+Enabling this mode will override other response formats with &quot;application/json&quot;.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_GenerativeModel_AddCachedContent_" data-uid="GenerativeAI.GenerativeModel.AddCachedContent*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_AddCachedContent_GenerativeAI_Types_GenerateContentRequest_" data-uid="GenerativeAI.GenerativeModel.AddCachedContent(GenerativeAI.Types.GenerateContentRequest)">
+  AddCachedContent(GenerateContentRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds cached content to the generate content request, ensuring the model and request contents align with the cached data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddCachedContent(GenerateContentRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The generate content request to which cached content is added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_AddCachedContent_GenerativeAI_Types_GenerateContentRequest__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Cached content includes predefined responses or data related to the current model.
+If cached content is present, it sets the cached contents and disables additional configurations related to tools or system instructions.
+An exception is thrown if the cached content's model does not match the generative model.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_AddFunctionTool_" data-uid="GenerativeAI.GenerativeModel.AddFunctionTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_AddFunctionTool_GenerativeAI_Core_GoogleFunctionTool_GenerativeAI_Types_ToolConfig_GenerativeAI_Core_FunctionCallingBehaviour_" data-uid="GenerativeAI.GenerativeModel.AddFunctionTool(GenerativeAI.Core.GoogleFunctionTool,GenerativeAI.Types.ToolConfig,GenerativeAI.Core.FunctionCallingBehaviour)">
+  AddFunctionTool(GoogleFunctionTool, ToolConfig?, FunctionCallingBehaviour?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a Google function tool to the generative model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFunctionTool(GoogleFunctionTool tool, ToolConfig? toolConfig = null, FunctionCallingBehaviour? functionCallingBehaviour = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tool</code> <a class="xref" href="GenerativeAI.Core.GoogleFunctionTool.html">GoogleFunctionTool</a></dt>
+    <dd><p>The Google function tool to be added.</p>
+</dd>
+    <dt><code>toolConfig</code> <a class="xref" href="GenerativeAI.Types.ToolConfig.html">ToolConfig</a></dt>
+    <dd><p>Optional configuration for the tool.</p>
+</dd>
+    <dt><code>functionCallingBehaviour</code> <a class="xref" href="GenerativeAI.Core.FunctionCallingBehaviour.html">FunctionCallingBehaviour</a></dt>
+    <dd><p>Optional behavior configuration for function calling.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_AddFunctionTool_" data-uid="GenerativeAI.GenerativeModel.AddFunctionTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_AddFunctionTool_GenerativeAI_Core_IFunctionTool_GenerativeAI_Types_ToolConfig_GenerativeAI_Core_FunctionCallingBehaviour_" data-uid="GenerativeAI.GenerativeModel.AddFunctionTool(GenerativeAI.Core.IFunctionTool,GenerativeAI.Types.ToolConfig,GenerativeAI.Core.FunctionCallingBehaviour)">
+  AddFunctionTool(IFunctionTool, ToolConfig?, FunctionCallingBehaviour?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new function tool to the list of available function tools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFunctionTool(IFunctionTool tool, ToolConfig? toolConfig = null, FunctionCallingBehaviour? functionCallingBehaviour = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tool</code> <a class="xref" href="GenerativeAI.Core.IFunctionTool.html">IFunctionTool</a></dt>
+    <dd><p>The implementation of the IFunctionTool interface to be added.</p>
+</dd>
+    <dt><code>toolConfig</code> <a class="xref" href="GenerativeAI.Types.ToolConfig.html">ToolConfig</a></dt>
+    <dd><p>Optional configuration for the tool.</p>
+</dd>
+    <dt><code>functionCallingBehaviour</code> <a class="xref" href="GenerativeAI.Core.FunctionCallingBehaviour.html">FunctionCallingBehaviour</a></dt>
+    <dd><p>Optional behavior configuration for function calling.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_AdjustJsonMode_" data-uid="GenerativeAI.GenerativeModel.AdjustJsonMode*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_AdjustJsonMode_GenerativeAI_Types_GenerateContentRequest_" data-uid="GenerativeAI.GenerativeModel.AdjustJsonMode(GenerativeAI.Types.GenerateContentRequest)">
+  AdjustJsonMode(GenerateContentRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adjusts the response mime type to JSON mode if enabled in the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AdjustJsonMode(GenerateContentRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The generate content request being processed, which includes configuration and settings for content generation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_BeforeRegeneration_" data-uid="GenerativeAI.GenerativeModel.BeforeRegeneration*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_BeforeRegeneration_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_" data-uid="GenerativeAI.GenerativeModel.BeforeRegeneration(GenerativeAI.Types.GenerateContentRequest,GenerativeAI.Types.GenerateContentResponse)">
+  BeforeRegeneration(GenerateContentRequest, GenerateContentResponse)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process the request before regenerating with a function call response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;Content&gt; BeforeRegeneration(GenerateContentRequest originalRequest, GenerateContentResponse response)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>originalRequest</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The original content generation request containing existing contents.</p>
+</dd>
+    <dt><code>response</code> <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a></dt>
+    <dd><p>The content generation response containing candidates from the model.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>A list of contents combining the original request contents and updated content from the response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CallFunctionAsync_" data-uid="GenerativeAI.GenerativeModel.CallFunctionAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CallFunctionAsync_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CallFunctionAsync(GenerativeAI.Types.GenerateContentRequest,GenerativeAI.Types.GenerateContentResponse,System.Threading.CancellationToken)">
+  CallFunctionAsync(GenerateContentRequest, GenerateContentResponse, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles invoking a function if the response requests one
+and optionally feeding the response back into the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;GenerateContentResponse&gt; CallFunctionAsync(GenerateContentRequest originalRequest, GenerateContentResponse response, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>originalRequest</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd></dd>
+    <dt><code>response</code> <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CallFunctionStreamingAsync_" data-uid="GenerativeAI.GenerativeModel.CallFunctionStreamingAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CallFunctionStreamingAsync_GenerativeAI_Types_GenerateContentRequest_GenerativeAI_Types_GenerateContentResponse_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CallFunctionStreamingAsync(GenerativeAI.Types.GenerateContentRequest,GenerativeAI.Types.GenerateContentResponse,System.Threading.CancellationToken)">
+  CallFunctionStreamingAsync(GenerateContentRequest, GenerateContentResponse, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles invoking a function if the response requests one
+and optionally feeding the response back into the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IAsyncEnumerable&lt;GenerateContentResponse&gt; CallFunctionStreamingAsync(GenerateContentRequest originalRequest, GenerateContentResponse response, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>originalRequest</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd></dd>
+    <dt><code>response</code> <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CountTokensAsync_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CountTokensAsync_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync(GenerativeAI.Types.CountTokensRequest,System.Threading.CancellationToken)">
+  CountTokensAsync(CountTokensRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Counts tokens asynchronously based on the provided request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CountTokensResponse&gt; CountTokensAsync(CountTokensRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.CountTokensRequest.html">CountTokensRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.CountTokensRequest.html">CountTokensRequest</a> containing the details of contents or generation parameters for counting tokens.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests during the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing a <a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a> with the token count details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CountTokensAsync_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CountTokensAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  CountTokensAsync(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Counts the number of tokens in the content based on the provided <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CountTokensResponse&gt; CountTokensAsync(GenerateContentRequest generateContentRequest, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>generateContentRequest</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> containing the input data for which the token count is calculated.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token that can be used to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing a <a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a> with token count details.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CountTokensAsync_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CountTokensAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Content__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Content},System.Threading.CancellationToken)">
+  CountTokensAsync(IEnumerable&lt;Content&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously counts the tokens in the provided contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CountTokensResponse&gt; CountTokensAsync(IEnumerable&lt;Content&gt; contents, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>A collection of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> objects for which the token count needs to be determined.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the <a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a> with the token count for the provided contents.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_CountTokensAsync_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_CountTokensAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.CountTokensAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  CountTokensAsync(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously counts the tokens in the provided collection of parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CountTokensResponse&gt; CountTokensAsync(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>A collection of <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> objects representing the input data for token counting.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the <a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a> with the token counting results.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_DisableFunctions_" data-uid="GenerativeAI.GenerativeModel.DisableFunctions*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_DisableFunctions" data-uid="GenerativeAI.GenerativeModel.DisableFunctions">
+  DisableFunctions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disable Global Functions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableFunctions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_EnableFunctions_" data-uid="GenerativeAI.GenerativeModel.EnableFunctions*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_EnableFunctions" data-uid="GenerativeAI.GenerativeModel.EnableFunctions">
+  EnableFunctions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable Global Functions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableFunctions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateAnswerAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateAnswerAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateAnswerAsync_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateAnswerAsync(GenerativeAI.Types.GenerateAnswerRequest,System.Threading.CancellationToken)">
+  GenerateAnswerAsync(GenerateAnswerRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateAnswer.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an answer asynchronously based on the provided request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateAnswerResponse&gt; GenerateAnswerAsync(GenerateAnswerRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateAnswerRequest.html">GenerateAnswerRequest</a></dt>
+    <dd><p>The request containing the input details for generating an answer.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a>&gt;</dt>
+    <dd><p>Returns a <a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a> containing the generated answer and additional context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/question_answering#method:-models.generateanswer">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateContentAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateContentAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  GenerateContentAsync(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously based on the given input parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GenerateContentResponse&gt; GenerateContentAsync(GenerateContentRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> containing the input configuration and settings for content generation.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> with the generated content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/text-generation">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateContentAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  GenerateContentAsync(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate content based on a sequence of Part objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateContentResponse&gt; GenerateContentAsync(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>The sequence of Part objects to be used for generating content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token for cancelling the operation, if needed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>Returns an instance of GenerateContentResponse containing the generated content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/text-generation">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateContentAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateContentAsync_System_String_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+  GenerateContentAsync(string, string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously based on the provided text prompt and a remote file URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateContentResponse&gt; GenerateContentAsync(string prompt, string fileUri, string mimeType, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input text prompt used for content generation.</p>
+</dd>
+    <dt><code>fileUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URI of the file to be included in the content generation process.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type of the file referenced by the URI.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> object with the generated content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateContentAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateContentAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync(System.String,System.Threading.CancellationToken)">
+  GenerateContentAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously based on the specified text input prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateContentResponse&gt; GenerateContentAsync(string prompt, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text input used to generate the content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the generated content response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/text-generation">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateContentAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateContentAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateContentAsync``1(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  GenerateContentAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously using JSON mode based on the given input parameters and converts the resulting JSON into a C# object of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GenerateContentResponse&gt; GenerateContentAsync&lt;T&gt;(GenerateContentRequest request, CancellationToken cancellationToken = default) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> containing the input configuration and settings for content generation.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the generated content response of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of C# object to send as JSON schema input in request.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateContentAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Some of the complex data types are not supported such as Dictionary. So make sure to avoid these.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateEnumAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateEnumAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync``1(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  GenerateEnumAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an enumerated value asynchronously using Enum mode based on the given input parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;T?&gt; GenerateEnumAsync&lt;T&gt;(GenerateContentRequest request, CancellationToken cancellationToken = default) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> containing the input configuration and settings for enum generation.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the generated enumeration value of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The enumeration type to convert the resulting JSON into.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateEnumAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync``1(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  GenerateEnumAsync&lt;T&gt;(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously generates an enumeration of the specified type <code class="typeparamref">T</code> based on the provided parts input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; GenerateEnumAsync&lt;T&gt;(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>A collection of <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> objects representing the input components for generating the enumeration.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the generated enumeration of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The enumeration type to convert the resulting data into. Must be an enumeration.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Ensure the type <code class="typeparamref">T</code> is an enumeration; non-enumeration types are not supported.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateEnumAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateEnumAsync``1(System.String,System.Threading.CancellationToken)">
+  GenerateEnumAsync&lt;T&gt;(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an enumeration asynchronously using Enum mode based on the provided prompt and converts the resulting Enum data into a C# enumeration of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; GenerateEnumAsync&lt;T&gt;(string prompt, CancellationToken cancellationToken = default) where T : Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The textual input used to generate an enumeration of type <code class="typeparamref">T</code>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests during the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the generated enumeration of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of C# enumeration to convert the resulting JSON into. Must be an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.enum">Enum</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateEnumAsync__1_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Some of the complex data types are not supported, such as Dictionary. Ensure that all input and output types conform to the supported JSON conversion structure.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateObjectAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync``1(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  GenerateObjectAsync&lt;T&gt;(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously using JSON mode based on the given input parameters and converts the resulting JSON into a C# object of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;T?&gt; GenerateObjectAsync&lt;T&gt;(GenerateContentRequest request, CancellationToken cancellationToken = default) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> containing the input configuration and settings for content generation.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the generated object of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of C# object to convert the resulting JSON into.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Some of the complex data types are not supported such as Dictionary. So make sure to avoid these.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateObjectAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync``1(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  GenerateObjectAsync&lt;T&gt;(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously using JSON mode based on the specified content generation request parts and converts the resulting JSON into a C# object of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; GenerateObjectAsync&lt;T&gt;(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>An enumerable containing the input parts used for generating the content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the generated object of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of C# object to convert the resulting JSON into.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Some of the complex data types are not supported such as Dictionary. So make sure to avoid these.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_GenerateObjectAsync_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.GenerateObjectAsync``1(System.String,System.Threading.CancellationToken)">
+  GenerateObjectAsync&lt;T&gt;(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.JsonMode.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates content asynchronously using JSON mode based on the specified text input prompt and converts the resulting JSON into a C# object of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T?&gt; GenerateObjectAsync&lt;T&gt;(string prompt, CancellationToken cancellationToken = default) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text input used to generate the content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the generated object of type <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of C# object to convert the resulting JSON into.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_GenerateObjectAsync__1_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Some of the complex data types are not supported such as Dictionary. So make sure to avoid these.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_PrepareRequest_" data-uid="GenerativeAI.GenerativeModel.PrepareRequest*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_PrepareRequest_GenerativeAI_Types_GenerateContentRequest_" data-uid="GenerativeAI.GenerativeModel.PrepareRequest(GenerativeAI.Types.GenerateContentRequest)">
+  PrepareRequest(GenerateContentRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prepares the <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> for content generation by populating global properties,
+configuring JSON mode, adding tools, cached content, and validating the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PrepareRequest(GenerateContentRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The content generation request to be prepared with required settings and validations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_PrepareRequest_GenerativeAI_Types_GenerateContentRequest__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method ensures that the request is appropriately configured with default global parameters,
+tools, and any necessary system-level instructions before proceeding with content generation.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_StartChat_" data-uid="GenerativeAI.GenerativeModel.StartChat*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StartChat_GenerativeAI_Types_ChatSessionBackUpData_System_Collections_Generic_List_GenerativeAI_Core_IFunctionTool__" data-uid="GenerativeAI.GenerativeModel.StartChat(GenerativeAI.Types.ChatSessionBackUpData,System.Collections.Generic.List{GenerativeAI.Core.IFunctionTool})">
+  StartChat(ChatSessionBackUpData, List&lt;IFunctionTool&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new chat session with the specified configuration, tools, and backup data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ChatSession StartChat(ChatSessionBackUpData chatSessionBackUpData, List&lt;IFunctionTool&gt;? tools = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chatSessionBackUpData</code> <a class="xref" href="GenerativeAI.Types.ChatSessionBackUpData.html">ChatSessionBackUpData</a></dt>
+    <dd><p>The backup data for the chat session, containing the model, safety settings, generation configuration, and history.</p>
+</dd>
+    <dt><code>tools</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Core.IFunctionTool.html">IFunctionTool</a>&gt;</dt>
+    <dd><p>Optional collection of tools to be used during the chat session. If not specified, default tools associated with the model will be used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.ChatSession.html">ChatSession</a></dt>
+    <dd><p>A new instance of the ChatSession class initialized with the provided parameters and model settings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_StartChat_" data-uid="GenerativeAI.GenerativeModel.StartChat*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StartChat_System_Collections_Generic_List_GenerativeAI_Types_Content__GenerativeAI_Types_GenerationConfig_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_String_" data-uid="GenerativeAI.GenerativeModel.StartChat(System.Collections.Generic.List{GenerativeAI.Types.Content},GenerativeAI.Types.GenerationConfig,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.String)">
+  StartChat(List&lt;Content&gt;?, GenerationConfig?, ICollection&lt;SafetySetting&gt;?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a new chat session with the given parameters and configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ChatSession StartChat(List&lt;Content&gt;? history = null, GenerationConfig? config = null, ICollection&lt;SafetySetting&gt;? safetySettings = null, string? systemInstruction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>history</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>Optional chat history to be included in the new session.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+    <dd><p>Optional configuration for text generation, including parameters such as temperature and maximum tokens.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional collection of safety settings to ensure the chat session adheres to defined guidelines.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional instruction defining the system's behavior or context for the chat session.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.ChatSession.html">ChatSession</a></dt>
+    <dd><p>A new instance of the ChatSession class representing the initiated chat session.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_StreamContentAsync_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StreamContentAsync_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync(GenerativeAI.Types.GenerateContentRequest,System.Threading.CancellationToken)">
+  StreamContentAsync(GenerateContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams content generation results asynchronously based on a given request and optional cancellation token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(GenerateContentRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The content generation request containing input configurations and options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous enumerable of <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> objects containing the streamed generation results.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=rest#generate-a-text-stream">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_StreamContentAsync_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StreamContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Content__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Content},System.Threading.CancellationToken)">
+  StreamContentAsync(IEnumerable&lt;Content&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams generated content as an asynchronous enumerable based on the provided request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(IEnumerable&lt;Content&gt; contents, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>The Contents containing the parameters for content generation.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional token to cancel the streaming operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous enumerable of GenerateContentResponse objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_StreamContentAsync_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StreamContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  StreamContentAsync(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams content generation based on a GenerateContentRequest asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>The Parts containing input parameters for the content generation process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous stream of GenerateContentResponse objects representing the generated content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_StreamContentAsync_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StreamContentAsync_System_String_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+  StreamContentAsync(string, string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams content generation asynchronously based on the given input prompt, file URI, and MIME type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(string prompt, string fileUri, string mimeType, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string used as a prompt for generating and streaming content.</p>
+</dd>
+    <dt><code>fileUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URI of the file to be used for content generation.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type associated with the provided file URI.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous enumerable of <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a> instances representing the streamed content responses.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/vision">See Official Vision API Documentation</a></span></div>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/audio">See Official Audio API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_StreamContentAsync_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_StreamContentAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.GenerativeModel.StreamContentAsync(System.String,System.Threading.CancellationToken)">
+  StreamContentAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.GenerateContent.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams content generation based on a string message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;GenerateContentResponse&gt; StreamContentAsync(string prompt, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input prompt to be processed and streamed.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to observe for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a>&gt;</dt>
+    <dd><p>An asynchronous enumerable of generated content responses.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=rest#generate-a-text-stream">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_GenerativeModel_UseFileSearch_" data-uid="GenerativeAI.GenerativeModel.UseFileSearch*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseFileSearch_System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__System_String_" data-uid="GenerativeAI.GenerativeModel.UseFileSearch(System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.String)">
+  UseFileSearch(IEnumerable&lt;string&gt;, int?, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.FileSearch.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Grounds every request on the given File Search stores by adding a <a class="xref" href="GenerativeAI.Types.FileSearch.html">FileSearch</a> tool
+(replacing any previously configured <a class="xref" href="GenerativeAI.GenerativeModel.html#GenerativeAI_GenerativeModel_RetrievalTool">RetrievalTool</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseFileSearch(IEnumerable&lt;string&gt; fileSearchStoreNames, int? topK = null, string? metadataFilter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileSearchStoreNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Store names, either <code>fileSearchStores/{id}</code> or just <code>{id}</code>.</p>
+</dd>
+    <dt><code>topK</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Optional number of chunks to retrieve.</p>
+</dd>
+    <dt><code>metadataFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional AIP-160 filter over document custom metadata, e.g. <code>author = &quot;Robert Graves&quot;</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The model is configured for Vertex AI, which does not support File Search stores.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>No store names were given.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseFileSearch_" data-uid="GenerativeAI.GenerativeModel.UseFileSearch*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseFileSearch_System_String___" data-uid="GenerativeAI.GenerativeModel.UseFileSearch(System.String[])">
+  UseFileSearch(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.FileSearch.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Grounds every request on the given File Search stores by adding a <a class="xref" href="GenerativeAI.Types.FileSearch.html">FileSearch</a> tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseFileSearch(params string[] fileSearchStoreNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileSearchStoreNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Store names, either <code>fileSearchStores/{id}</code> or just <code>{id}</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GenerativeModel_UseVertexRetrievalTool_" data-uid="GenerativeAI.GenerativeModel.UseVertexRetrievalTool*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_UseVertexRetrievalTool_System_String_GenerativeAI_Types_RagEngine_RagRetrievalConfig_" data-uid="GenerativeAI.GenerativeModel.UseVertexRetrievalTool(System.String,GenerativeAI.Types.RagEngine.RagRetrievalConfig)">
+  UseVertexRetrievalTool(string, RagRetrievalConfig?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures and assigns a Vertex Retrieval Tool with the specified corpus ID and retrieval configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseVertexRetrievalTool(string corpusId, RagRetrievalConfig? retrievalConfig = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier for the corpus to be associated with the Vertex Retrieval Tool.</p>
+</dd>
+    <dt><code>retrievalConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagRetrievalConfig.html">RagRetrievalConfig</a></dt>
+    <dd><p>An optional retrieval configuration for customizing the behavior of the Vertex Retrieval Tool.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Thrown when the platform does not support Retrieval Augmentation Generation on Vertex AI.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_GenerativeModel_ValidateGenerateContentRequest_" data-uid="GenerativeAI.GenerativeModel.ValidateGenerateContentRequest*"></a>
+
+  <h3 id="GenerativeAI_GenerativeModel_ValidateGenerateContentRequest_GenerativeAI_Types_GenerateContentRequest_" data-uid="GenerativeAI.GenerativeModel.ValidateGenerateContentRequest(GenerativeAI.Types.GenerateContentRequest)">
+  ValidateGenerateContentRequest(GenerateContentRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the provided GenerateContentRequest to ensure compatibility with the current model configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateGenerateContentRequest(GenerateContentRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+    <dd><p>The content generation request containing parameters such as generation configuration.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_GenerativeModel_ValidateGenerateContentRequest_GenerativeAI_Types_GenerateContentRequest__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method ensures that specific features like grounding, Google Search, or code execution tools
+are not used concurrently with incompatible modes such as JSON mode or cached content mode.
+It also checks for consistency in the generation configuration, such as the specified response MIME type.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/GenerativeModel/GenerativeModel.Tools.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

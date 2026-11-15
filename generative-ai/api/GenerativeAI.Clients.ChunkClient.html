@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ChunkClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ChunkClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A client for interacting with the Chunks API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_ChunkClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.ChunkClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.ChunkClient">
+
+
+
+  <h1 id="GenerativeAI_Clients_ChunkClient" data-uid="GenerativeAI.Clients.ChunkClient" class="text-break">
+Class ChunkClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A client for interacting with the Chunks API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChunkClient : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">ChunkClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient__ctor_" data-uid="GenerativeAI.Clients.ChunkClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.ChunkClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  ChunkClient(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A client for managing and interacting with chunks in the Generative AI API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChunkClient(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter for handling platform-specific operations.</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client for sending requests. Defaults to null.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger for logging purposes. Defaults to null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_AddAuthorizationHeader_" data-uid="GenerativeAI.Clients.ChunkClient.AddAuthorizationHeader*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.AddAuthorizationHeader(System.Net.Http.HttpRequestMessage,System.Boolean,System.Threading.CancellationToken)">
+  AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the authorization header to the HTTP request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task AddAuthorizationHeader(HttpRequestMessage request, bool requireAccessToken = false, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd><p>The HTTP request message.</p>
+</dd>
+    <dt><code>requireAccessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether an access token is required.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_BatchCreateChunksAsync_" data-uid="GenerativeAI.Clients.ChunkClient.BatchCreateChunksAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_BatchCreateChunksAsync_System_String_System_Collections_Generic_List_GenerativeAI_Types_CreateChunkRequest__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.BatchCreateChunksAsync(System.String,System.Collections.Generic.List{GenerativeAI.Types.CreateChunkRequest},System.Threading.CancellationToken)">
+  BatchCreateChunksAsync(string, List&lt;CreateChunkRequest&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Batches create <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BatchCreateChunksResponse?&gt; BatchCreateChunksAsync(string parent, List&lt;CreateChunkRequest&gt; requests, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> where this batch of <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s will be created. Example: <code>corpora/my-corpus-123/documents/the-doc-abc</code></p>
+</dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.CreateChunkRequest.html">CreateChunkRequest</a>&gt;</dt>
+    <dd><p>The request messages specifying the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s to create. A maximum of 100 <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s can be created in a batch.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.BatchCreateChunksResponse.html">BatchCreateChunksResponse</a>&gt;</dt>
+    <dd><p>A list of created <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/batchCreate">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_BatchDeleteChunksAsync_" data-uid="GenerativeAI.Clients.ChunkClient.BatchDeleteChunksAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_BatchDeleteChunksAsync_System_String_System_Collections_Generic_List_GenerativeAI_Types_DeleteChunkRequest__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.BatchDeleteChunksAsync(System.String,System.Collections.Generic.List{GenerativeAI.Types.DeleteChunkRequest},System.Threading.CancellationToken)">
+  BatchDeleteChunksAsync(string, List&lt;DeleteChunkRequest&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Batches delete <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BatchDeleteChunksAsync(string parent, List&lt;DeleteChunkRequest&gt; requests, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> containing the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s to delete. Example: <code>corpora/my-corpus-123/documents/the-doc-abc</code></p>
+</dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.DeleteChunkRequest.html">DeleteChunkRequest</a>&gt;</dt>
+    <dd><p>The request messages specifying the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s to delete.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/batchDelete">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_BatchUpdateChunksAsync_" data-uid="GenerativeAI.Clients.ChunkClient.BatchUpdateChunksAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_BatchUpdateChunksAsync_System_String_System_Collections_Generic_List_GenerativeAI_Types_UpdateChunkRequest__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.BatchUpdateChunksAsync(System.String,System.Collections.Generic.List{GenerativeAI.Types.UpdateChunkRequest},System.Threading.CancellationToken)">
+  BatchUpdateChunksAsync(string, List&lt;UpdateChunkRequest&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Batches update <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BatchUpdateChunksResponse?&gt; BatchUpdateChunksAsync(string parent, List&lt;UpdateChunkRequest&gt; requests, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> containing the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s to update. Example: <code>corpora/my-corpus-123/documents/the-doc-abc</code></p>
+</dd>
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.UpdateChunkRequest.html">UpdateChunkRequest</a>&gt;</dt>
+    <dd><p>The request messages specifying the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s to update. A maximum of 100 <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s can be updated in a batch.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.BatchUpdateChunksResponse.html">BatchUpdateChunksResponse</a>&gt;</dt>
+    <dd><p>A list of updated <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/batchUpdate">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_CreateChunkAsync_" data-uid="GenerativeAI.Clients.ChunkClient.CreateChunkAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_CreateChunkAsync_System_String_GenerativeAI_Types_Chunk_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.CreateChunkAsync(System.String,GenerativeAI.Types.Chunk,System.Threading.CancellationToken)">
+  CreateChunkAsync(string, Chunk, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Chunk?&gt; CreateChunkAsync(string parent, Chunk chunk, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> where this <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> will be created. Example: <code>corpora/my-corpus-123/documents/the-doc-abc</code></p>
+</dd>
+    <dt><code>chunk</code> <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> to create.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>&gt;</dt>
+    <dd><p>The created <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/create">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_DeleteChunkAsync_" data-uid="GenerativeAI.Clients.ChunkClient.DeleteChunkAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_DeleteChunkAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.DeleteChunkAsync(System.String,System.Threading.CancellationToken)">
+  DeleteChunkAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteChunkAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource name of the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> to delete. Example: <code>corpora/my-corpus-123/documents/the-doc-abc/chunks/some-chunk</code></p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/delete">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_GetChunkAsync_" data-uid="GenerativeAI.Clients.ChunkClient.GetChunkAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_GetChunkAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.GetChunkAsync(System.String,System.Threading.CancellationToken)">
+  GetChunkAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a specific <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Chunk?&gt; GetChunkAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource name of the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> to retrieve. Example: <code>corpora/my-corpus-123/documents/the-doc-abc/chunks/some-chunk</code></p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>&gt;</dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/get">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_ListChunksAsync_" data-uid="GenerativeAI.Clients.ChunkClient.ListChunksAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_ListChunksAsync_System_String_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.ListChunksAsync(System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListChunksAsync(string, int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists available <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListChunksResponse?&gt; ListChunksAsync(string parent, int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> containing <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s. Example: <code>corpora/my-corpus-123/documents/the-doc-abc</code></p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources to return.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A page token, received from a previous <a class="xref" href="GenerativeAI.Clients.ChunkClient.html#GenerativeAI_Clients_ChunkClient_ListChunksAsync_System_String_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_">ListChunksAsync(string, int?, string?, CancellationToken)</a> call.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListChunksResponse.html">ListChunksResponse</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/list">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_ChunkClient_UpdateChunkAsync_" data-uid="GenerativeAI.Clients.ChunkClient.UpdateChunkAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_ChunkClient_UpdateChunkAsync_GenerativeAI_Types_Chunk_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.ChunkClient.UpdateChunkAsync(GenerativeAI.Types.Chunk,System.String,System.Threading.CancellationToken)">
+  UpdateChunkAsync(Chunk, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates a <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Chunk?&gt; UpdateChunkAsync(Chunk chunk, string updateMask, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource to update.</p>
+</dd>
+    <dt><code>updateMask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The list of fields to update. Currently, this only supports updating <code>customMetadata</code> and <code>data</code>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token to cancel the request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>&gt;</dt>
+    <dd><p>The updated <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> resource.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks/patch">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://ai.google.dev/api/rest/v1beta/corpora.documents.chunks">See Official API Documentation</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/SemanticRetrieval/ChunkClient.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

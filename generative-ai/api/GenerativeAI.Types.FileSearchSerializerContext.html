@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FileSearchSerializerContext | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FileSearchSerializerContext | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Source-generated serialization metadata for the File Search stores and documents types.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Types_FileSearchSerializerContext.md&amp;value=---%0Auid%3A%20GenerativeAI.Types.FileSearchSerializerContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Types.FileSearchSerializerContext">
+
+
+
+  <h1 id="GenerativeAI_Types_FileSearchSerializerContext" data-uid="GenerativeAI.Types.FileSearchSerializerContext" class="text-break">
+Class FileSearchSerializerContext  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/FileSearch/FileSearchSerializerContext.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Source-generated serialization metadata for the File Search stores and documents types.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonSourceGenerationOptions(WriteIndented = true, DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull, UseStringEnumConverter = true)]
+[JsonSerializable(typeof(FileSearchStore))]
+[JsonSerializable(typeof(FileSearchDocument))]
+[JsonSerializable(typeof(FileSearchDocumentState))]
+[JsonSerializable(typeof(ChunkingConfig))]
+[JsonSerializable(typeof(WhiteSpaceConfig))]
+[JsonSerializable(typeof(UploadToFileSearchStoreConfig))]
+[JsonSerializable(typeof(ImportFileConfig))]
+[JsonSerializable(typeof(ImportFileRequest))]
+[JsonSerializable(typeof(ListFileSearchStoresResponse))]
+[JsonSerializable(typeof(ListFileSearchDocumentsResponse))]
+[JsonSerializable(typeof(FileSearchOperation))]
+[JsonSerializable(typeof(FileSearchOperationResponse))]
+public class FileSearchSerializerContext : JsonSerializerContext, IJsonTypeInfoResolver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a></div>
+      <div><span class="xref">FileSearchSerializerContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.ijsontypeinforesolver">IJsonTypeInfoResolver</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext.options">JsonSerializerContext.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="GenerativeAI_Types_FileSearchSerializerContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This is a separate context rather than a partial of <a class="xref" href="GenerativeAI.Types.TypesSerializerContext.html">TypesSerializerContext</a> because the
+System.Text.Json source generator shipped for net6.0-net10.0/netstandard2.0 fails when
+<code>[JsonSerializable]</code> attributes are split across partial declarations (duplicate hint names).
+<a class="xref" href="GenerativeAI.Clients.FileSearchStoresClient.html">FileSearchStoresClient</a> appends it to its serializer resolver chain.
+Options mirror those of <a class="xref" href="GenerativeAI.Types.TypesSerializerContext.html">TypesSerializerContext</a>.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext__ctor_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext__ctor" data-uid="GenerativeAI.Types.FileSearchSerializerContext.#ctor">
+  FileSearchSerializerContext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileSearchSerializerContext()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext__ctor_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext__ctor_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+  FileSearchSerializerContext(JsonSerializerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a> and binds it with the indicated <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileSearchSerializerContext(JsonSerializerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd><p>The run time provided options for the context instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Boolean_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Boolean*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Boolean" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Boolean">
+  Boolean
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;bool&gt; Boolean { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ChunkingConfig_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ChunkingConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ChunkingConfig" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ChunkingConfig">
+  ChunkingConfig
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ChunkingConfig&gt; ChunkingConfig { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.ChunkingConfig.html">ChunkingConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_CustomMetadata_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.CustomMetadata*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_CustomMetadata" data-uid="GenerativeAI.Types.FileSearchSerializerContext.CustomMetadata">
+  CustomMetadata
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;CustomMetadata&gt; CustomMetadata { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.CustomMetadata.html">CustomMetadata</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Default_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Default*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Default" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Default">
+  Default
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonserializercontext">JsonSerializerContext</a> associated with a default <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileSearchSerializerContext Default { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.FileSearchSerializerContext.html">FileSearchSerializerContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Double_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Double*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Double" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Double">
+  Double
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;double&gt; Double { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchDocument_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchDocument*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchDocument" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchDocument">
+  FileSearchDocument
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchDocument&gt; FileSearchDocument { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchDocument.html">FileSearchDocument</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchDocumentState_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchDocumentState*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchDocumentState" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchDocumentState">
+  FileSearchDocumentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchDocumentState&gt; FileSearchDocumentState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchDocumentState.html">FileSearchDocumentState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchOperation_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchOperation*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchOperation" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchOperation">
+  FileSearchOperation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchOperation&gt; FileSearchOperation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchOperation.html">FileSearchOperation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchOperationResponse_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchOperationResponse*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchOperationResponse" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchOperationResponse">
+  FileSearchOperationResponse
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchOperationResponse&gt; FileSearchOperationResponse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchOperationResponse.html">FileSearchOperationResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchStore_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchStore*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_FileSearchStore" data-uid="GenerativeAI.Types.FileSearchSerializerContext.FileSearchStore">
+  FileSearchStore
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchStore&gt; FileSearchStore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_GeneratedSerializerOptions_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GeneratedSerializerOptions*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_GeneratedSerializerOptions" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GeneratedSerializerOptions">
+  GeneratedSerializerOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The source-generated options associated with this context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override JsonSerializerOptions? GeneratedSerializerOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_GoogleRpcStatus_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GoogleRpcStatus*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_GoogleRpcStatus" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GoogleRpcStatus">
+  GoogleRpcStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;GoogleRpcStatus&gt; GoogleRpcStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.GoogleRpcStatus.html">GoogleRpcStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ICollectionIDictionaryStringJsonElement_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ICollectionIDictionaryStringJsonElement*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ICollectionIDictionaryStringJsonElement" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ICollectionIDictionaryStringJsonElement">
+  ICollectionIDictionaryStringJsonElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ICollection&lt;IDictionary&lt;string, JsonElement&gt;&gt;&gt; ICollectionIDictionaryStringJsonElement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>&gt;&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_IDictionaryStringJsonElement_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.IDictionaryStringJsonElement*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_IDictionaryStringJsonElement" data-uid="GenerativeAI.Types.FileSearchSerializerContext.IDictionaryStringJsonElement">
+  IDictionaryStringJsonElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;IDictionary&lt;string, JsonElement&gt;&gt; IDictionaryStringJsonElement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ImportFileConfig_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ImportFileConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ImportFileConfig" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ImportFileConfig">
+  ImportFileConfig
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ImportFileConfig&gt; ImportFileConfig { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.ImportFileConfig.html">ImportFileConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ImportFileRequest_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ImportFileRequest*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ImportFileRequest" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ImportFileRequest">
+  ImportFileRequest
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ImportFileRequest&gt; ImportFileRequest { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.ImportFileRequest.html">ImportFileRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Int32_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Int32*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Int32" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Int32">
+  Int32
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;int&gt; Int32 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Int64_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Int64*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Int64" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Int64">
+  Int64
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;long&gt; Int64 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_JsonElement_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.JsonElement*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_JsonElement" data-uid="GenerativeAI.Types.FileSearchSerializerContext.JsonElement">
+  JsonElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;JsonElement&gt; JsonElement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ListCustomMetadata_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListCustomMetadata*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ListCustomMetadata" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListCustomMetadata">
+  ListCustomMetadata
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;List&lt;CustomMetadata&gt;&gt; ListCustomMetadata { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.CustomMetadata.html">CustomMetadata</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchDocument_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchDocument*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchDocument" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchDocument">
+  ListFileSearchDocument
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;List&lt;FileSearchDocument&gt;&gt; ListFileSearchDocument { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchDocument.html">FileSearchDocument</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchDocumentsResponse_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchDocumentsResponse*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchDocumentsResponse" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchDocumentsResponse">
+  ListFileSearchDocumentsResponse
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ListFileSearchDocumentsResponse&gt; ListFileSearchDocumentsResponse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.ListFileSearchDocumentsResponse.html">ListFileSearchDocumentsResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchStore_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchStore*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchStore" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchStore">
+  ListFileSearchStore
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;List&lt;FileSearchStore&gt;&gt; ListFileSearchStore { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchStoresResponse_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchStoresResponse*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_ListFileSearchStoresResponse" data-uid="GenerativeAI.Types.FileSearchSerializerContext.ListFileSearchStoresResponse">
+  ListFileSearchStoresResponse
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;ListFileSearchStoresResponse&gt; ListFileSearchStoresResponse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.ListFileSearchStoresResponse.html">ListFileSearchStoresResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableBoolean_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableBoolean*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableBoolean" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableBoolean">
+  NullableBoolean
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;bool?&gt; NullableBoolean { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableDouble_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableDouble*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableDouble" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableDouble">
+  NullableDouble
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;double?&gt; NullableDouble { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableFileSearchDocumentState_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableFileSearchDocumentState*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableFileSearchDocumentState" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableFileSearchDocumentState">
+  NullableFileSearchDocumentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;FileSearchDocumentState?&gt; NullableFileSearchDocumentState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.FileSearchDocumentState.html">FileSearchDocumentState</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableInt32_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableInt32*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableInt32" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableInt32">
+  NullableInt32
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;int?&gt; NullableInt32 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableInt64_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableInt64*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableInt64" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableInt64">
+  NullableInt64
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;long?&gt; NullableInt64 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_NullableJsonElement_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableJsonElement*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_NullableJsonElement" data-uid="GenerativeAI.Types.FileSearchSerializerContext.NullableJsonElement">
+  NullableJsonElement
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;JsonElement?&gt; NullableJsonElement { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>?&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_String_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.String*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_String" data-uid="GenerativeAI.Types.FileSearchSerializerContext.String">
+  String
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;string&gt; String { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_StringArray_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.StringArray*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_StringArray" data-uid="GenerativeAI.Types.FileSearchSerializerContext.StringArray">
+  StringArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;string[]&gt; StringArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_StringList_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.StringList*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_StringList" data-uid="GenerativeAI.Types.FileSearchSerializerContext.StringList">
+  StringList
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;StringList&gt; StringList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.StringList.html">StringList</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_Timestamp_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Timestamp*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_Timestamp" data-uid="GenerativeAI.Types.FileSearchSerializerContext.Timestamp">
+  Timestamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;Timestamp&gt; Timestamp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.Timestamp.html">Timestamp</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_UploadToFileSearchStoreConfig_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.UploadToFileSearchStoreConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_UploadToFileSearchStoreConfig" data-uid="GenerativeAI.Types.FileSearchSerializerContext.UploadToFileSearchStoreConfig">
+  UploadToFileSearchStoreConfig
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;UploadToFileSearchStoreConfig&gt; UploadToFileSearchStoreConfig { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.UploadToFileSearchStoreConfig.html">UploadToFileSearchStoreConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_WhiteSpaceConfig_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.WhiteSpaceConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_WhiteSpaceConfig" data-uid="GenerativeAI.Types.FileSearchSerializerContext.WhiteSpaceConfig">
+  WhiteSpaceConfig
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the source generated JSON serialization contract metadata for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfo&lt;WhiteSpaceConfig&gt; WhiteSpaceConfig { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo-1">JsonTypeInfo</a>&lt;<a class="xref" href="GenerativeAI.Types.WhiteSpaceConfig.html">WhiteSpaceConfig</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Types_FileSearchSerializerContext_GetTypeInfo_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GetTypeInfo*"></a>
+
+  <h3 id="GenerativeAI_Types_FileSearchSerializerContext_GetTypeInfo_System_Type_" data-uid="GenerativeAI.Types.FileSearchSerializerContext.GetTypeInfo(System.Type)">
+  GetTypeInfo(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets metadata for the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override JsonTypeInfo? GetTypeInfo(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to fetch metadata for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.metadata.jsontypeinfo">JsonTypeInfo</a></dt>
+    <dd><p>The metadata for the specified type, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the context has no metadata for the type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/FileSearch/FileSearchSerializerContext.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

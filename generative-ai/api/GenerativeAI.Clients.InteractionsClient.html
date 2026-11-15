@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InteractionsClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InteractionsClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A client for the Gemini Interactions API (/interactions): stateful model and agent interactions (e.g. Deep Research, Antigravity) with server-side state, background execution, Server-Sent Event streaming, stream resumption and continuation of long decodes. Works with the Gemini Developer API and Vertex AI.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_InteractionsClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.InteractionsClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.InteractionsClient">
+
+
+
+  <h1 id="GenerativeAI_Clients_InteractionsClient" data-uid="GenerativeAI.Clients.InteractionsClient" class="text-break">
+Class InteractionsClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A client for the Gemini Interactions API (<code>/interactions</code>): stateful model and agent interactions
+(e.g. Deep Research, Antigravity) with server-side state, background execution, Server-Sent Event streaming,
+stream resumption and continuation of long decodes. Works with the Gemini Developer API and Vertex AI.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InteractionsClient : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">InteractionsClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient__ctor_" data-uid="GenerativeAI.Clients.InteractionsClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.InteractionsClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  InteractionsClient(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html">InteractionsClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteractionsClient(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter (Google AI or Vertex AI).</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_EnableAutomaticContinuation_" data-uid="GenerativeAI.Clients.InteractionsClient.EnableAutomaticContinuation*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_EnableAutomaticContinuation" data-uid="GenerativeAI.Clients.InteractionsClient.EnableAutomaticContinuation">
+  EnableAutomaticContinuation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html#GenerativeAI_Clients_InteractionsClient_CreateAsync_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_">CreateAsync(CreateInteractionRequest, CancellationToken)</a> automatically resumes an
+interaction whose status is <a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_RequiresContinuation">RequiresContinuation</a> (default true, as in
+python-genai). The returned interaction is the last hop, with the steps of all hops.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableAutomaticContinuation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_MaxContinuations_" data-uid="GenerativeAI.Clients.InteractionsClient.MaxContinuations*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_MaxContinuations" data-uid="GenerativeAI.Clients.InteractionsClient.MaxContinuations">
+  MaxContinuations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum number of continuation requests per create call (default 10).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxContinuations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_MaxStreamReconnects_" data-uid="GenerativeAI.Clients.InteractionsClient.MaxStreamReconnects*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_MaxStreamReconnects" data-uid="GenerativeAI.Clients.InteractionsClient.MaxStreamReconnects">
+  MaxStreamReconnects
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many times <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html#GenerativeAI_Clients_InteractionsClient_StreamAsync_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_">StreamAsync(CreateInteractionRequest, CancellationToken)</a> resumes a stream that
+fails after the interaction was created, using the last received event ID (default 3; 0 disables it).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxStreamReconnects { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_CancelAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.CancelAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_CancelAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.CancelAsync(System.String,System.Threading.CancellationToken)">
+  CancelAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cancels a running (background) interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; CancelAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The interaction ID.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The interaction after cancellation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_ContinueAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.ContinueAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_ContinueAsync_GenerativeAI_Types_Interaction_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.ContinueAsync(GenerativeAI.Types.Interaction,GenerativeAI.Types.CreateInteractionRequest,System.Threading.CancellationToken)">
+  ContinueAsync(Interaction, CreateInteractionRequest?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Continues an interaction whose status is <a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_RequiresContinuation">RequiresContinuation</a> (see
+<a class="xref" href="GenerativeAI.Clients.InteractionsClient.html#GenerativeAI_Clients_InteractionsClient_CreateContinuationRequest_GenerativeAI_Types_Interaction_GenerativeAI_Types_CreateInteractionRequest_">CreateContinuationRequest(Interaction, CreateInteractionRequest?)</a>). Each continuation re-prefills and bills input tokens; background
+interactions are continued by the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; ContinueAsync(Interaction interaction, CreateInteractionRequest? originalRequest = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interaction</code> <a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a></dt>
+    <dd><p>The interaction to continue.</p>
+</dd>
+    <dt><code>originalRequest</code> <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The request that created the interaction, if available.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The new interaction produced by the continuation hop.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_CreateAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_CreateAsync_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateAsync(GenerativeAI.Types.CreateInteractionRequest,System.Threading.CancellationToken)">
+  CreateAsync(CreateInteractionRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an interaction and returns it once the request completes (or, with
+<a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Background">Background</a>, as soon as it has been queued).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; CreateAsync(CreateInteractionRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The request. <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Stream">Stream</a> is ignored; use <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html#GenerativeAI_Clients_InteractionsClient_StreamAsync_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_">StreamAsync(CreateInteractionRequest, CancellationToken)</a>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The interaction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/api/interactions">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_CreateAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_CreateAsync_System_String_GenerativeAI_Types_InteractionInput_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateAsync(System.String,GenerativeAI.Types.InteractionInput,System.Threading.CancellationToken)">
+  CreateAsync(string, InteractionInput, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a model interaction from a model ID and an input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; CreateAsync(string model, InteractionInput input, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model ID (see <a class="xref" href="GenerativeAI.Types.InteractionModels.html">InteractionModels</a>).</p>
+</dd>
+    <dt><code>input</code> <a class="xref" href="GenerativeAI.Types.InteractionInput.html">InteractionInput</a></dt>
+    <dd><p>The input: a string, content blocks or steps.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The interaction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_CreateContinuationRequest_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateContinuationRequest*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_CreateContinuationRequest_GenerativeAI_Types_Interaction_GenerativeAI_Types_CreateInteractionRequest_" data-uid="GenerativeAI.Clients.InteractionsClient.CreateContinuationRequest(GenerativeAI.Types.Interaction,GenerativeAI.Types.CreateInteractionRequest)">
+  CreateContinuationRequest(Interaction, CreateInteractionRequest?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds the request that continues an interaction whose status is
+<a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_RequiresContinuation">RequiresContinuation</a>, following python-genai: the
+<a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_ContinuationToken">ContinuationToken</a> is passed back unchanged; when the original request was stored
+(the default) the interaction is referenced by <code>previous_interaction_id</code> and no input is sent,
+otherwise (<code>store=false</code>) the original input is sent again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CreateInteractionRequest CreateContinuationRequest(Interaction interaction, CreateInteractionRequest? originalRequest = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interaction</code> <a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a></dt>
+    <dd><p>The interaction to continue.</p>
+</dd>
+    <dt><code>originalRequest</code> <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The request that created the interaction. When omitted, the model/agent of
+<code class="paramref">interaction</code> are used and the interaction is assumed to be stored.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The continuation request.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_DeleteAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.DeleteAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+  DeleteAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes an interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The interaction ID.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes when the interaction has been deleted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_GetAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.GetAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_GetAsync_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.GetAsync(System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+  GetAsync(string, bool?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves an interaction by ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; GetAsync(string id, bool? includeInput = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The interaction ID (an <code>interactions/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>includeInput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>If <code>true</code>, includes the input in the response.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The interaction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_GetInteractionsUrl_" data-uid="GenerativeAI.Clients.InteractionsClient.GetInteractionsUrl*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_GetInteractionsUrl" data-uid="GenerativeAI.Clients.InteractionsClient.GetInteractionsUrl">
+  GetInteractionsUrl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the base URL of the interactions collection, e.g.
+<code>https://generativelanguage.googleapis.com/v1beta/interactions</code> or
+<code>https://{location}-aiplatform.googleapis.com/{version}/projects/{project}/locations/{location}/interactions</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetInteractionsUrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The collection URL.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_ResumeStreamAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.ResumeStreamAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_ResumeStreamAsync_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.ResumeStreamAsync(System.String,System.String,System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+  ResumeStreamAsync(string, string?, bool?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Streams the events of an existing interaction (<code>GET /interactions/{id}?stream=true</code>), e.g. a
+background interaction, or resumes a dropped stream after <code class="paramref">lastEventId</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;InteractionSseEvent&gt; ResumeStreamAsync(string id, string? lastEventId = null, bool? includeInput = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The interaction ID.</p>
+</dd>
+    <dt><code>lastEventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>If set, resumes the stream from the event after this event ID.</p>
+</dd>
+    <dt><code>includeInput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>If <code>true</code>, includes the input in the interaction.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.InteractionSseEvent.html">InteractionSseEvent</a>&gt;</dt>
+    <dd><p>The stream of events.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_StreamAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.StreamAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_StreamAsync_GenerativeAI_Types_CreateInteractionRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.StreamAsync(GenerativeAI.Types.CreateInteractionRequest,System.Threading.CancellationToken)">
+  StreamAsync(CreateInteractionRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an interaction and streams its Server-Sent Events (<code>interaction.created</code>,
+<code>step.start</code>, <code>step.delta</code>, <code>step.stop</code>, <code>interaction.status_update</code>,
+<code>interaction.completed</code>, <code>error</code>). Keep the last <a class="xref" href="GenerativeAI.Types.InteractionSseEvent.html#GenerativeAI_Types_InteractionSseEvent_EventId">EventId</a> to
+resume a dropped stream with <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html#GenerativeAI_Clients_InteractionsClient_ResumeStreamAsync_System_String_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_">ResumeStreamAsync(string, string?, bool?, CancellationToken)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;InteractionSseEvent&gt; StreamAsync(CreateInteractionRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The request; <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Stream">Stream</a> is set to <code>true</code>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.InteractionSseEvent.html">InteractionSseEvent</a>&gt;</dt>
+    <dd><p>The stream of events.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_InteractionsClient_WaitForCompletionAsync_" data-uid="GenerativeAI.Clients.InteractionsClient.WaitForCompletionAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_InteractionsClient_WaitForCompletionAsync_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.InteractionsClient.WaitForCompletionAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
+  WaitForCompletionAsync(string, TimeSpan?, TimeSpan?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Polls an interaction (typically one created with <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Background">Background</a>) until
+it is no longer <a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_InProgress">InProgress</a> or <a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_Queued">Queued</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Interaction&gt; WaitForCompletionAsync(string id, TimeSpan? pollInterval = null, TimeSpan? timeout = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The interaction ID.</p>
+</dd>
+    <dt><code>pollInterval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dd><p>Delay between polls (default 10 seconds).</p>
+</dd>
+    <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dd><p>Optional overall timeout; a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a> is thrown when exceeded.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a>&gt;</dt>
+    <dd><p>The interaction in its final (or action/continuation-required) state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://ai.google.dev/api/interactions">See Official API Documentation</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/InteractionsClient.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

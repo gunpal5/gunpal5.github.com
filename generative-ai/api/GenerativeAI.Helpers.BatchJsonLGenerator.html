@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BatchJsonLGenerator | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BatchJsonLGenerator | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Provides helper methods for generating JSONL (JSON Lines) content for batch processing. This is the centralized helper for creating batch input files for both Vertex AI and Google AI.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Helpers_BatchJsonLGenerator.md&amp;value=---%0Auid%3A%20GenerativeAI.Helpers.BatchJsonLGenerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Helpers.BatchJsonLGenerator">
+
+
+
+  <h1 id="GenerativeAI_Helpers_BatchJsonLGenerator" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator" class="text-break">
+Class BatchJsonLGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides helper methods for generating JSONL (JSON Lines) content for batch processing.
+This is the centralized helper for creating batch input files for both Vertex AI and Google AI.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class BatchJsonLGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BatchJsonLGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="GenerativeAI_Helpers_BatchJsonLGenerator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>JSONL format consists of JSON objects separated by newlines, with no commas between lines.
+Each line represents a complete JSON object suitable for batch API requests.</p>
+<p>For Vertex AI: Use these methods to create JSONL files to upload to GCS.
+For Google AI: Use <a class="xref" href="GenerativeAI.Types.InlinedRequest.html">InlinedRequest</a> directly with the BatchClient.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_System_Collections_Generic_IEnumerable_System_String__GenerativeAI_Helpers_BatchOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL(System.Collections.Generic.IEnumerable{System.String},GenerativeAI.Helpers.BatchOptions)">
+  GenerateContentJsonL(IEnumerable&lt;string&gt;, BatchOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for batch content generation requests.
+This is the primary method for creating batch input files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateContentJsonL(IEnumerable&lt;string&gt; prompts, BatchOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of prompt texts to process.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="GenerativeAI.Helpers.BatchOptions.html">BatchOptions</a></dt>
+    <dd><p>Optional batch options including schema, system instruction, etc.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for batch prediction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_System_Collections_Generic_IEnumerable_System_String__GenerativeAI_Helpers_BatchOptions__examples">Examples</h4>
+  <pre><code class="lang-csharp">// Simple prompts without schema
+var jsonl = BatchJsonLGenerator.GenerateContentJsonL(
+    new[] { "What is AI?", "Explain machine learning" });
+
+// With schema for structured output
+var jsonl = BatchJsonLGenerator.GenerateContentJsonL(
+    new[] { "Create profile for John, age 30" },
+    new BatchOptions { ResponseSchemaType = typeof(Person) });</code></pre>
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_System_Collections_Generic_IEnumerable_System_String__System_String_System_Type_GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL(System.Collections.Generic.IEnumerable{System.String},System.String,System.Type,GenerativeAI.Types.Content,System.Text.Json.JsonSerializerOptions)">
+  GenerateContentJsonL(IEnumerable&lt;string&gt;, string, Type?, Content?, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for content generation batch requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentJsonL with BatchOptions instead.&quot;)]
+public static string GenerateContentJsonL(IEnumerable&lt;string&gt; prompts, string model, Type? responseSchemaType = null, Content? systemInstruction = null, JsonSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>responseSchemaType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL__1_System_Collections_Generic_IEnumerable_System_String__GenerativeAI_Types_Content_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL``1(System.Collections.Generic.IEnumerable{System.String},GenerativeAI.Types.Content)">
+  GenerateContentJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt;, Content?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for batch content generation with schema from a generic type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateContentJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt; prompts, Content? systemInstruction = null) where TSchema : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of prompt texts to process.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>Optional system instruction for the requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for batch prediction.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSchema</code></dt>
+    <dd><p>The C# type to generate response schema from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL__1_System_Collections_Generic_IEnumerable_System_String__GenerativeAI_Types_Content__examples">Examples</h4>
+  <pre><code class="lang-csharp">var jsonl = BatchJsonLGenerator.GenerateContentJsonL&lt;Person&gt;(
+    new[] { "Create profile for John, age 30" });</code></pre>
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentJsonL__1_System_Collections_Generic_IEnumerable_System_String__System_String_GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentJsonL``1(System.Collections.Generic.IEnumerable{System.String},System.String,GenerativeAI.Types.Content,System.Text.Json.JsonSerializerOptions)">
+  GenerateContentJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt;, string, Content?, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for content generation batch requests with schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentJsonL&lt;TSchema&gt; instead.&quot;)]
+public static string GenerateContentJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt; prompts, string model, Content? systemInstruction = null, JsonSerializerOptions? options = null) where TSchema : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSchema</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_System_Collections_Generic_IEnumerable_GenerativeAI_Helpers_BatchRequestItem__GenerativeAI_Helpers_BatchOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL(System.Collections.Generic.IEnumerable{GenerativeAI.Helpers.BatchRequestItem},GenerativeAI.Helpers.BatchOptions)">
+  GenerateContentWithFilesJsonL(IEnumerable&lt;BatchRequestItem&gt;, BatchOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for batch content generation with file attachments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateContentWithFilesJsonL(IEnumerable&lt;BatchRequestItem&gt; requests, BatchOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Helpers.BatchRequestItem.html">BatchRequestItem</a>&gt;</dt>
+    <dd><p>List of batch request items with prompts and optional files.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="GenerativeAI.Helpers.BatchOptions.html">BatchOptions</a></dt>
+    <dd><p>Optional batch options including schema, system instruction, etc.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for batch prediction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_System_Collections_Generic_IEnumerable_GenerativeAI_Helpers_BatchRequestItem__GenerativeAI_Helpers_BatchOptions__examples">Examples</h4>
+  <pre><code class="lang-csharp">var requests = new[]
+{
+    new BatchRequestItem("Describe this image", "gs://bucket/image.jpg", "image/jpeg"),
+    new BatchRequestItem("Summarize this document", "gs://bucket/doc.pdf", "application/pdf")
+};
+var jsonl = BatchJsonLGenerator.GenerateContentWithFilesJsonL(requests);</code></pre>
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_ValueTuple_System_String_System_String_System_String____System_Type_GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.ValueTuple{System.String,System.String,System.String}}},System.Type,GenerativeAI.Types.Content,System.Text.Json.JsonSerializerOptions)">
+  GenerateContentWithFilesJsonL(IEnumerable&lt;(string prompt, (string bucket, string name, string mimeType) file)&gt;, Type?, Content?, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content with file attachments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentWithFilesJsonL with BatchRequestItem instead.&quot;)]
+public static string GenerateContentWithFilesJsonL(IEnumerable&lt;(string prompt, (string bucket, string name, string mimeType) file)&gt; promptsWithFiles, Type? responseSchemaType = null, Content? systemInstruction = null, JsonSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptsWithFiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.valuetuple-system.string,system.string,system.string--.prompt">prompt</a>, (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.bucket">bucket</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.name">name</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.mimetype">mimeType</a>) <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.valuetuple-system.string,system.string,system.string--.file">file</a>)&gt;</dt>
+    <dd></dd>
+    <dt><code>responseSchemaType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL__1_System_Collections_Generic_IEnumerable_GenerativeAI_Helpers_BatchRequestItem__GenerativeAI_Types_Content_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL``1(System.Collections.Generic.IEnumerable{GenerativeAI.Helpers.BatchRequestItem},GenerativeAI.Types.Content)">
+  GenerateContentWithFilesJsonL&lt;TSchema&gt;(IEnumerable&lt;BatchRequestItem&gt;, Content?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for batch content generation with file attachments and schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateContentWithFilesJsonL&lt;TSchema&gt;(IEnumerable&lt;BatchRequestItem&gt; requests, Content? systemInstruction = null) where TSchema : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Helpers.BatchRequestItem.html">BatchRequestItem</a>&gt;</dt>
+    <dd><p>List of batch request items with prompts and optional files.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>Optional system instruction for the requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for batch prediction.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSchema</code></dt>
+    <dd><p>The C# type to generate response schema from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateContentWithFilesJsonL__1_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_ValueTuple_System_String_System_String_System_String____GenerativeAI_Types_Content_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateContentWithFilesJsonL``1(System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.ValueTuple{System.String,System.String,System.String}}},GenerativeAI.Types.Content,System.Text.Json.JsonSerializerOptions)">
+  GenerateContentWithFilesJsonL&lt;TSchema&gt;(IEnumerable&lt;(string prompt, (string bucket, string name, string mimeType) file)&gt;, Content?, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content with file attachments and schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentWithFilesJsonL&lt;TSchema&gt; with BatchRequestItem instead.&quot;)]
+public static string GenerateContentWithFilesJsonL&lt;TSchema&gt;(IEnumerable&lt;(string prompt, (string bucket, string name, string mimeType) file)&gt; promptsWithFiles, Content? systemInstruction = null, JsonSerializerOptions? options = null) where TSchema : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptsWithFiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.valuetuple-system.string,system.string,system.string--.prompt">prompt</a>, (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.bucket">bucket</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.name">name</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string,system.string-.mimetype">mimeType</a>) <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.valuetuple-system.string,system.string,system.string--.file">file</a>)&gt;</dt>
+    <dd></dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSchema</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateEmbeddingJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateEmbeddingJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateEmbeddingJsonL_System_Collections_Generic_IEnumerable_System_String__" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateEmbeddingJsonL(System.Collections.Generic.IEnumerable{System.String})">
+  GenerateEmbeddingJsonL(IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for batch embedding requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateEmbeddingJsonL(IEnumerable&lt;string&gt; texts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of text strings to generate embeddings for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing JSONL content for embeddings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateEmbeddingJsonL_System_Collections_Generic_IEnumerable_System_String___examples">Examples</h4>
+  <pre><code class="lang-csharp">var jsonl = BatchJsonLGenerator.GenerateEmbeddingJsonL(
+    new[] { "Hello world", "How are you?" });</code></pre>
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateEmbeddingJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateEmbeddingJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateEmbeddingJsonL_System_Collections_Generic_IEnumerable_System_String__System_String_System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateEmbeddingJsonL(System.Collections.Generic.IEnumerable{System.String},System.String,System.Text.Json.JsonSerializerOptions)">
+  GenerateEmbeddingJsonL(IEnumerable&lt;string&gt;, string, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for embedding batch requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateEmbeddingJsonL without model parameter instead.&quot;)]
+public static string GenerateEmbeddingJsonL(IEnumerable&lt;string&gt; texts, string model, JsonSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>texts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateFromInlinedRequests_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateFromInlinedRequests*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateFromInlinedRequests_System_Collections_Generic_IEnumerable_GenerativeAI_Types_InlinedRequest__" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateFromInlinedRequests(System.Collections.Generic.IEnumerable{GenerativeAI.Types.InlinedRequest})">
+  GenerateFromInlinedRequests(IEnumerable&lt;InlinedRequest&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content from InlinedRequest objects.
+Use this when you have pre-built InlinedRequest objects with all settings configured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateFromInlinedRequests(IEnumerable&lt;InlinedRequest&gt; requests)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.InlinedRequest.html">InlinedRequest</a>&gt;</dt>
+    <dd><p>List of InlinedRequest objects to serialize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing JSONL content with &quot;request&quot; wrapper format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateInlinedRequestJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateInlinedRequestJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateInlinedRequestJsonL_System_Collections_Generic_IEnumerable_GenerativeAI_Types_InlinedRequest__System_Text_Json_JsonSerializerOptions_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateInlinedRequestJsonL(System.Collections.Generic.IEnumerable{GenerativeAI.Types.InlinedRequest},System.Text.Json.JsonSerializerOptions)">
+  GenerateInlinedRequestJsonL(IEnumerable&lt;InlinedRequest&gt;, JsonSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content from InlinedRequest objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateFromInlinedRequests instead.&quot;)]
+public static string GenerateInlinedRequestJsonL(IEnumerable&lt;InlinedRequest&gt; requests, JsonSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.InlinedRequest.html">InlinedRequest</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateJsonL__1_System_Collections_Generic_IEnumerable___0__" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateJsonL``1(System.Collections.Generic.IEnumerable{``0})">
+  GenerateJsonL&lt;T&gt;(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content from any list of objects.
+Each object is serialized as a complete JSON line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateJsonL&lt;T&gt;(IEnumerable&lt;T&gt; items) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>List of objects to serialize as JSONL.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing JSONL content.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of objects to serialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateVertexBatchJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateVertexBatchJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateVertexBatchJsonL_System_Collections_Generic_IEnumerable_System_String__System_Type_GenerativeAI_Types_Content_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateVertexBatchJsonL(System.Collections.Generic.IEnumerable{System.String},System.Type,GenerativeAI.Types.Content)">
+  GenerateVertexBatchJsonL(IEnumerable&lt;string&gt;, Type?, Content?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for Vertex AI batch prediction with optional schema support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentJsonL with BatchOptions instead.&quot;)]
+public static string GenerateVertexBatchJsonL(IEnumerable&lt;string&gt; prompts, Type? responseSchemaType = null, Content? systemInstruction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of prompt texts to process.</p>
+</dd>
+    <dt><code>responseSchemaType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Optional C# type to generate response schema from.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>Optional system instruction for the requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for Vertex AI batch prediction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateVertexBatchJsonL_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateVertexBatchJsonL*"></a>
+
+  <h3 id="GenerativeAI_Helpers_BatchJsonLGenerator_GenerateVertexBatchJsonL__1_System_Collections_Generic_IEnumerable_System_String__GenerativeAI_Types_Content_" data-uid="GenerativeAI.Helpers.BatchJsonLGenerator.GenerateVertexBatchJsonL``1(System.Collections.Generic.IEnumerable{System.String},GenerativeAI.Types.Content)">
+  GenerateVertexBatchJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt;, Content?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates JSONL content for Vertex AI batch prediction with schema from generic type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GenerateContentJsonL&lt;TSchema&gt; instead.&quot;)]
+public static string GenerateVertexBatchJsonL&lt;TSchema&gt;(IEnumerable&lt;string&gt; prompts, Content? systemInstruction = null) where TSchema : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of prompt texts to process.</p>
+</dd>
+    <dt><code>systemInstruction</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>Optional system instruction for the requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing properly formatted JSONL for Vertex AI batch prediction.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSchema</code></dt>
+    <dd><p>Optional C# type to generate response schema from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Helpers/BatchJsonLGenerator.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SemanticRetrieverModel | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SemanticRetrieverModel | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Represents a semantic retriever model used for working with documents, corpora, chunks, and corpus permissions. This model requires a platform adapter with authentication for initialization.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_SemanticRetrieverModel.md&amp;value=---%0Auid%3A%20GenerativeAI.SemanticRetrieverModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.SemanticRetrieverModel">
+
+
+
+  <h1 id="GenerativeAI_SemanticRetrieverModel" data-uid="GenerativeAI.SemanticRetrieverModel" class="text-break">
+Class SemanticRetrieverModel  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.GenerateAnswer.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a semantic retriever model used for working with documents, corpora, chunks,
+and corpus permissions. This model requires a platform adapter with authentication for initialization.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SemanticRetrieverModel : BaseModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a></div>
+      <div><span class="xref">SemanticRetrieverModel</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_String_">BaseModel.CheckBlockedResponse(GenerateContentResponse, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentStreamAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentStreamAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CountTokensAsync_System_String_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_">BaseModel.CountTokensAsync(string, CountTokensRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_BatchEmbedContentAsync_System_String_GenerativeAI_Types_BatchEmbedContentRequest_System_Threading_CancellationToken_">BaseModel.BatchEmbedContentAsync(string, BatchEmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_EmbedContentAsync_System_String_GenerativeAI_Types_EmbedContentRequest_System_Threading_CancellationToken_">BaseModel.EmbedContentAsync(string, EmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateAnswerAsync_System_String_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_">BaseModel.GenerateAnswerAsync(string, GenerateAnswerRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_Uri_">BaseModel.CheckBlockedResponse(GenerateContentResponse, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel__ctor_" data-uid="GenerativeAI.SemanticRetrieverModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.SemanticRetrieverModel.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  SemanticRetrieverModel(IPlatformAdapter, string, ICollection&lt;SafetySetting&gt;?, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.SemanticRetrieverModel.html">SemanticRetrieverModel</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticRetrieverModel(IPlatformAdapter platform, string modelName, ICollection&lt;SafetySetting&gt;? safetySettings = null, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter providing necessary infrastructure, including authentication.</p>
+</dd>
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the semantic retriever model.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional collection of safety settings to apply to the model.</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>The optional HTTP client for making requests.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The optional logger for logging events and debugging information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Exceptions.GenerativeAIException.html">GenerativeAIException</a></dt>
+    <dd><p>Thrown when the platform authenticator is not provided.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel__ctor_" data-uid="GenerativeAI.SemanticRetrieverModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel__ctor_System_String_System_String_GenerativeAI_Core_IGoogleAuthenticator_System_Net_Http_HttpClient_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.SemanticRetrieverModel.#ctor(System.String,System.String,GenerativeAI.Core.IGoogleAuthenticator,System.Net.Http.HttpClient,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},Microsoft.Extensions.Logging.ILogger)">
+  SemanticRetrieverModel(string, string, IGoogleAuthenticator, HttpClient?, ICollection&lt;SafetySetting&gt;?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents a semantic retriever model designed to interact with a platform to fetch and process semantic data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticRetrieverModel(string modelName, string apiKey, IGoogleAuthenticator authenticator, HttpClient? httpClient = null, ICollection&lt;SafetySetting&gt;? safetySettings = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>authenticator</code> <a class="xref" href="GenerativeAI.Core.IGoogleAuthenticator.html">IGoogleAuthenticator</a></dt>
+    <dd></dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_CorporaManager_" data-uid="GenerativeAI.SemanticRetrieverModel.CorporaManager*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_CorporaManager" data-uid="GenerativeAI.SemanticRetrieverModel.CorporaManager">
+  CorporaManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the corpora manager, which provides operations for managing corpora,
+documents, chunks, and corpus permissions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CorporaManager CorporaManager { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.CorporaManager.html">CorporaManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_ModelName_" data-uid="GenerativeAI.SemanticRetrieverModel.ModelName*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_ModelName" data-uid="GenerativeAI.SemanticRetrieverModel.ModelName">
+  ModelName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name of the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModelName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_SafetySettings_" data-uid="GenerativeAI.SemanticRetrieverModel.SafetySettings*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_SafetySettings" data-uid="GenerativeAI.SemanticRetrieverModel.SafetySettings">
+  SafetySettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of safety settings that define harm categories and thresholds
+to control the content moderation for model interactions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SafetySetting&gt;? SafetySettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_CreateChatSession_" data-uid="GenerativeAI.SemanticRetrieverModel.CreateChatSession*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_CreateChatSession_System_String_GenerativeAI_Types_AnswerStyle_System_Collections_Generic_List_GenerativeAI_Types_Content__System_Collections_Generic_List_GenerativeAI_Types_SafetySetting__" data-uid="GenerativeAI.SemanticRetrieverModel.CreateChatSession(System.String,GenerativeAI.Types.AnswerStyle,System.Collections.Generic.List{GenerativeAI.Types.Content},System.Collections.Generic.List{GenerativeAI.Types.SafetySetting})">
+  CreateChatSession(string, AnswerStyle, List&lt;Content&gt;?, List&lt;SafetySetting&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new chat session for semantic retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticRetrieverChatSession CreateChatSession(string corpusName, AnswerStyle answerStyle = AnswerStyle.VERBOSE, List&lt;Content&gt;? history = null, List&lt;SafetySetting&gt;? safetySettings = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the corpus to query.</p>
+</dd>
+    <dt><code>answerStyle</code> <a class="xref" href="GenerativeAI.Types.AnswerStyle.html">AnswerStyle</a></dt>
+    <dd><p>The style of answers to generate.</p>
+</dd>
+    <dt><code>history</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>Optional conversation history.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>Optional safety settings for the session.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.SemanticRetrieverChatSession.html">SemanticRetrieverChatSession</a></dt>
+    <dd><p>A new <a class="xref" href="GenerativeAI.SemanticRetrieverChatSession.html">SemanticRetrieverChatSession</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_GenerateAnswerAsync_" data-uid="GenerativeAI.SemanticRetrieverModel.GenerateAnswerAsync*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_GenerateAnswerAsync_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.SemanticRetrieverModel.GenerateAnswerAsync(GenerativeAI.Types.GenerateAnswerRequest,System.Threading.CancellationToken)">
+  GenerateAnswerAsync(GenerateAnswerRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.GenerateAnswer.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an answer asynchronously based on the provided request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateAnswerResponse&gt; GenerateAnswerAsync(GenerateAnswerRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.GenerateAnswerRequest.html">GenerateAnswerRequest</a></dt>
+    <dd><p>The request containing the input details for generating an answer.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a>&gt;</dt>
+    <dd><p>Returns a <a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a> containing the generated answer and additional context.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/question_answering#method:-models.generateanswer">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_SemanticRetrieverModel_GenerateAnswerAsync_" data-uid="GenerativeAI.SemanticRetrieverModel.GenerateAnswerAsync*"></a>
+
+  <h3 id="GenerativeAI_SemanticRetrieverModel_GenerateAnswerAsync_System_String_System_String_GenerativeAI_Types_AnswerStyle_System_Collections_Generic_ICollection_GenerativeAI_Types_SafetySetting__System_Threading_CancellationToken_" data-uid="GenerativeAI.SemanticRetrieverModel.GenerateAnswerAsync(System.String,System.String,GenerativeAI.Types.AnswerStyle,System.Collections.Generic.ICollection{GenerativeAI.Types.SafetySetting},System.Threading.CancellationToken)">
+  GenerateAnswerAsync(string, string, AnswerStyle, ICollection&lt;SafetySetting&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.GenerateAnswer.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates an answer asynchronously based on the given prompt and specified parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateAnswerResponse&gt; GenerateAnswerAsync(string prompt, string corpusId, AnswerStyle answerStyle = AnswerStyle.ABSTRACTIVE, ICollection&lt;SafetySetting&gt;? safetySettings = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text input that serves as the basis for generating a response.</p>
+</dd>
+    <dt><code>corpusId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the corpus to use as the grounding source for generating the answer.</p>
+</dd>
+    <dt><code>answerStyle</code> <a class="xref" href="GenerativeAI.Types.AnswerStyle.html">AnswerStyle</a></dt>
+    <dd><p>An optional parameter indicating the stylistic approach to be used when generating the answer.</p>
+</dd>
+    <dt><code>safetySettings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a>&gt;</dt>
+    <dd><p>An optional collection of rules or configurations applied to ensure safety during the answer generation process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests during the asynchronous operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a>&gt;</dt>
+    <dd><p>Returns a <a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a> object containing the generated response and associated metadata.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://ai.google.dev/gemini-api/docs/question_answering#method:-models.generateanswer">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/SemanticRetriever/SemanticRetrieverModel.GenerateAnswer.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

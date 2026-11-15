@@ -1,0 +1,3762 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace GenerativeAI.Types | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace GenerativeAI.Types | Google GenerativeAI .NET SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Types">
+
+  <h1 id="GenerativeAI_Types" data-uid="GenerativeAI.Types" class="text-break">Namespace GenerativeAI.Types</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ActivityEnd.html">ActivityEnd</a></dt>
+      <dd><p>Marks the end of user activity.
+This can only be sent if automatic (i.e. server-side) activity detection is disabled.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ActivityStart.html">ActivityStart</a></dt>
+      <dd><p>Marks the start of user activity.
+This can only be sent if automatic (i.e. server-side) activity detection is disabled.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Agent.html">Agent</a></dt>
+      <dd><p>A managed agent (<code>/agents</code>): a reusable agent definition (base agent, configuration, system instruction,
+tools and base environment) that interactions can reference by ID.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AgentApisSerializerContext.html">AgentApisSerializerContext</a></dt>
+      <dd><p>Source-generated JSON metadata for the agent-related API types (Voices, Agents, Environments, Triggers,
+Credentials and Decisions). The clients of these APIs put it first in their resolver chain (followed by
+<a class="xref" href="GenerativeAI.Types.InteractionsSerializerContext.html">InteractionsSerializerContext</a> for the shared Interactions types), so they work with Native AOT and
+trimming.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AgentEnvironment.html">AgentEnvironment</a></dt>
+      <dd><p>A sandbox environment (<code>/environments</code>) used by agent interactions, with its mounted sources and
+workspace files. Named <code>AgentEnvironment</code> to avoid clashing with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.environment">Environment</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AntigravityAgentConfig.html">AntigravityAgentConfig</a></dt>
+      <dd><p>Configuration of the Antigravity agent (<code>antigravity</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ApiKeyConfig.html">ApiKeyConfig</a></dt>
+      <dd><p>Config for authentication with API key.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AsyncBatchEmbedContentRequest.html">AsyncBatchEmbedContentRequest</a></dt>
+      <dd><p>Request for batch embedding generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AttributionSourceId.html">AttributionSourceId</a></dt>
+      <dd><p>Identifier for the source contributing to this attribution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AudioChunk.html">AudioChunk</a></dt>
+      <dd><p>Representation of an audio chunk.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AudioResponseFormat.html">AudioResponseFormat</a></dt>
+      <dd><p>Format of audio output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AudioTranscriptionConfig.html">AudioTranscriptionConfig</a></dt>
+      <dd><p>Configuration settings for audio transcription in multimodal live sessions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthConfig.html">AuthConfig</a></dt>
+      <dd><p>Auth configuration to run the extension.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthConfigGoogleServiceAccountConfig.html">AuthConfigGoogleServiceAccountConfig</a></dt>
+      <dd><p>Config for Google Service Account Authentication.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthConfigHttpBasicAuthConfig.html">AuthConfigHttpBasicAuthConfig</a></dt>
+      <dd><p>Config for HTTP Basic Authentication.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthConfigOauthConfig.html">AuthConfigOauthConfig</a></dt>
+      <dd><p>Config for user oauth.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthConfigOidcConfig.html">AuthConfigOidcConfig</a></dt>
+      <dd><p>Config for user OIDC auth.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthToken.html">AuthToken</a></dt>
+      <dd><p>An ephemeral auth token for the Live API. Pass <a class="xref" href="GenerativeAI.Types.AuthToken.html#GenerativeAI_Types_AuthToken_Name">Name</a> as the API key of a
+<code>GoogleAIPlatformAdapter</code> used by a Live client; the client then connects to the constrained endpoint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AutoRoutingMode.html">AutoRoutingMode</a></dt>
+      <dd><p>When automated routing is specified, the routing will be determined by the pretrained routing model
+and customer provided model routing preference.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AutomaticActivityDetection.html">AutomaticActivityDetection</a></dt>
+      <dd><p>Configures automatic detection of activity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AutoraterConfig.html">AutoraterConfig</a></dt>
+      <dd><p>Autorater config used for model evaluation during tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AvatarConfig.html">AvatarConfig</a></dt>
+      <dd><p>Configures the avatar to be used in the live session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchBigQueryDestination.html">BatchBigQueryDestination</a></dt>
+      <dd><p>BigQuery destination for batch output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchBigQuerySource.html">BatchBigQuerySource</a></dt>
+      <dd><p>BigQuery source for batch input.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchConfig.html">BatchConfig</a></dt>
+      <dd><p>Batch configuration containing input config.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchContentOutput.html">BatchContentOutput</a></dt>
+      <dd><p>Output wrapper for content generation batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchContentResponsesWrapper.html">BatchContentResponsesWrapper</a></dt>
+      <dd><p>Wrapper for content generation batch responses (nested structure).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchCreateChunksRequest.html">BatchCreateChunksRequest</a></dt>
+      <dd><p>Represents a request to batch create chunks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchCreateChunksResponse.html">BatchCreateChunksResponse</a></dt>
+      <dd><p>Represents the response from a batch create chunks operation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchDeleteChunksRequest.html">BatchDeleteChunksRequest</a></dt>
+      <dd><p>Represents a request to batch delete chunks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchEmbedContentRequest.html">BatchEmbedContentRequest</a></dt>
+      <dd><p>Represents a batched request for embedding content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchEmbedContentsResponse.html">BatchEmbedContentsResponse</a></dt>
+      <dd><p>Represents the response to a <a class="xref" href="GenerativeAI.Types.BatchEmbedContentRequest.html">BatchEmbedContentRequest</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchEmbeddingOutput.html">BatchEmbeddingOutput</a></dt>
+      <dd><p>Output wrapper for embedding batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchEmbeddingResponsesWrapper.html">BatchEmbeddingResponsesWrapper</a></dt>
+      <dd><p>Wrapper for embedding batch responses (nested structure).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchGcsDestination.html">BatchGcsDestination</a></dt>
+      <dd><p>GCS destination for batch output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchGcsSource.html">BatchGcsSource</a></dt>
+      <dd><p>GCS source for batch input.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchGenerateContentRequest.html">BatchGenerateContentRequest</a></dt>
+      <dd><p>Request for batch content generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchInputConfig.html">BatchInputConfig</a></dt>
+      <dd><p>Input configuration for a batch job (Google AI / MLDev format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchJob.html">BatchJob</a></dt>
+      <dd><p>Represents a batch processing job for generating content or embeddings at scale.
+Batch jobs allow processing large numbers of requests asynchronously.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchJobDestination.html">BatchJobDestination</a></dt>
+      <dd><p>Configuration for the output data destination of a batch job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchJobResponse.html">BatchJobResponse</a></dt>
+      <dd><p>Response wrapper for batch job operations (Google AI format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchJobResponseConverter.html">BatchJobResponseConverter</a></dt>
+      <dd><p>Custom JSON converter for BatchJobResponse that handles dynamic response parsing
+based on the metadata type field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchJobSource.html">BatchJobSource</a></dt>
+      <dd><p>Configuration for the input data source of a batch job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchOutputInfo.html">BatchOutputInfo</a></dt>
+      <dd><p>Information about the output of a batch prediction job (Vertex AI only).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchStats.html">BatchStats</a></dt>
+      <dd><p>Statistics about a batch job's progress.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchUpdateChunksRequest.html">BatchUpdateChunksRequest</a></dt>
+      <dd><p>Represents the request body for batch updating chunks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchUpdateChunksResponse.html">BatchUpdateChunksResponse</a></dt>
+      <dd><p>Represents the response body for batch updating chunks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BatchWrapper.html">BatchWrapper</a></dt>
+      <dd><p>Wrapper for batch request (Google AI / MLDev format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BearerTokenCredentialConfig.html">BearerTokenCredentialConfig</a></dt>
+      <dd><p>An HTTP bearer token (<code>bearer_token</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Blob.html">Blob</a></dt>
+      <dd><p>Raw media bytes.
+Text should not be sent as raw bytes, use the 'text' field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CachedContent.html">CachedContent</a></dt>
+      <dd><p>Content that has been preprocessed and can be used in subsequent requests to GenerativeService.
+Cached content can be only used with the model it was created for.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Candidate.html">Candidate</a></dt>
+      <dd><p>A response candidate generated from the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChatSessionBackUpData.html">ChatSessionBackUpData</a></dt>
+      <dd><p>Represents a backup object for a chat session containing session-related data and configurations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Checkpoint.html">Checkpoint</a></dt>
+      <dd><p>Describes the machine learning model version checkpoint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChoiceDecisionAnswer.html">ChoiceDecisionAnswer</a></dt>
+      <dd><p>The answer to a <a class="xref" href="GenerativeAI.Types.ChoiceDecisionQuestion.html">ChoiceDecisionQuestion</a> (<code>choice</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChoiceDecisionQuestion.html">ChoiceDecisionQuestion</a></dt>
+      <dd><p>A multiple-choice question (<code>choice</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a></dt>
+      <dd><p>A <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> is a subpart of a <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> that is treated as an independent unit for the purposes of vector representation and storage.
+A <a class="xref" href="GenerativeAI.Types.Corpus.html">Corpus</a> can have a maximum of 1 million <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChunkData.html">ChunkData</a></dt>
+      <dd><p>Extracted data that represents the <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChunkingConfig.html">ChunkingConfig</a></dt>
+      <dd><p>Tells the service how to split a file into chunks when adding it to a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CitationMetadata.html">CitationMetadata</a></dt>
+      <dd><p>A collection of source attributions for a piece of content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CitationSource.html">CitationSource</a></dt>
+      <dd><p>A citation to a source for a portion of a specific response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeExecutionResult.html">CodeExecutionResult</a></dt>
+      <dd><p>Result of executing the <a class="xref" href="GenerativeAI.Types.ExecutableCode.html">ExecutableCode</a>.
+Only generated when using the <a class="xref" href="GenerativeAI.Types.CodeExecutionTool.html">CodeExecutionTool</a>, and always follows a <a class="xref" href="GenerativeAI.Types.Part.html">Part</a>
+containing the <a class="xref" href="GenerativeAI.Types.ExecutableCode.html">ExecutableCode</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeExecutionTool.html">CodeExecutionTool</a></dt>
+      <dd><p>Tool that executes code generated by the model, and automatically returns the result to the model.
+See also <a class="xref" href="GenerativeAI.Types.ExecutableCode.html">ExecutableCode</a> and <a class="xref" href="GenerativeAI.Types.CodeExecutionResult.html">CodeExecutionResult</a> which are only generated when using this tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeMenderAgentConfig.html">CodeMenderAgentConfig</a></dt>
+      <dd><p>Configuration of the CodeMender agent (<code>code-mender</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeMenderFindRequest.html">CodeMenderFindRequest</a></dt>
+      <dd><p>Parameters of a CodeMender FIND session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeMenderFixRequest.html">CodeMenderFixRequest</a></dt>
+      <dd><p>Parameters of a CodeMender FIX session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeMenderSessionConfig.html">CodeMenderSessionConfig</a></dt>
+      <dd><p>CodeMender session configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CodeMenderSourceFile.html">CodeMenderSourceFile</a></dt>
+      <dd><p>A source file given to the CodeMender agent.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CompositeReinforcementTuningRewardConfig.html">CompositeReinforcementTuningRewardConfig</a></dt>
+      <dd><p>A composite (weighted) reward function configuration for reinforcement tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CompositeReinforcementTuningRewardConfigWeightedRewardConfig.html">CompositeReinforcementTuningRewardConfigWeightedRewardConfig</a></dt>
+      <dd><p>A weighted single reward configuration inside a <a class="xref" href="GenerativeAI.Types.CompositeReinforcementTuningRewardConfig.html">CompositeReinforcementTuningRewardConfig</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ComputeTokensRequest.html">ComputeTokensRequest</a></dt>
+      <dd><p>Request body of the Vertex AI <code>computeTokens</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ComputeTokensResponse.html">ComputeTokensResponse</a></dt>
+      <dd><p>Response of the Vertex AI <code>computeTokens</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ComputerUse.html">ComputerUse</a></dt>
+      <dd><p>Tool to support computer use.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Condition.html">Condition</a></dt>
+      <dd><p>Filter condition applicable to a single key.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+      <dd><p>The base structured datatype containing multi-part content of a message.
+A <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> includes a <a class="xref" href="GenerativeAI.Types.Content.html#GenerativeAI_Types_Content_Role">Role</a> field designating the producer of the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a>
+and a <a class="xref" href="GenerativeAI.Types.Content.html#GenerativeAI_Types_Content_Parts">Parts</a> field containing multi-part data that contains the content of the message turn.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ContentEmbedding.html">ContentEmbedding</a></dt>
+      <dd><p>Represents a list of floats that make up an embedding.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ContentEmbeddingStatistics.html">ContentEmbeddingStatistics</a></dt>
+      <dd><p>Statistics of the input text associated with the result of content embedding.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ContextUpdateTools.html">ContextUpdateTools</a></dt>
+      <dd><p>A wrapper around the list of tools in a <a class="xref" href="GenerativeAI.Types.LiveClientContextUpdate.html">LiveClientContextUpdate</a>.
+The wrapper distinguishes &quot;no tools update&quot; (wrapper unset) from &quot;clear all tools&quot; (wrapper set with an empty list).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ContextWindowCompressionConfig.html">ContextWindowCompressionConfig</a></dt>
+      <dd><p>Configures context window compression mechanism. If included, server will compress context window to fit into given length.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Corpus.html">Corpus</a></dt>
+      <dd><p>A <a class="xref" href="GenerativeAI.Types.Corpus.html">Corpus</a> is a collection of <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>. A project can create up to 5 corpora.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CountTokensRequest.html">CountTokensRequest</a></dt>
+      <dd><p>Request to count tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CountTokensResponse.html">CountTokensResponse</a></dt>
+      <dd><p>Response to count tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateAuthTokenConfig.html">CreateAuthTokenConfig</a></dt>
+      <dd><p>Options for creating an ephemeral Live API auth token.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateAuthTokenRequest.html">CreateAuthTokenRequest</a></dt>
+      <dd><p>Request body for creating an ephemeral auth token (<code>POST v1alpha/auth_tokens</code>).
+Most callers should use <a class="xref" href="GenerativeAI.Types.CreateAuthTokenConfig.html">CreateAuthTokenConfig</a>, which builds the field mask for you.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateChunkRequest.html">CreateChunkRequest</a></dt>
+      <dd><p>Represents a request to create a <a class="xref" href="GenerativeAI.Types.CreateChunkRequest.html#GenerativeAI_Types_CreateChunkRequest_Chunk">Chunk</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateDecisionRequest.html">CreateDecisionRequest</a></dt>
+      <dd><p>Request body of <code>POST /decisions</code>: evaluates one or more structured decision questions (NOUL, choice or
+score) against a shared <a class="xref" href="GenerativeAI.Types.CreateDecisionRequest.html#GenerativeAI_Types_CreateDecisionRequest_Input">Input</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateDecisionResponse.html">CreateDecisionResponse</a></dt>
+      <dd><p>Response of <code>POST /decisions</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateEnvironmentRequest.html">CreateEnvironmentRequest</a></dt>
+      <dd><p>Request body of <code>POST /environments</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+      <dd><p>Request body of <code>POST /interactions</code>. Set either <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Model">Model</a> (model interaction) or
+<a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Agent">Agent</a> (agent interaction, e.g. Deep Research or Antigravity), not both.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateTriggerRequest.html">CreateTriggerRequest</a></dt>
+      <dd><p>Request body of <code>POST /triggers</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateTuningJobConfig.html">CreateTuningJobConfig</a></dt>
+      <dd><p>Optional configuration for <a class="xref" href="GenerativeAI.Clients.TuningClient.html#GenerativeAI_Clients_TuningClient_TuneAsync_System_String_GenerativeAI_Types_TuningDataset_GenerativeAI_Types_CreateTuningJobConfig_System_Threading_CancellationToken_">TuneAsync(string, TuningDataset, CreateTuningJobConfig?, CancellationToken)</a>, mirroring
+<code>CreateTuningJobConfig</code> of the google-genai SDK.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateVoiceRequest.html">CreateVoiceRequest</a></dt>
+      <dd><p>Request body of <code>POST /voices</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CreateWebhookRequest.html">CreateWebhookRequest</a></dt>
+      <dd><p>The request body of <code>POST /webhooks</code> (python-genai <code>WebhookInput</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Credential.html">Credential</a></dt>
+      <dd><p>A stored credential (<code>/credentials</code>) that agent environments can use without exposing the secret (e.g. as
+an environment variable or a bearer token injected into allow-listed egress requests). Secrets are write-only and
+never returned.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CredentialConfig.html">CredentialConfig</a></dt>
+      <dd><p>The body of <code>POST /credentials</code> (create, <a class="xref" href="GenerativeAI.Types.CredentialConfig.html#GenerativeAI_Types_CredentialConfig_Id">Id</a> required) and <code>PATCH /credentials/{id}</code>
+(update, <a class="xref" href="GenerativeAI.Types.CredentialConfig.html#GenerativeAI_Types_CredentialConfig_Id">Id</a> not sent), discriminated by <code>type</code> (see <a class="xref" href="GenerativeAI.Types.CredentialTypes.html">CredentialTypes</a>).
+For updates, only the fields that are set are sent; combine with an <code>update_mask</code> to clear fields.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CredentialInjectionLocations.html">CredentialInjectionLocations</a></dt>
+      <dd><p>Known values of <a class="xref" href="GenerativeAI.Types.EnvironmentVariableCredentialConfig.html#GenerativeAI_Types_EnvironmentVariableCredentialConfig_InjectionLocation">InjectionLocation</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CredentialStatuses.html">CredentialStatuses</a></dt>
+      <dd><p>Known credential statuses.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CredentialTypes.html">CredentialTypes</a></dt>
+      <dd><p>Known credential types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CustomMetadata.html">CustomMetadata</a></dt>
+      <dd><p>User provided metadata stored as key-value pairs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.CustomizedAvatar.html">CustomizedAvatar</a></dt>
+      <dd><p>Configures the customized avatar to be used in the live session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Dataset.html">Dataset</a></dt>
+      <dd><p>Dataset for training or validation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionAnswer.html">DecisionAnswer</a></dt>
+      <dd><p>The answer to a decision question, discriminated by <code>type</code>. Unknown types are read as
+<a class="xref" href="GenerativeAI.Types.UnknownDecisionAnswer.html">UnknownDecisionAnswer</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionBlockReasons.html">DecisionBlockReasons</a></dt>
+      <dd><p>Known values of <a class="xref" href="GenerativeAI.Types.DecisionPromptFeedback.html#GenerativeAI_Types_DecisionPromptFeedback_BlockReason">BlockReason</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionModels.html">DecisionModels</a></dt>
+      <dd><p>Models of the Decisions API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionPromptFeedback.html">DecisionPromptFeedback</a></dt>
+      <dd><p>Feedback on the input of a decision request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionQuestion.html">DecisionQuestion</a></dt>
+      <dd><p>A decision question, discriminated by <code>type</code> (see <a class="xref" href="GenerativeAI.Types.DecisionQuestionTypes.html">DecisionQuestionTypes</a>).
+Unknown types are read as <a class="xref" href="GenerativeAI.Types.UnknownDecisionQuestion.html">UnknownDecisionQuestion</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DecisionQuestionTypes.html">DecisionQuestionTypes</a></dt>
+      <dd><p>Known decision question and answer types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DeepResearchAgentConfig.html">DeepResearchAgentConfig</a></dt>
+      <dd><p>Configuration of the Deep Research agent (<code>deep-research</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DeleteChunkRequest.html">DeleteChunkRequest</a></dt>
+      <dd><p>Represents a request to delete a specific chunk.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DeleteVoiceResponse.html">DeleteVoiceResponse</a></dt>
+      <dd><p>Response of <code>DELETE /voices/{id}</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DistillationHyperParameters.html">DistillationHyperParameters</a></dt>
+      <dd><p>Hyperparameters for distillation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DistillationSamplingSpec.html">DistillationSamplingSpec</a></dt>
+      <dd><p>Spec for the teacher model sampling of a distillation job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DistillationSpec.html">DistillationSpec</a></dt>
+      <dd><p>Tuning spec for distillation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Document.html">Document</a></dt>
+      <dd><p>A <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> is a collection of <code>Chunk</code>s. A <code>Corpus</code> can have a maximum of 10,000 <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>s.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Duration.html">Duration</a></dt>
+      <dd><p>A Duration represents a signed, fixed-length span of time represented as a count of seconds and fractions
+of seconds at nanosecond resolution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DurationJsonConverter.html">DurationJsonConverter</a></dt>
+      <dd><p>JSON converter for <a class="xref" href="GenerativeAI.Types.Duration.html">Duration</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DynamicAgentConfig.html">DynamicAgentConfig</a></dt>
+      <dd><p>Free-form agent configuration (<code>dynamic</code>); put the settings in <a class="xref" href="GenerativeAI.Types.InteractionAgentConfig.html#GenerativeAI_Types_InteractionAgentConfig_ExtensionData">ExtensionData</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DynamicRetrievalConfig.html">DynamicRetrievalConfig</a></dt>
+      <dd><p>Describes the options to customize dynamic retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a></dt>
+      <dd><p>Represents a request containing the content for the model to embed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a></dt>
+      <dd><p>Represents the response to an <a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbedRequestBody.html">EmbedRequestBody</a></dt>
+      <dd><p>The actual embedding request body for batch processing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbedRequestWrapper.html">EmbedRequestWrapper</a></dt>
+      <dd><p>Wrapper for a single embed request in batch processing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbedRequestsWrapper.html">EmbedRequestsWrapper</a></dt>
+      <dd><p>Wrapper for embedding requests array (Google AI nested structure).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbeddingBatchConfig.html">EmbeddingBatchConfig</a></dt>
+      <dd><p>Batch configuration for embeddings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbeddingBatchInputConfig.html">EmbeddingBatchInputConfig</a></dt>
+      <dd><p>Input configuration for embedding batch jobs (Google AI format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EmbeddingBatchWrapper.html">EmbeddingBatchWrapper</a></dt>
+      <dd><p>Wrapper for embedding batch request (Google AI format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EncryptionSpec.html">EncryptionSpec</a></dt>
+      <dd><p>Represents a customer-managed encryption key spec that can be applied to a top-level resource.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Endpoint.html">Endpoint</a></dt>
+      <dd><p>An endpoint where you deploy models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnterpriseWebSearch.html">EnterpriseWebSearch</a></dt>
+      <dd><p>Tool to search public web data, powered by Vertex AI Search and Sec4 compliance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentFile.html">EnvironmentFile</a></dt>
+      <dd><p>A file or directory in an environment workspace.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentFileTypes.html">EnvironmentFileTypes</a></dt>
+      <dd><p>Known environment file entry types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentNetworkModes.html">EnvironmentNetworkModes</a></dt>
+      <dd><p>Known environment network modes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentSourceTypes.html">EnvironmentSourceTypes</a></dt>
+      <dd><p>Known environment source types (<a class="xref" href="GenerativeAI.Types.InteractionEnvironmentSource.html#GenerativeAI_Types_InteractionEnvironmentSource_Type">Type</a>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentStatuses.html">EnvironmentStatuses</a></dt>
+      <dd><p>Known environment statuses.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EnvironmentVariableCredentialConfig.html">EnvironmentVariableCredentialConfig</a></dt>
+      <dd><p>A secret exposed to the environment as a variable (<code>environment_variable</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EvaluateDatasetRun.html">EvaluateDatasetRun</a></dt>
+      <dd><p>An evaluation run of a tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EvaluationConfig.html">EvaluationConfig</a></dt>
+      <dd><p>Evaluation configuration for model tuning.
+Defines how the tuned model should be evaluated during and after training.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ExecutableCode.html">ExecutableCode</a></dt>
+      <dd><p>Code generated by the model that is meant to be executed, and the result returned to the model.
+Only generated when using the <a class="xref" href="GenerativeAI.Types.CodeExecutionTool.html">CodeExecutionTool</a> tool, in which the code will be automatically
+executed, and a corresponding <a class="xref" href="GenerativeAI.Types.CodeExecutionResult.html">CodeExecutionResult</a> will also be generated.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ExternalApi.html">ExternalApi</a></dt>
+      <dd><p>Retrieve from data source powered by external API for grounding.
+The external API is not owned by Google, but needs to follow the pre-defined API spec.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ExternalApiElasticSearchParams.html">ExternalApiElasticSearchParams</a></dt>
+      <dd><p>The search parameters to use for the ELASTIC_SEARCH spec.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ExternalApiSimpleSearchParams.html">ExternalApiSimpleSearchParams</a></dt>
+      <dd><p>The search parameters to use for SIMPLE_SEARCH spec.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileData.html">FileData</a></dt>
+      <dd><p>URI based data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearch.html">FileSearch</a></dt>
+      <dd><p>Tool that retrieves relevant content from File Search stores (managed retrieval-augmented generation).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchDocument.html">FileSearchDocument</a></dt>
+      <dd><p>A document inside a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>: a file that has been chunked and embedded for retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchOperation.html">FileSearchOperation</a></dt>
+      <dd><p>Long-running operation returned when a file is uploaded to (<code>uploadToFileSearchStore</code>) or
+imported into (<code>importFile</code>) a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchOperationResponse.html">FileSearchOperationResponse</a></dt>
+      <dd><p>The result of a completed upload or import into a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchSerializerContext.html">FileSearchSerializerContext</a></dt>
+      <dd><p>Source-generated serialization metadata for the File Search stores and documents types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a></dt>
+      <dd><p>A File Search store: a managed collection of <a class="xref" href="GenerativeAI.Types.FileSearchDocument.html">FileSearchDocument</a>s that the
+<a class="xref" href="GenerativeAI.Types.FileSearch.html">FileSearch</a> tool can retrieve from (managed retrieval-augmented generation).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FullFineTuningSpec.html">FullFineTuningSpec</a></dt>
+      <dd><p>Tuning spec for full fine tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a></dt>
+      <dd><p>A predicted <a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a> returned from the model that contains a string representing
+the <a class="xref" href="GenerativeAI.Types.FunctionDeclaration.html#GenerativeAI_Types_FunctionDeclaration_Name">Name</a> with the arguments and their values.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionCallingConfig.html">FunctionCallingConfig</a></dt>
+      <dd><p>Configuration for specifying function calling behavior.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionDeclaration.html">FunctionDeclaration</a></dt>
+      <dd><p>Declaration of a function that can be used as a <a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionResponse.html">FunctionResponse</a></dt>
+      <dd><p>The result output from a <a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a> that contains a string representing the
+<a class="xref" href="GenerativeAI.Types.FunctionDeclaration.html#GenerativeAI_Types_FunctionDeclaration_Name">Name</a> and a structured JSON object containing any output from
+the function is used as context to the model. This should contain the result of a
+<a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a> made based on model prediction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionResponseBlob.html">FunctionResponseBlob</a></dt>
+      <dd><p>Raw media bytes for function response.
+Text should not be sent as raw bytes, use the FunctionResponse.response field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionResponseFileData.html">FunctionResponseFileData</a></dt>
+      <dd><p>URI based data for function response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionResponsePart.html">FunctionResponsePart</a></dt>
+      <dd><p>A datatype containing media that is part of a FunctionResponse message.
+A FunctionResponsePart consists of data which has an associated datatype.
+A FunctionResponsePart can only contain one of the accepted types in FunctionResponsePart.data.
+A FunctionResponsePart must have a fixed IANA MIME type identifying the type and subtype of the media
+if the inline_data field is filled with raw bytes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GcsDestination.html">GcsDestination</a></dt>
+      <dd><p>The Google Cloud Storage location where the output is to be written to.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateAnswerRequest.html">GenerateAnswerRequest</a></dt>
+      <dd><p>Request to generate an answer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a></dt>
+      <dd><p>Response from the model for a grounded answer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a></dt>
+      <dd><p>Request to generate content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateContentRequestForCountToken.html">GenerateContentRequestForCountToken</a></dt>
+      <dd><p>Request to generate a completion from the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html">GenerateContentResponse</a></dt>
+      <dd><p>Response from the model supporting multiple candidate responses.
+Safety ratings and content filtering are reported for both prompt in
+<a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html#GenerativeAI_Types_GenerateContentResponse_PromptFeedback">PromptFeedback</a> and for each candidate in <a class="xref" href="GenerativeAI.Types.FinishReason.html">FinishReason</a>
+and in <a class="xref" href="GenerativeAI.Types.Candidate.html#GenerativeAI_Types_Candidate_SafetyRatings">SafetyRatings</a>. The API:</p>
+<ul>
+<li>Returns either all requested candidates or none of them</li>
+<li>Returns no candidates at all only if there was something wrong with the prompt
+(check <a class="xref" href="GenerativeAI.Types.GenerateContentResponse.html#GenerativeAI_Types_GenerateContentResponse_PromptFeedback">PromptFeedback</a>)</li>
+<li>Reports feedback on each candidate in <a class="xref" href="GenerativeAI.Types.Candidate.html#GenerativeAI_Types_Candidate_FinishReason">FinishReason</a> and
+<a class="xref" href="GenerativeAI.Types.Candidate.html#GenerativeAI_Types_Candidate_SafetyRatings">SafetyRatings</a>.</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateImageRequest.html">GenerateImageRequest</a></dt>
+      <dd><p>Represents the request for generating images.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateImageResponse.html">GenerateImageResponse</a></dt>
+      <dd><p>Represents the response from the image generation API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateVideosConfig.html">GenerateVideosConfig</a></dt>
+      <dd><p>Configuration settings for a video generation request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateVideosOperation.html">GenerateVideosOperation</a></dt>
+      <dd><p>Represents a long-running operation, specifically for video generation tasks.
+Poll this resource to check the status and retrieve results upon completion.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateVideosRequest.html">GenerateVideosRequest</a></dt>
+      <dd><p>Represents the parameters sent when requesting video generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerateVideosResponse.html">GenerateVideosResponse</a></dt>
+      <dd><p>The response returned after a successful video generation request (often part of an Operation).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GeneratedVideo.html">GeneratedVideo</a></dt>
+      <dd><p>Represents a single generated video as part of a video generation response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerationConfig.html">GenerationConfig</a></dt>
+      <dd><p>Configuration options for model generation and outputs. Not all parameters are configurable
+for every model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GenerationOutputConfig.html">GenerationOutputConfig</a></dt>
+      <dd><p>Where to write generated output. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleAIListBatchJobsResponse.html">GoogleAIListBatchJobsResponse</a></dt>
+      <dd><p>Response for the list batch jobs method (Google AI wire format).
+Contains operations array that needs to be transformed to batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleAITunedModel.html">GoogleAITunedModel</a></dt>
+      <dd><p>A tuned model resource of the Gemini Developer API (<code>tunedModels/{id}</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleLongRunningListOperationsResponse.html">GoogleLongRunningListOperationsResponse</a></dt>
+      <dd><p>The response message for Operations.ListOperations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a></dt>
+      <dd><p>This resource represents a long-running operation that is the result of a network API call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleMaps.html">GoogleMaps</a></dt>
+      <dd><p>Tool to support Google Maps in Model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleMapsGroundingTypes.html">GoogleMapsGroundingTypes</a></dt>
+      <dd><p>The kinds of Google Maps grounding to use. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleMapsPlaces.html">GoogleMapsPlaces</a></dt>
+      <dd><p>Places grounding settings. Currently has no options; set an instance to enable it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleMapsRouting.html">GoogleMapsRouting</a></dt>
+      <dd><p>Routing grounding settings. Currently has no options; set an instance to enable it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleSchemaHelper.html">GoogleSchemaHelper</a></dt>
+      <dd><p>Provides helper methods for converting JSON schemas to Google-compatible formats.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleSearchRetrievalTool.html">GoogleSearchRetrievalTool</a></dt>
+      <dd><p>Tool to retrieve public web data for grounding, powered by Google.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleSearchTool.html">GoogleSearchTool</a></dt>
+      <dd><p>GoogleSearch tool type. Tool to support Google Search in Model. Powered by Google.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GoogleTypeDate.html">GoogleTypeDate</a></dt>
+      <dd><p>Represents a whole or partial calendar date, such as a birthday.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingAttribution.html">GroundingAttribution</a></dt>
+      <dd><p>Attribution for a source that contributed to an answer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunk.html">GroundingChunk</a></dt>
+      <dd><p>Grounding chunk.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkCustomMetadata.html">GroundingChunkCustomMetadata</a></dt>
+      <dd><p>A custom metadata entry attached to a File Search document.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkImage.html">GroundingChunkImage</a></dt>
+      <dd><p>An image used to ground the response (from Google Search image search).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkMaps.html">GroundingChunkMaps</a></dt>
+      <dd><p>Chunk from Google Maps.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkMapsRoute.html">GroundingChunkMapsRoute</a></dt>
+      <dd><p>A route returned by Google Maps grounding.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkRetrievedContext.html">GroundingChunkRetrievedContext</a></dt>
+      <dd><p>Chunk from context retrieved by the retrieval tools.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingChunkStringList.html">GroundingChunkStringList</a></dt>
+      <dd><p>A list of string values in custom metadata.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingMetadata.html">GroundingMetadata</a></dt>
+      <dd><p>Metadata returned to client when grounding is enabled.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingMetadataSourceFlaggingUri.html">GroundingMetadataSourceFlaggingUri</a></dt>
+      <dd><p>Source content flagging uri for a place or review.
+This is currently populated only for Google Maps grounding.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingPassage.html">GroundingPassage</a></dt>
+      <dd><p>Passage included inline with a grounding configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingPassageId.html">GroundingPassageId</a></dt>
+      <dd><p>Identifier for a part within a <a class="xref" href="GenerativeAI.Types.GroundingPassage.html">GroundingPassage</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingPassages.html">GroundingPassages</a></dt>
+      <dd><p>A repeated list of passages.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingSource.html">GroundingSource</a></dt>
+      <dd><p>The sources in which to ground the answer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GroundingSupport.html">GroundingSupport</a></dt>
+      <dd><p>Grounding support.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HistoryConfig.html">HistoryConfig</a></dt>
+      <dd><p>Configuration for history exchange between client and server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Hyperparameters.html">Hyperparameters</a></dt>
+      <dd><p>Hyperparameters controlling the tuning process.
+Read more at <a href="https://ai.google.dev/docs/model_tuning_guidance">https://ai.google.dev/docs/model_tuning_guidance</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageCaptioningParameters.html">ImageCaptioningParameters</a></dt>
+      <dd><p>Represents the parameters for the Image Captioning API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageCaptioningRequest.html">ImageCaptioningRequest</a></dt>
+      <dd><p>Represents the request body for the Image Captioning API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageCaptioningResponse.html">ImageCaptioningResponse</a></dt>
+      <dd><p>Represents the response body from the Image Captioning API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageConfig.html">ImageConfig</a></dt>
+      <dd><p>Configuration for image generation in models that support image output (e.g., gemini-2.5-flash-image, gemini-3-pro-image-preview).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageData.html">ImageData</a></dt>
+      <dd><p>Represents the image data, which can be either base64 encoded or a Cloud Storage URI.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageGenerationInstance.html">ImageGenerationInstance</a></dt>
+      <dd><p>Represents an instance for image generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageGenerationParameters.html">ImageGenerationParameters</a></dt>
+      <dd><p>Represents the parameters for image generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageInstance.html">ImageInstance</a></dt>
+      <dd><p>Represents an image instance in the <a class="xref" href="GenerativeAI.Types.ImageCaptioningRequest.html">ImageCaptioningRequest</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageOutputOptions.html">ImageOutputOptions</a></dt>
+      <dd><p>The image output format for generated images.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageResponseFormat.html">ImageResponseFormat</a></dt>
+      <dd><p>Format of image output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageSample.html">ImageSample</a></dt>
+      <dd><p>Represents an image, which can be provided via Google Cloud Storage URI or raw byte data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageSearch.html">ImageSearch</a></dt>
+      <dd><p>Image search settings. Currently has no options; set an instance to enable image search.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageSource.html">ImageSource</a></dt>
+      <dd><p>Represents the image source, either as base64 encoded bytes or a Cloud Storage URI.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImportFileConfig.html">ImportFileConfig</a></dt>
+      <dd><p>Optional settings for importing an existing Files API file into a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImportFileRequest.html">ImportFileRequest</a></dt>
+      <dd><p>Request body for <code>fileSearchStores.importFile</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InlinedEmbedContentResponse.html">InlinedEmbedContentResponse</a></dt>
+      <dd><p>Represents an inlined embedding response from batch processing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InlinedRequest.html">InlinedRequest</a></dt>
+      <dd><p>Represents an inlined request for batch processing without external storage.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InlinedRequestBody.html">InlinedRequestBody</a></dt>
+      <dd><p>The actual request body for batch inlined requests.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InlinedRequestWrapper.html">InlinedRequestWrapper</a></dt>
+      <dd><p>Wrapper for inlined request in batch processing (Google AI format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InlinedResponse.html">InlinedResponse</a></dt>
+      <dd><p>Represents an inlined response from batch processing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InputFeedback.html">InputFeedback</a></dt>
+      <dd><p>Feedback related to the input data used to answer the question, as opposed to the
+model-generated response to the question.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Interaction.html">Interaction</a></dt>
+      <dd><p>The Interaction resource returned by the Interactions API (<code>/interactions</code>). The output is exposed as
+<a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_Steps">Steps</a>; <a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_OutputText">OutputText</a>, <a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_OutputImage">OutputImage</a>, <a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_OutputAudio">OutputAudio</a> and
+<a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_OutputVideo">OutputVideo</a> are convenience accessors computed from the steps, like python-genai's helpers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAgentConfig.html">InteractionAgentConfig</a></dt>
+      <dd><p>Agent configuration (<code>agent_config</code>), discriminated by <code>type</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAgents.html">InteractionAgents</a></dt>
+      <dd><p>Agent identifiers listed by the Interactions API <code>AgentOption</code> enum (python-genai). The API also accepts other agent IDs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAllowedTools.html">InteractionAllowedTools</a></dt>
+      <dd><p>Tools allowed for an MCP server or a tool choice.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAnnotation.html">InteractionAnnotation</a></dt>
+      <dd><p>A citation or other annotation attached to text content, discriminated by <code>type</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionArgumentsDelta.html">InteractionArgumentsDelta</a></dt>
+      <dd><p>A chunk of function-call arguments JSON (<code>arguments_delta</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAudioContent.html">InteractionAudioContent</a></dt>
+      <dd><p>An audio content block.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAudioDelta.html">InteractionAudioDelta</a></dt>
+      <dd><p>An audio delta (<code>audio</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionAudioResponseFormat.html">InteractionAudioResponseFormat</a></dt>
+      <dd><p>Audio output format (<code>type: audio</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCallStep.html">InteractionCallStep</a></dt>
+      <dd><p>Base class for tool call steps, which carry the call <a class="xref" href="GenerativeAI.Types.InteractionCallStep.html#GenerativeAI_Types_InteractionCallStep_Id">Id</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionArguments.html">InteractionCodeExecutionArguments</a></dt>
+      <dd><p>Arguments of a code execution call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionCallDelta.html">InteractionCodeExecutionCallDelta</a></dt>
+      <dd><p>A code execution call delta (<code>code_execution_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionCallStep.html">InteractionCodeExecutionCallStep</a></dt>
+      <dd><p>A code execution call (<code>code_execution_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionResultDelta.html">InteractionCodeExecutionResultDelta</a></dt>
+      <dd><p>A code execution result delta (<code>code_execution_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionResultStep.html">InteractionCodeExecutionResultStep</a></dt>
+      <dd><p>The result of a code execution (<code>code_execution_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCodeExecutionTool.html">InteractionCodeExecutionTool</a></dt>
+      <dd><p>The code execution tool (<code>code_execution</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCompletedEvent.html">InteractionCompletedEvent</a></dt>
+      <dd><p>The interaction completed (<code>interaction.completed</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionComputerUseTool.html">InteractionComputerUseTool</a></dt>
+      <dd><p>The computer use tool (<code>computer_use</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionContent.html">InteractionContent</a></dt>
+      <dd><p>A content block of the Interactions API (text, image, audio, video or document), discriminated by <code>type</code>.
+Unknown content types are read as <a class="xref" href="GenerativeAI.Types.UnknownInteractionContent.html">UnknownInteractionContent</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionContentTypes.html">InteractionContentTypes</a></dt>
+      <dd><p>Known values of the <code>type</code> discriminator of <a class="xref" href="GenerativeAI.Types.InteractionContent.html">InteractionContent</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionCreatedEvent.html">InteractionCreatedEvent</a></dt>
+      <dd><p>The interaction was created (<code>interaction.created</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionDeliveryModes.html">InteractionDeliveryModes</a></dt>
+      <dd><p>Known values for the <code>delivery</code> field of media response formats.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionDeltaTypes.html">InteractionDeltaTypes</a></dt>
+      <dd><p>Known values of the <code>type</code> discriminator of <a class="xref" href="GenerativeAI.Types.InteractionStepDeltaData.html">InteractionStepDeltaData</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionDocumentContent.html">InteractionDocumentContent</a></dt>
+      <dd><p>A document content block (PDF, CSV, Office documents, ...).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionDocumentDelta.html">InteractionDocumentDelta</a></dt>
+      <dd><p>A document delta (<code>document</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionEnvironment.html">InteractionEnvironment</a></dt>
+      <dd><p>A remote sandbox environment configuration for agent interactions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionEnvironmentReference.html">InteractionEnvironmentReference</a></dt>
+      <dd><p>The <code>environment</code> of an interaction: either an existing environment ID or an
+<a class="xref" href="GenerativeAI.Types.InteractionEnvironment.html">InteractionEnvironment</a> configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionEnvironmentSource.html">InteractionEnvironmentSource</a></dt>
+      <dd><p>A source mounted into a remote agent environment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionError.html">InteractionError</a></dt>
+      <dd><p>An error recorded on an interaction or sent in an error event.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionErrorEvent.html">InteractionErrorEvent</a></dt>
+      <dd><p>An error occurred while streaming (<code>error</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionEventTypes.html">InteractionEventTypes</a></dt>
+      <dd><p>Known values of the <code>event_type</code> discriminator of <a class="xref" href="GenerativeAI.Types.InteractionSseEvent.html">InteractionSseEvent</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionExternalSearchConfig.html">InteractionExternalSearchConfig</a></dt>
+      <dd><p>Configuration of a third-party search provider (Exa.ai or Parallel.ai) for the retrieval tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileCitation.html">InteractionFileCitation</a></dt>
+      <dd><p>A file citation (<code>file_citation</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileSearchCallDelta.html">InteractionFileSearchCallDelta</a></dt>
+      <dd><p>A file search call delta (<code>file_search_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileSearchCallStep.html">InteractionFileSearchCallStep</a></dt>
+      <dd><p>A file search call (<code>file_search_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileSearchResultDelta.html">InteractionFileSearchResultDelta</a></dt>
+      <dd><p>A file search result delta (<code>file_search_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileSearchResultStep.html">InteractionFileSearchResultStep</a></dt>
+      <dd><p>The result of a file search call (<code>file_search_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFileSearchTool.html">InteractionFileSearchTool</a></dt>
+      <dd><p>The file search tool (<code>file_search</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFunctionCallStep.html">InteractionFunctionCallStep</a></dt>
+      <dd><p>A function call requested by the model (<code>function_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFunctionResultDelta.html">InteractionFunctionResultDelta</a></dt>
+      <dd><p>A function result delta (<code>function_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFunctionResultStep.html">InteractionFunctionResultStep</a></dt>
+      <dd><p>The result of a function call, sent back by the client (<code>function_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionFunctionTool.html">InteractionFunctionTool</a></dt>
+      <dd><p>A function declaration (<code>function</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGenerationConfig.html">InteractionGenerationConfig</a></dt>
+      <dd><p>Generation parameters for model interactions (<code>generation_config</code>). Not allowed together with an agent.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsCallDelta.html">InteractionGoogleMapsCallDelta</a></dt>
+      <dd><p>A Google Maps call delta (<code>google_maps_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsCallStep.html">InteractionGoogleMapsCallStep</a></dt>
+      <dd><p>A Google Maps call (<code>google_maps_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsPlace.html">InteractionGoogleMapsPlace</a></dt>
+      <dd><p>A place returned by Google Maps.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsResult.html">InteractionGoogleMapsResult</a></dt>
+      <dd><p>One Google Maps result.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsResultDelta.html">InteractionGoogleMapsResultDelta</a></dt>
+      <dd><p>A Google Maps result delta (<code>google_maps_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsResultStep.html">InteractionGoogleMapsResultStep</a></dt>
+      <dd><p>The result of a Google Maps call (<code>google_maps_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleMapsTool.html">InteractionGoogleMapsTool</a></dt>
+      <dd><p>The Google Maps grounding tool (<code>google_maps</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchCallDelta.html">InteractionGoogleSearchCallDelta</a></dt>
+      <dd><p>A Google Search call delta (<code>google_search_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchCallStep.html">InteractionGoogleSearchCallStep</a></dt>
+      <dd><p>A Google Search call (<code>google_search_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchResult.html">InteractionGoogleSearchResult</a></dt>
+      <dd><p>One Google Search result.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchResultDelta.html">InteractionGoogleSearchResultDelta</a></dt>
+      <dd><p>A Google Search result delta (<code>google_search_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchResultStep.html">InteractionGoogleSearchResultStep</a></dt>
+      <dd><p>The result of a Google Search call (<code>google_search_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGoogleSearchTool.html">InteractionGoogleSearchTool</a></dt>
+      <dd><p>The Google Search grounding tool (<code>google_search</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionGroundingToolCount.html">InteractionGroundingToolCount</a></dt>
+      <dd><p>Usage count of a grounding tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionImageConfig.html">InteractionImageConfig</a></dt>
+      <dd><p>Image generation configuration (deprecated in the API).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionImageContent.html">InteractionImageContent</a></dt>
+      <dd><p>An image content block.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionImageDelta.html">InteractionImageDelta</a></dt>
+      <dd><p>An image delta (<code>image</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionImageResponseFormat.html">InteractionImageResponseFormat</a></dt>
+      <dd><p>Image output format (<code>type: image</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionInput.html">InteractionInput</a></dt>
+      <dd><p>The input of an interaction: a string, a single content block, a list of content blocks, or a list of steps
+(for example the previous turns plus function results).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMcpServerTool.html">InteractionMcpServerTool</a></dt>
+      <dd><p>A remote MCP server whose tools the model may call (<code>mcp_server</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMcpServerToolCallDelta.html">InteractionMcpServerToolCallDelta</a></dt>
+      <dd><p>An MCP server tool call delta (<code>mcp_server_tool_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMcpServerToolCallStep.html">InteractionMcpServerToolCallStep</a></dt>
+      <dd><p>A call to a tool of a remote MCP server (<code>mcp_server_tool_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMcpServerToolResultDelta.html">InteractionMcpServerToolResultDelta</a></dt>
+      <dd><p>An MCP server tool result delta (<code>mcp_server_tool_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMcpServerToolResultStep.html">InteractionMcpServerToolResultStep</a></dt>
+      <dd><p>The result of an MCP server tool call (<code>mcp_server_tool_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMediaContent.html">InteractionMediaContent</a></dt>
+      <dd><p>Base class for media content blocks (image, audio, video, document), which carry either inline base64
+<a class="xref" href="GenerativeAI.Types.InteractionMediaContent.html#GenerativeAI_Types_InteractionMediaContent_Data">Data</a> or a <a class="xref" href="GenerativeAI.Types.InteractionMediaContent.html#GenerativeAI_Types_InteractionMediaContent_Uri">Uri</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionMediaDelta.html">InteractionMediaDelta</a></dt>
+      <dd><p>Base class for media deltas (image, audio, video, document).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionModalities.html">InteractionModalities</a></dt>
+      <dd><p>Known values for response modalities (<code>response_modalities</code>, <a class="xref" href="GenerativeAI.Types.InteractionModalityTokens.html#GenerativeAI_Types_InteractionModalityTokens_Modality">Modality</a>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionModalityTokens.html">InteractionModalityTokens</a></dt>
+      <dd><p>Token count for one modality.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionModelOutputStep.html">InteractionModelOutputStep</a></dt>
+      <dd><p>Model output (<code>model_output</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionModels.html">InteractionModels</a></dt>
+      <dd><p>Model identifiers listed by the Interactions API <code>Model</code> enum (python-genai). The API also accepts other model IDs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionPlaceCitation.html">InteractionPlaceCitation</a></dt>
+      <dd><p>A place citation from Google Maps grounding (<code>place_citation</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionProcessingCallDelta.html">InteractionProcessingCallDelta</a></dt>
+      <dd><p>A processing call delta (<code>processing_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionProcessingCallStep.html">InteractionProcessingCallStep</a></dt>
+      <dd><p>A processing call, e.g. media processing (<code>processing_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionProcessingResultDelta.html">InteractionProcessingResultDelta</a></dt>
+      <dd><p>A processing result delta (<code>processing_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionProcessingResultStep.html">InteractionProcessingResultStep</a></dt>
+      <dd><p>The result of a processing call (<code>processing_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionQueryArguments.html">InteractionQueryArguments</a></dt>
+      <dd><p>Query arguments shared by the Google Search, Google Maps and Retrieval calls.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionResponseFormat.html">InteractionResponseFormat</a></dt>
+      <dd><p>Requested output format (<code>response_format</code>), discriminated by <code>type</code>: text (structured output),
+image, audio or video. Formats this SDK does not know are kept as <a class="xref" href="GenerativeAI.Types.UnknownInteractionResponseFormat.html">UnknownInteractionResponseFormat</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionResultStep.html">InteractionResultStep</a></dt>
+      <dd><p>Base class for tool result steps, which reference the call by <a class="xref" href="GenerativeAI.Types.InteractionResultStep.html#GenerativeAI_Types_InteractionResultStep_CallId">CallId</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRetrievalCallDelta.html">InteractionRetrievalCallDelta</a></dt>
+      <dd><p>A retrieval call delta (<code>retrieval_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRetrievalCallStep.html">InteractionRetrievalCallStep</a></dt>
+      <dd><p>A retrieval call (<code>retrieval_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRetrievalResultDelta.html">InteractionRetrievalResultDelta</a></dt>
+      <dd><p>A retrieval result delta (<code>retrieval_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRetrievalResultStep.html">InteractionRetrievalResultStep</a></dt>
+      <dd><p>The result of a retrieval call (<code>retrieval_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRetrievalTool.html">InteractionRetrievalTool</a></dt>
+      <dd><p>The retrieval tool (<code>retrieval</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionReviewSnippet.html">InteractionReviewSnippet</a></dt>
+      <dd><p>A Google Maps review snippet.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionRpcStatus.html">InteractionRpcStatus</a></dt>
+      <dd><p>A <code>google.rpc.Status</code> error.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionSafetySetting.html">InteractionSafetySetting</a></dt>
+      <dd><p>A safety setting for an interaction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionServiceTiers.html">InteractionServiceTiers</a></dt>
+      <dd><p>Known values for the <code>service_tier</code> field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionSpeechAnnotation.html">InteractionSpeechAnnotation</a></dt>
+      <dd><p>Speech synthesis metadata for a text segment (<code>speech_metadata</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionSseEvent.html">InteractionSseEvent</a></dt>
+      <dd><p>A Server-Sent Event of a streamed interaction, discriminated by <code>event_type</code>. Unknown event types are
+read as <a class="xref" href="GenerativeAI.Types.UnknownInteractionSseEvent.html">UnknownInteractionSseEvent</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStatusUpdateEvent.html">InteractionStatusUpdateEvent</a></dt>
+      <dd><p>The interaction status changed (<code>interaction.status_update</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStatuses.html">InteractionStatuses</a></dt>
+      <dd><p>Known values of <a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_Status">Status</a>. The API may return values that are not listed here,
+so the status is exposed as a string.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStep.html">InteractionStep</a></dt>
+      <dd><p>A step of an interaction (user input, model output, thought, tool call or tool result), discriminated by
+<code>type</code>. Unknown step types are read as <a class="xref" href="GenerativeAI.Types.UnknownInteractionStep.html">UnknownInteractionStep</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepDeltaData.html">InteractionStepDeltaData</a></dt>
+      <dd><p>The payload of a <code>step.delta</code> event, discriminated by <code>type</code>. Unknown delta types are read as
+<a class="xref" href="GenerativeAI.Types.UnknownInteractionStepDeltaData.html">UnknownInteractionStepDeltaData</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepDeltaEvent.html">InteractionStepDeltaEvent</a></dt>
+      <dd><p>Incremental data for a step (<code>step.delta</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepDeltaMetadata.html">InteractionStepDeltaMetadata</a></dt>
+      <dd><p>Metadata accompanying a streamed delta.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepStartEvent.html">InteractionStepStartEvent</a></dt>
+      <dd><p>A step started (<code>step.start</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepStopEvent.html">InteractionStepStopEvent</a></dt>
+      <dd><p>A step finished (<code>step.stop</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStepTypes.html">InteractionStepTypes</a></dt>
+      <dd><p>Known values of the <code>type</code> discriminator of <a class="xref" href="GenerativeAI.Types.InteractionStep.html">InteractionStep</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTextAnnotationDelta.html">InteractionTextAnnotationDelta</a></dt>
+      <dd><p>Annotations for the text of the step (<code>text_annotation_delta</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTextContent.html">InteractionTextContent</a></dt>
+      <dd><p>A text content block.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTextDelta.html">InteractionTextDelta</a></dt>
+      <dd><p>A text delta (<code>text</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTextResponseFormat.html">InteractionTextResponseFormat</a></dt>
+      <dd><p>Text output format, e.g. JSON with a schema (<code>type: text</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionThinkingLevels.html">InteractionThinkingLevels</a></dt>
+      <dd><p>Known values for <a class="xref" href="GenerativeAI.Types.InteractionGenerationConfig.html#GenerativeAI_Types_InteractionGenerationConfig_ThinkingLevel">ThinkingLevel</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionThinkingSummaries.html">InteractionThinkingSummaries</a></dt>
+      <dd><p>Known values for the <code>thinking_summaries</code> field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionThoughtSignatureDelta.html">InteractionThoughtSignatureDelta</a></dt>
+      <dd><p>A thought signature (<code>thought_signature</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionThoughtStep.html">InteractionThoughtStep</a></dt>
+      <dd><p>A thought / reasoning step (<code>thought</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionThoughtSummaryDelta.html">InteractionThoughtSummaryDelta</a></dt>
+      <dd><p>A thought summary chunk (<code>thought_summary</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTool.html">InteractionTool</a></dt>
+      <dd><p>A tool the model may use during an interaction, discriminated by <code>type</code>.
+Unknown tool types are read as <a class="xref" href="GenerativeAI.Types.UnknownInteractionTool.html">UnknownInteractionTool</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionToolChoice.html">InteractionToolChoice</a></dt>
+      <dd><p>Tool choice: either a <a class="xref" href="GenerativeAI.Types.InteractionToolChoice.html#GenerativeAI_Types_InteractionToolChoice_Mode">Mode</a> string (see <a class="xref" href="GenerativeAI.Types.InteractionToolChoiceModes.html">InteractionToolChoiceModes</a>) or an
+<a class="xref" href="GenerativeAI.Types.InteractionToolChoice.html#GenerativeAI_Types_InteractionToolChoice_AllowedTools">AllowedTools</a> configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionToolChoiceModes.html">InteractionToolChoiceModes</a></dt>
+      <dd><p>Known values for the <code>mode</code> of <a class="xref" href="GenerativeAI.Types.InteractionToolChoice.html">InteractionToolChoice</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionToolTypes.html">InteractionToolTypes</a></dt>
+      <dd><p>Known values of the <code>type</code> discriminator of <a class="xref" href="GenerativeAI.Types.InteractionTool.html">InteractionTool</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionTranscriptionConfig.html">InteractionTranscriptionConfig</a></dt>
+      <dd><p>Speech recognition (transcription) configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlCitation.html">InteractionUrlCitation</a></dt>
+      <dd><p>A URL citation (<code>url_citation</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextArguments.html">InteractionUrlContextArguments</a></dt>
+      <dd><p>Arguments of a URL context call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextCallDelta.html">InteractionUrlContextCallDelta</a></dt>
+      <dd><p>A URL context call delta (<code>url_context_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextCallStep.html">InteractionUrlContextCallStep</a></dt>
+      <dd><p>A URL context call (<code>url_context_call</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextResult.html">InteractionUrlContextResult</a></dt>
+      <dd><p>One fetched URL of a URL context result.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextResultDelta.html">InteractionUrlContextResultDelta</a></dt>
+      <dd><p>A URL context result delta (<code>url_context_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextResultStep.html">InteractionUrlContextResultStep</a></dt>
+      <dd><p>The result of a URL context call (<code>url_context_result</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUrlContextTool.html">InteractionUrlContextTool</a></dt>
+      <dd><p>The URL context tool (<code>url_context</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUsage.html">InteractionUsage</a></dt>
+      <dd><p>Token usage of an interaction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionUserInputStep.html">InteractionUserInputStep</a></dt>
+      <dd><p>User input (<code>user_input</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionVertexAISearchConfig.html">InteractionVertexAISearchConfig</a></dt>
+      <dd><p>Vertex AI Search configuration for the retrieval tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionVideoConfig.html">InteractionVideoConfig</a></dt>
+      <dd><p>Video generation configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionVideoContent.html">InteractionVideoContent</a></dt>
+      <dd><p>A video content block (input for video understanding, or generated video output).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionVideoDelta.html">InteractionVideoDelta</a></dt>
+      <dd><p>A video delta (<code>video</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionVideoResponseFormat.html">InteractionVideoResponseFormat</a></dt>
+      <dd><p>Video output format (<code>type: video</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionWebhookConfig.html">InteractionWebhookConfig</a></dt>
+      <dd><p>Webhook configuration for an interaction.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionWordInfo.html">InteractionWordInfo</a></dt>
+      <dd><p>Word-level transcription information (<code>word_info</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionsSerializerContext.html">InteractionsSerializerContext</a></dt>
+      <dd><p>Source-generated JSON metadata for the Interactions API types. <a class="xref" href="GenerativeAI.Clients.InteractionsClient.html">InteractionsClient</a>
+puts it first in its resolver chain, so the Interactions types also work with Native AOT and trimming.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Interval.html">Interval</a></dt>
+      <dd><p>A time interval. Both ends are optional.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.JobError.html">JobError</a></dt>
+      <dd><p>Represents an error that occurred during job execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.JobStateConverter.html">JobStateConverter</a></dt>
+      <dd><p>JSON converter for JobState that handles both BATCH_STATE_* and JOB_STATE_* formats.
+Google AI uses BATCH_STATE_* which is converted to JOB_STATE_* for consistency.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LanguageAuto.html">LanguageAuto</a></dt>
+      <dd><p>Deprecated: Language auto-detection is now the default when <a class="xref" href="GenerativeAI.Types.AudioTranscriptionConfig.html#GenerativeAI_Types_AudioTranscriptionConfig_LanguageCodes">LanguageCodes</a> is omitted.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LanguageHints.html">LanguageHints</a></dt>
+      <dd><p>Deprecated: Use <a class="xref" href="GenerativeAI.Types.AudioTranscriptionConfig.html#GenerativeAI_Types_AudioTranscriptionConfig_LanguageCodes">LanguageCodes</a> instead.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LatLng.html">LatLng</a></dt>
+      <dd><p>An object that represents a latitude/longitude pair.
+This is expressed as a pair of doubles to represent degrees latitude and degrees longitude.
+Unless specified otherwise, this object must conform to the WGS84 standard.
+Values must be within normalized ranges.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListAgentsResponse.html">ListAgentsResponse</a></dt>
+      <dd><p>Response of <code>GET /agents</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListBatchJobsResponse.html">ListBatchJobsResponse</a></dt>
+      <dd><p>Response for the list batch jobs method.
+Contains a paginated list of batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListCachedContentsResponse.html">ListCachedContentsResponse</a></dt>
+      <dd><p>Response to listing cached contents.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListChunksResponse.html">ListChunksResponse</a></dt>
+      <dd><p>Response from <code>chunks.list</code> containing a paginated list of <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>.
+The <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>s are sorted by ascending <code>chunk.create_time</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListCorporaResponse.html">ListCorporaResponse</a></dt>
+      <dd><p>Represents a list corpora response.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListCredentialsResponse.html">ListCredentialsResponse</a></dt>
+      <dd><p>Response of <code>GET /credentials</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListDocumentsResponse.html">ListDocumentsResponse</a></dt>
+      <dd><p>Response from <code>documents.list</code> containing a paginated list of <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>.
+The <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>s are sorted by ascending <code>document.create_time</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListEnvironmentFilesResponse.html">ListEnvironmentFilesResponse</a></dt>
+      <dd><p>Response of <code>GET /environments/{environment}/files/{path}</code> (and of a file upload).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListEnvironmentsResponse.html">ListEnvironmentsResponse</a></dt>
+      <dd><p>Response of <code>GET /environments</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListFileSearchDocumentsResponse.html">ListFileSearchDocumentsResponse</a></dt>
+      <dd><p>Response of <code>fileSearchStores.documents.list</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListFileSearchStoresResponse.html">ListFileSearchStoresResponse</a></dt>
+      <dd><p>Response of <code>fileSearchStores.list</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListFilesResponse.html">ListFilesResponse</a></dt>
+      <dd><p>Response to list files.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListModelsResponse.html">ListModelsResponse</a></dt>
+      <dd><p>Response to list models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListPermissionsResponse.html">ListPermissionsResponse</a></dt>
+      <dd><p>Response from ListPermissions containing a paginated list of permissions.
+<a href="https://ai.google.dev/api/semantic-retrieval/permissions#response-body_1">See Official API Documentation</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListTriggerExecutionsResponse.html">ListTriggerExecutionsResponse</a></dt>
+      <dd><p>Response of <code>GET /triggers/{id}/executions</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListTriggersResponse.html">ListTriggersResponse</a></dt>
+      <dd><p>Response of <code>GET /triggers</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListTunedModelsResponse.html">ListTunedModelsResponse</a></dt>
+      <dd><p>Response from <code>tunedModels.list</code> containing a paginated list of Models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListTuningJobsResponse.html">ListTuningJobsResponse</a></dt>
+      <dd><p>Response for the list tuning jobs method.
+Contains a paginated list of tuning jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListVoicesOptions.html">ListVoicesOptions</a></dt>
+      <dd><p>Filters of <code>GET /voices</code>. Each list filter matches any of its values (case-insensitive).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ListVoicesResponse.html">ListVoicesResponse</a></dt>
+      <dd><p>Response of <code>GET /voices</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientContent.html">LiveClientContent</a></dt>
+      <dd><p>Incremental update of the current conversation delivered from the client. All of the content here is unconditionally appended to the conversation history and used as part of the prompt to the model to generate content.
+A message here will interrupt any current model generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientContextUpdate.html">LiveClientContextUpdate</a></dt>
+      <dd><p>Updates to the context of the current live session.
+Only fields that are set will be updated. Updates are guaranteed to be processed in order with the rest of the inputs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientMessage.html">LiveClientMessage</a></dt>
+      <dd><p>Represents the payload for a bidirectional client interaction.
+This class is used to encapsulate data such as the setup, client content, real-time input,
+and tool responses that are involved in bidirectional communication.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientRealtimeInput.html">LiveClientRealtimeInput</a></dt>
+      <dd><p>User input that is sent in real time.
+This is different from <a class="xref" href="GenerativeAI.Types.LiveClientContent.html">LiveClientContent</a> in a few ways:</p>
+<ul>
+<li>Can be sent continuously without interruption to model generation.</li>
+<li>If there is a need to mix data interleaved across the <a class="xref" href="GenerativeAI.Types.LiveClientContent.html">LiveClientContent</a> and the <a class="xref" href="GenerativeAI.Types.LiveClientRealtimeInput.html">LiveClientRealtimeInput</a>, the server attempts to optimize for best response, but there are no guarantees.</li>
+<li>End of turn is not explicitly specified, but is rather derived from user activity (for example, end of speech).</li>
+<li>Even before the end of turn, the data is processed incrementally to optimize for a fast start of the response from the model.</li>
+<li>Is always direct user input that is sent in real time. Can be sent continuously without interruptions. The model automatically detects the beginning and the end of user speech and starts or terminates streaming the response accordingly. Data is processed incrementally as it arrives, minimizing latency.</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientSetup.html">LiveClientSetup</a></dt>
+      <dd><p>Message to be sent in the first and only first client message. Contains configuration that will apply for the duration of the streaming session.
+Clients should wait for a <a class="xref" href="GenerativeAI.Types.LiveServerSetupComplete.html">LiveServerSetupComplete</a> message before sending any additional messages.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveClientToolResponse.html">LiveClientToolResponse</a></dt>
+      <dd><p>Client generated response to a <a class="xref" href="GenerativeAI.Types.LiveServerToolCall.html">LiveServerToolCall</a> received from the server. Individual <a class="xref" href="GenerativeAI.Types.FunctionResponse.html">FunctionResponse</a> objects are matched to the respective <a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a> objects by the <code>id</code> field.
+Note that in the unary and server-streaming GenerateContent APIs function calling happens by exchanging the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> parts, while in the bidi GenerateContent APIs function calling happens over these dedicated set of messages.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicClientContent.html">LiveMusicClientContent</a></dt>
+      <dd><p>User input to start or steer the music.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicClientMessage.html">LiveMusicClientMessage</a></dt>
+      <dd><p>Messages sent by the client in the LiveMusicClientMessage call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicClientSetup.html">LiveMusicClientSetup</a></dt>
+      <dd><p>Message to be sent by the system when connecting to the API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicConnectParameters.html">LiveMusicConnectParameters</a></dt>
+      <dd><p>Parameters for connecting to the live API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicFilteredPrompt.html">LiveMusicFilteredPrompt</a></dt>
+      <dd><p>A prompt that was filtered with the reason.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicGenerationConfig.html">LiveMusicGenerationConfig</a></dt>
+      <dd><p>Configuration for music generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicServerContent.html">LiveMusicServerContent</a></dt>
+      <dd><p>Server update generated by the model in response to client messages.
+Content is generated as quickly as possible, and not in real time.
+Clients may choose to buffer and play it out in real time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicServerMessage.html">LiveMusicServerMessage</a></dt>
+      <dd><p>Response message for the LiveMusicClientMessage call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicServerSetupComplete.html">LiveMusicServerSetupComplete</a></dt>
+      <dd><p>Sent in response to a <code>LiveMusicClientSetup</code> message from the client.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicSetConfigParameters.html">LiveMusicSetConfigParameters</a></dt>
+      <dd><p>Parameters for setting config for the live music API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicSetWeightedPromptsParameters.html">LiveMusicSetWeightedPromptsParameters</a></dt>
+      <dd><p>Parameters for setting weighted prompts for the live music API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicSourceMetadata.html">LiveMusicSourceMetadata</a></dt>
+      <dd><p>Prompts and config used for generating this audio chunk.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerContent.html">LiveServerContent</a></dt>
+      <dd><p>Incremental server update generated by the model in response to client messages.
+Content is generated as quickly as possible, and not in real time. Clients may choose to buffer and play it out in real time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerGoAway.html">LiveServerGoAway</a></dt>
+      <dd><p>Server notice that the connection will be closed soon. The client should
+reconnect (for example using a session resumption handle) before <a class="xref" href="GenerativeAI.Types.LiveServerGoAway.html#GenerativeAI_Types_LiveServerGoAway_TimeLeft">TimeLeft</a> elapses.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerMessage.html">LiveServerMessage</a></dt>
+      <dd><p>Represents a bidirectional response payload containing various types of server responses in a multimodal live session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerSessionResumptionUpdate.html">LiveServerSessionResumptionUpdate</a></dt>
+      <dd><p>Update of the session resumption state. Only sent if <a class="xref" href="GenerativeAI.Types.SessionResumptionConfig.html">SessionResumptionConfig</a> was set in the setup message.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerSetupComplete.html">LiveServerSetupComplete</a></dt>
+      <dd><p>Sent in response to a <a class="xref" href="GenerativeAI.Types.LiveClientSetup.html">LiveClientSetup</a> message from the client.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerToolCall.html">LiveServerToolCall</a></dt>
+      <dd><p>Request for the client to execute the <a class="xref" href="GenerativeAI.Types.FunctionCall.html">FunctionCall</a> and return the responses with the matching <code>id</code>s.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveServerToolCallCancellation.html">LiveServerToolCallCancellation</a></dt>
+      <dd><p>Notification for the client that a previously issued <a class="xref" href="GenerativeAI.Types.LiveServerToolCall.html">LiveServerToolCall</a> with the specified <code>id</code>s should have been not executed and should be cancelled. If there were side-effects to those tool calls, clients may attempt to undo the tool calls. This message occurs only in cases where the clients interrupt server turns.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LogprobsCandidate.html">LogprobsCandidate</a></dt>
+      <dd><p>Candidate for the logprobs token and score.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LogprobsResult.html">LogprobsResult</a></dt>
+      <dd><p>Logprobs Result.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ManualRoutingMode.html">ManualRoutingMode</a></dt>
+      <dd><p>When manual routing is set, the specified model will be used directly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.McpServer.html">McpServer</a></dt>
+      <dd><p>A remote MCP server that the model calls server-side.
+For client-side MCP tools see <code>GenerativeAI.Tools.Mcp.McpTool</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MetadataFilter.html">MetadataFilter</a></dt>
+      <dd><p>User provided filter to limit retrieval based on <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a> or <a class="xref" href="GenerativeAI.Types.Document.html">Document</a> level metadata
+values. Example (genre = drama OR genre = action):
+key = &quot;document.custom_metadata.genre&quot;
+conditions = [{stringValue = &quot;drama&quot;, operation = EQUAL}, {stringValue = &quot;action&quot;, operation = EQUAL}]</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Metric.html">Metric</a></dt>
+      <dd><p>The metric used for evaluation during model tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModalityTokenCount.html">ModalityTokenCount</a></dt>
+      <dd><p>Represents token counting info for a single modality.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Model.html">Model</a></dt>
+      <dd><p>Information about a Generative Language Model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModelArmorConfig.html">ModelArmorConfig</a></dt>
+      <dd><p>Model Armor configuration for sanitizing prompts and responses. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModelSelectionConfig.html">ModelSelectionConfig</a></dt>
+      <dd><p>Config for model selection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModelStatus.html">ModelStatus</a></dt>
+      <dd><p>Lifecycle status of the model that served a request, including deprecation and retirement information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MultiSpeakerVoiceConfig.html">MultiSpeakerVoiceConfig</a></dt>
+      <dd><p>The configuration for the multi-speaker setup.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.NoulCriteria.html">NoulCriteria</a></dt>
+      <dd><p>Descriptions of the outcomes of a <a class="xref" href="GenerativeAI.Types.NoulDecisionQuestion.html">NoulDecisionQuestion</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.NoulDecisionAnswer.html">NoulDecisionAnswer</a></dt>
+      <dd><p>The answer to a <a class="xref" href="GenerativeAI.Types.NoulDecisionQuestion.html">NoulDecisionQuestion</a> (<code>noul</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.NoulDecisionQuestion.html">NoulDecisionQuestion</a></dt>
+      <dd><p>A yes/no (&quot;NOUL&quot;) question (<code>noul</code>), answered with a probability.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.OAuth2CredentialConfig.html">OAuth2CredentialConfig</a></dt>
+      <dd><p>OAuth 2.0 refresh-token credentials (<code>oauth2</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.OutputConfig.html">OutputConfig</a></dt>
+      <dd><p>Config for evaluation output during model tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.OutputOptions.html">OutputOptions</a></dt>
+      <dd><p>Represents the output options for the generated image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Part.html">Part</a></dt>
+      <dd><p>A datatype containing media that is part of a multi-part <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> message.
+A <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> consists of data which has an associated datatype.<br>
+A <a class="xref" href="GenerativeAI.Types.Part.html">Part</a> must have a fixed IANA MIME type identifying the type and subtype of the media
+if the <a class="xref" href="GenerativeAI.Types.Part.html#GenerativeAI_Types_Part_InlineData">InlineData</a> field is filled with raw bytes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PartMediaResolution.html">PartMediaResolution</a></dt>
+      <dd><p>Media resolution for a single part. Overrides <a class="xref" href="GenerativeAI.Types.GenerationConfig.html#GenerativeAI_Types_GenerationConfig_MediaResolution">MediaResolution</a> for that part.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PartialArg.html">PartialArg</a></dt>
+      <dd><p>A streamed piece of a function call's arguments. Vertex AI only; enabled with
+<a class="xref" href="GenerativeAI.Types.FunctionCallingConfig.html#GenerativeAI_Types_FunctionCallingConfig_StreamFunctionCallArguments">StreamFunctionCallArguments</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PartnerModelTuningSpec.html">PartnerModelTuningSpec</a></dt>
+      <dd><p>Tuning specification for open-source and third-party Partner models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Permission.html">Permission</a></dt>
+      <dd><p>Permission resource grants user, group or the rest of the world access to the PaLM API resource (e.g. a tuned model, corpus).</p>
+<p>A role is a collection of permitted operations that allows users to perform specific actions on PaLM API resources.
+To make them available to users, groups, or service accounts, you assign roles.
+When you assign a role, you grant permissions that the role contains.</p>
+<p>There are three concentric roles. Each role is a superset of the previous role's permitted operations:</p>
+<ul>
+<li>reader can use the resource (<a class="xref" href="GenerativeAI.Types.TunedModel.html">TunedModel</a>, <a class="xref" href="GenerativeAI.Types.Corpus.html">Corpus</a>) for inference</li>
+<li>writer has reader's permissions and additionally can edit and share</li>
+<li>owner has writer's permissions and additionally can delete</li>
+</ul>
+<a href="https://ai.google.dev/api/semantic-retrieval/permissions#Permission">See Official API Documentation</a>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PingWebhookRequest.html">PingWebhookRequest</a></dt>
+      <dd><p>Request body of <code>POST /webhooks/{id}:ping</code>. Currently has no fields.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PreTunedModel.html">PreTunedModel</a></dt>
+      <dd><p>A pre-tuned model for continuous tuning.
+Used as a base for further fine-tuning iterations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PrebuiltVoiceConfig.html">PrebuiltVoiceConfig</a></dt>
+      <dd><p>The configuration for the prebuilt speaker to use.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PreferenceOptimizationHyperParameters.html">PreferenceOptimizationHyperParameters</a></dt>
+      <dd><p>Hyperparameters for preference optimization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PreferenceOptimizationSpec.html">PreferenceOptimizationSpec</a></dt>
+      <dd><p>Tuning spec for preference optimization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ProactivityConfig.html">ProactivityConfig</a></dt>
+      <dd><p>Configures the proactivity of the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PromptFeedback.html">PromptFeedback</a></dt>
+      <dd><p>A set of the feedback metadata the prompt specified in <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html#GenerativeAI_Types_GenerateContentRequest_Contents">Contents</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PromptedVoice.html">PromptedVoice</a></dt>
+      <dd><p>Parameters of a voice designed from a text prompt.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.QueryCorpusRequest.html">QueryCorpusRequest</a></dt>
+      <dd><p>Represents a request to query a corpus.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.QueryCorpusResponse.html">QueryCorpusResponse</a></dt>
+      <dd><p>Represents the response from querying a corpus.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.QueryDocumentRequest.html">QueryDocumentRequest</a></dt>
+      <dd><p>Request body for performing semantic search over a <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.QueryDocumentResponse.html">QueryDocumentResponse</a></dt>
+      <dd><p>Response from <code>documents.query</code> containing a list of relevant chunks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RagChunk.html">RagChunk</a></dt>
+      <dd><p>A RagChunk includes the content of a chunk of a RagFile, and associated metadata.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RagChunkPageSpan.html">RagChunkPageSpan</a></dt>
+      <dd><p>Represents where the chunk starts and ends in the document.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RealtimeInputConfig.html">RealtimeInputConfig</a></dt>
+      <dd><p>Configures the realtime input behavior in <a class="xref" href="GenerativeAI.Types.LiveClientSetup.html#GenerativeAI_Types_LiveClientSetup_RealtimeInputConfig">RealtimeInputConfig</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RegisterFilesRequest.html">RegisterFilesRequest</a></dt>
+      <dd><p>Request body of <code>files:register</code>, which registers Google Cloud Storage files with the Gemini API
+Files service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RegisterFilesResponse.html">RegisterFilesResponse</a></dt>
+      <dd><p>Response of <code>files:register</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningAutoraterScorer.html">ReinforcementTuningAutoraterScorer</a></dt>
+      <dd><p>Scores parsed responses with an autorater model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningAutoraterScorerExactMatchScorer.html">ReinforcementTuningAutoraterScorerExactMatchScorer</a></dt>
+      <dd><p>Scores autorater responses by exact string match.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningAutoraterScorerParsedResponseConversionScorer.html">ReinforcementTuningAutoraterScorerParsedResponseConversionScorer</a></dt>
+      <dd><p>Scores autorater responses by converting the parsed response to a float reward clipped to <code>[-1, 1]</code>.
+This message has no fields; set an instance to select this scorer.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningCloudRunRewardScorer.html">ReinforcementTuningCloudRunRewardScorer</a></dt>
+      <dd><p>Scores parsed responses by calling a Cloud Run service.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningCodeExecutionRewardScorer.html">ReinforcementTuningCodeExecutionRewardScorer</a></dt>
+      <dd><p>Scores parsed responses by running a Python code snippet.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningExample.html">ReinforcementTuningExample</a></dt>
+      <dd><p>An example (prompt) used to validate a reinforcement tuning reward configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningHyperParameters.html">ReinforcementTuningHyperParameters</a></dt>
+      <dd><p>Hyperparameters for reinforcement tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningParseResponseConfig.html">ReinforcementTuningParseResponseConfig</a></dt>
+      <dd><p>Defines how a response is parsed before scoring.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningRewardInfo.html">ReinforcementTuningRewardInfo</a></dt>
+      <dd><p>The reward info for a single reward function.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningSpec.html">ReinforcementTuningSpec</a></dt>
+      <dd><p>Tuning spec for reinforcement tuning (Vertex AI only).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningStringMatchRewardScorer.html">ReinforcementTuningStringMatchRewardScorer</a></dt>
+      <dd><p>Scores parsed responses by simple string matching.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningStringMatchRewardScorerJsonMatchExpression.html">ReinforcementTuningStringMatchRewardScorerJsonMatchExpression</a></dt>
+      <dd><p>Parses the response as JSON, finds the first-level value for <a class="xref" href="GenerativeAI.Types.ReinforcementTuningStringMatchRewardScorerJsonMatchExpression.html#GenerativeAI_Types_ReinforcementTuningStringMatchRewardScorerJsonMatchExpression_KeyName">KeyName</a> and evaluates it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningStringMatchRewardScorerStringMatchExpression.html">ReinforcementTuningStringMatchRewardScorerStringMatchExpression</a></dt>
+      <dd><p>Evaluates a parsed response using a match operation against an expression.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RelevantChunk.html">RelevantChunk</a></dt>
+      <dd><p>The information for a chunk relevant to a query.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RemoteFile.html">RemoteFile</a></dt>
+      <dd><p>A file uploaded to the API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReplicatedVoice.html">ReplicatedVoice</a></dt>
+      <dd><p>Parameters of a voice replicated from recorded audio.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReplicatedVoiceConfig.html">ReplicatedVoiceConfig</a></dt>
+      <dd><p>Configuration for speaking with a voice replicated from an audio sample.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RequestsWrapper.html">RequestsWrapper</a></dt>
+      <dd><p>Wrapper for requests array (Google AI nested structure).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ResponseFormat.html">ResponseFormat</a></dt>
+      <dd><p>Output format for one response modality. Set only the member for the modality it applies to. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RetrievalConfig.html">RetrievalConfig</a></dt>
+      <dd><p>Retrieval config for tool configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RetrievalMetadata.html">RetrievalMetadata</a></dt>
+      <dd><p>Metadata related to retrieval in the grounding flow.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RotateSigningSecretRequest.html">RotateSigningSecretRequest</a></dt>
+      <dd><p>Request body of <code>POST /webhooks/{id}:rotateSigningSecret</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.RoutingConfig.html">RoutingConfig</a></dt>
+      <dd><p>The configuration for routing the request to a specific model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SafetyAttributes.html">SafetyAttributes</a></dt>
+      <dd><p>Represents the safety attributes of a generated image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SafetyRating.html">SafetyRating</a></dt>
+      <dd><p>Safety rating for a piece of content.
+The safety rating contains the category of harm and the harm probability level in that category
+for a piece of content. Content is classified for safety across a number of harm categories
+and the probability of the harm classification is included here.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SafetySetting.html">SafetySetting</a></dt>
+      <dd><p>Safety setting, affecting the safety-blocking behavior.
+Passing a safety setting for a category changes the allowed probability that content is blocked.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Schema.html">Schema</a></dt>
+      <dd><p>The <a class="xref" href="GenerativeAI.Types.Schema.html">Schema</a> object allows the definition of input and output data types.
+These types can be objects, but also primitives and arrays. Represents a select
+subset of an <a href="https://spec.openapis.org/oas/v3.0.3#schema">OpenAPI 3.0 schema object</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SchemaSourceGenerationContext.html">SchemaSourceGenerationContext</a></dt>
+      <dd><p>The SchemaSourceGenerationContext class is a custom
+source generation context for improving the performance of JSON serialization and deserialization.
+This is achieved by leveraging the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonsourcegenerationoptionsattribute">JsonSourceGenerationOptionsAttribute</a>
+to configure source generation options and define types for serialization at compile-time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ScoreDecisionAnswer.html">ScoreDecisionAnswer</a></dt>
+      <dd><p>The answer to a <a class="xref" href="GenerativeAI.Types.ScoreDecisionQuestion.html">ScoreDecisionQuestion</a> (<code>score</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ScoreDecisionQuestion.html">ScoreDecisionQuestion</a></dt>
+      <dd><p>A scoring question (<code>score</code>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SearchEntryPoint.html">SearchEntryPoint</a></dt>
+      <dd><p>Google search entry point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SearchTypes.html">SearchTypes</a></dt>
+      <dd><p>The kinds of Google Search the model may use. Leave unset for web search only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Segment.html">Segment</a></dt>
+      <dd><p>Segment of the content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SemanticRetrieverChunk.html">SemanticRetrieverChunk</a></dt>
+      <dd><p>Identifier for a <a class="xref" href="GenerativeAI.Types.SemanticRetrieverChunk.html#GenerativeAI_Types_SemanticRetrieverChunk_Chunk">Chunk</a> retrieved via Semantic Retriever specified in the
+<a class="xref" href="GenerativeAI.Types.GenerateAnswerRequest.html">GenerateAnswerRequest</a> using <a class="xref" href="GenerativeAI.Types.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SemanticRetrieverConfig.html">SemanticRetrieverConfig</a></dt>
+      <dd><p>Configuration for retrieving grounding content from a <a class="xref" href="GenerativeAI.Types.Corpus.html">Corpus</a> or <a class="xref" href="GenerativeAI.Types.Document.html">Document</a>
+created using the Semantic Retriever API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ServiceTiers.html">ServiceTiers</a></dt>
+      <dd><p>Values for <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html#GenerativeAI_Types_GenerateContentRequest_ServiceTier">ServiceTier</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SessionResumptionConfig.html">SessionResumptionConfig</a></dt>
+      <dd><p>Configuration of session resumption mechanism.
+Included in LiveConnectConfig.session_resumption. If included server
+will send LiveServerSessionResumptionUpdate messages.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SigningSecret.html">SigningSecret</a></dt>
+      <dd><p>Represents a signing secret used to verify webhook payloads.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SingleEmbedContentResponse.html">SingleEmbedContentResponse</a></dt>
+      <dd><p>Response for a single embedding content request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SingleReinforcementTuningRewardConfig.html">SingleReinforcementTuningRewardConfig</a></dt>
+      <dd><p>A single reward function configuration for reinforcement tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SlidingWindow.html">SlidingWindow</a></dt>
+      <dd><p>Context window will be truncated by keeping only suffix of it.
+Context window will always be cut at start of USER role turn. System
+instructions and LiveClientSetup.prefix_turns will not be
+subject to the sliding window mechanism, they will always stay at the
+beginning of context window.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SpeakerVoiceConfig.html">SpeakerVoiceConfig</a></dt>
+      <dd><p>The configuration for a single speaker in a multi speaker setup.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SpeechConfig.html">SpeechConfig</a></dt>
+      <dd><p>The speech generation config.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SpeechMetadata.html">SpeechMetadata</a></dt>
+      <dd><p>Speaker and style metadata for speech generated in a part.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Status.html">Status</a></dt>
+      <dd><p>The <code>Status</code> type defines a logical error model that is suitable for different
+programming environments, including REST APIs and RPC APIs. It is used by
+<a href="https://github.com/grpc">gRPC</a>. Each <code>Status</code> message contains
+three pieces of data: error code, error message, and error details.
+You can find out more about this error model and how to work with it in the
+<a href="https://cloud.google.com/apis/design/errors">API Design Guide</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.StreamableHttpTransport.html">StreamableHttpTransport</a></dt>
+      <dd><p>Streamable HTTP transport settings for a server-side MCP server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.StringList.html">StringList</a></dt>
+      <dd><p>User provided string values assigned to a single metadata key.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SupervisedHyperParameters.html">SupervisedHyperParameters</a></dt>
+      <dd><p>Hyperparameters for Supervised Fine-Tuning (SFT).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SupervisedTuningDataStats.html">SupervisedTuningDataStats</a></dt>
+      <dd><p>Tuning data statistics for Supervised Fine-Tuning.
+Provides comprehensive analytics about the training dataset.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SupervisedTuningDatasetDistribution.html">SupervisedTuningDatasetDistribution</a></dt>
+      <dd><p>Dataset distribution for Supervised Tuning.
+Provides statistical analysis of the training dataset.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SupervisedTuningDatasetDistributionDatasetBucket.html">SupervisedTuningDatasetDistributionDatasetBucket</a></dt>
+      <dd><p>Dataset bucket used to create a histogram for the distribution given a population of values.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SupervisedTuningSpec.html">SupervisedTuningSpec</a></dt>
+      <dd><p>Tuning specification for Supervised Fine-Tuning for first-party models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TextResponseFormat.html">TextResponseFormat</a></dt>
+      <dd><p>Format of text output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ThinkingConfig.html">ThinkingConfig</a></dt>
+      <dd><p>Config for thinking features.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Timestamp.html">Timestamp</a></dt>
+      <dd><p>A Timestamp represents a point in time independent of any time zone or calendar,
+represented as seconds and fractions of seconds at nanosecond resolution in UTC Epoch time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TimestampJsonConverter.html">TimestampJsonConverter</a></dt>
+      <dd><p>JSON converter for <a class="xref" href="GenerativeAI.Types.Timestamp.html">Timestamp</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TokensInfo.html">TokensInfo</a></dt>
+      <dd><p>Tokens info with a list of tokens and the corresponding list of token ids.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a></dt>
+      <dd><p>Tool details that the model may use to generate response.
+A <a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a> is a piece of code that enables the system to interact with external systems
+to perform an action, or set of actions, outside of knowledge and scope of the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolCall.html">ToolCall</a></dt>
+      <dd><p>A call to a server-side tool (for example Google Search or File Search) made by the model.
+Returned when <a class="xref" href="GenerativeAI.Types.ToolConfig.html#GenerativeAI_Types_ToolConfig_IncludeServerSideToolInvocations">IncludeServerSideToolInvocations</a> is true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolConfig.html">ToolConfig</a></dt>
+      <dd><p>The Tool configuration containing parameters for specifying <a class="xref" href="GenerativeAI.Types.Tool.html">Tool</a> use in the request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolExaAiSearch.html">ToolExaAiSearch</a></dt>
+      <dd><p>Exa AI web search tool. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolParallelAiSearch.html">ToolParallelAiSearch</a></dt>
+      <dd><p>Parallel AI web search tool. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolResponse.html">ToolResponse</a></dt>
+      <dd><p>The result of a server-side tool call.
+Returned when <a class="xref" href="GenerativeAI.Types.ToolConfig.html#GenerativeAI_Types_ToolConfig_IncludeServerSideToolInvocations">IncludeServerSideToolInvocations</a> is true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TopCandidates.html">TopCandidates</a></dt>
+      <dd><p>Candidates with top log probabilities at each decoding step.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Transcription.html">Transcription</a></dt>
+      <dd><p>Audio transcription in Server Content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TranslationConfig.html">TranslationConfig</a></dt>
+      <dd><p>Config for stream translation. Sent on the wire as <code>setup.generationConfig.translationConfig</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Trigger.html">Trigger</a></dt>
+      <dd><p>A trigger (<code>/triggers</code>): runs an agent interaction on a cron schedule.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TriggerExecution.html">TriggerExecution</a></dt>
+      <dd><p>A run of a <a class="xref" href="GenerativeAI.Types.Trigger.html">Trigger</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TriggerExecutionStatuses.html">TriggerExecutionStatuses</a></dt>
+      <dd><p>Known trigger execution statuses.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TriggerStatuses.html">TriggerStatuses</a></dt>
+      <dd><p>Known trigger statuses.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TunedModel.html">TunedModel</a></dt>
+      <dd><p>TunedModel for the Tuned Model of a Tuning Job.
+Represents the output model produced by a tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TunedModelCheckpoint.html">TunedModelCheckpoint</a></dt>
+      <dd><p>TunedModelCheckpoint for the Tuned Model of a Tuning Job.
+Represents a specific checkpoint during the tuning process.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TunedModelInfo.html">TunedModelInfo</a></dt>
+      <dd><p>Information about the tuned model from the base model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TunedModelSource.html">TunedModelSource</a></dt>
+      <dd><p>Tuned model as a source for training a new model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningDataStats.html">TuningDataStats</a></dt>
+      <dd><p>The tuning data statistics associated with the tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningDataset.html">TuningDataset</a></dt>
+      <dd><p>The training dataset of a tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningExample.html">TuningExample</a></dt>
+      <dd><p>A single example for tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningExamples.html">TuningExamples</a></dt>
+      <dd><p>A set of tuning examples. Can be training or validation data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a></dt>
+      <dd><p>Represents a model tuning job.
+A tuning job is used to fine-tune a base model with custom training data
+to create a specialized model tailored to specific tasks or domains.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningJobMetadata.html">TuningJobMetadata</a></dt>
+      <dd><p>Tuning job metadata.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningSerializerContext.html">TuningSerializerContext</a></dt>
+      <dd><p>Source-generated serialization metadata for the tuning types used by
+<a class="xref" href="GenerativeAI.Clients.TuningClient.html">TuningClient</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningSnapshot.html">TuningSnapshot</a></dt>
+      <dd><p>Record for a single tuning step.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningTask.html">TuningTask</a></dt>
+      <dd><p>Tuning tasks that create tuned models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningValidationDataset.html">TuningValidationDataset</a></dt>
+      <dd><p>The validation dataset of a tuning job (Vertex AI only).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TypesSerializerContext.html">TypesSerializerContext</a></dt>
+      <dd><p>JSON serializer context for GenerativeAI types, providing source-generated serialization metadata.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownCredentialConfig.html">UnknownCredentialConfig</a></dt>
+      <dd><p>A credential configuration whose <code>type</code> this SDK does not know; the raw JSON is kept and sent as is.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownDecisionAnswer.html">UnknownDecisionAnswer</a></dt>
+      <dd><p>An answer whose <code>type</code> this SDK does not know; the raw JSON is kept.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownDecisionQuestion.html">UnknownDecisionQuestion</a></dt>
+      <dd><p>A question whose <code>type</code> this SDK does not know; the raw JSON is kept.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionAgentConfig.html">UnknownInteractionAgentConfig</a></dt>
+      <dd><p>An agent configuration whose <code>type</code> this SDK does not know.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionAnnotation.html">UnknownInteractionAnnotation</a></dt>
+      <dd><p>An annotation whose <code>type</code> this SDK does not know.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionContent.html">UnknownInteractionContent</a></dt>
+      <dd><p>A content block whose <code>type</code> this SDK does not know. <a class="xref" href="GenerativeAI.Types.UnknownInteractionContent.html#GenerativeAI_Types_UnknownInteractionContent_Raw">Raw</a> keeps the original JSON and is
+written back unchanged.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionResponseFormat.html">UnknownInteractionResponseFormat</a></dt>
+      <dd><p>A response format this SDK does not know, or a free-form JSON object.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionSseEvent.html">UnknownInteractionSseEvent</a></dt>
+      <dd><p>An event whose <code>event_type</code> this SDK does not know.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionStep.html">UnknownInteractionStep</a></dt>
+      <dd><p>A step whose <code>type</code> this SDK does not know. <a class="xref" href="GenerativeAI.Types.UnknownInteractionStep.html#GenerativeAI_Types_UnknownInteractionStep_Raw">Raw</a> keeps the original JSON and is written back
+unchanged (for example when the step is passed back as input).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionStepDeltaData.html">UnknownInteractionStepDeltaData</a></dt>
+      <dd><p>A delta whose <code>type</code> this SDK does not know.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UnknownInteractionTool.html">UnknownInteractionTool</a></dt>
+      <dd><p>A tool whose <code>type</code> this SDK does not know.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UpdateChunkRequest.html">UpdateChunkRequest</a></dt>
+      <dd><p>Represents a request to update a chunk.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UpdateModelConfig.html">UpdateModelConfig</a></dt>
+      <dd><p>The fields to update on a (tuned) model, mirroring <code>UpdateModelConfig</code> of the google-genai SDK.
+Only the fields that are set are sent.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UpdateTriggerRequest.html">UpdateTriggerRequest</a></dt>
+      <dd><p>Request body of <code>PATCH /triggers/{id}</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UploadFileInformation.html">UploadFileInformation</a></dt>
+      <dd><p>Represents information about a file to be uploaded.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UploadFileRequest.html">UploadFileRequest</a></dt>
+      <dd><p>Represents a request to upload a local file in order to create a File resource.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UploadFileResponse.html">UploadFileResponse</a></dt>
+      <dd><p>Represents the response containing details about a file uploaded through the File API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UploadToFileSearchStoreConfig.html">UploadToFileSearchStoreConfig</a></dt>
+      <dd><p>Optional settings for uploading a file directly into a <a class="xref" href="GenerativeAI.Types.FileSearchStore.html">FileSearchStore</a>.
+Sent as the JSON metadata of the <code>uploadToFileSearchStore</code> request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UpscaleConfig.html">UpscaleConfig</a></dt>
+      <dd><p>Represents the Upscale configuration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UrlContext.html">UrlContext</a></dt>
+      <dd><p>Tool to support URL context retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UrlContextMetadata.html">UrlContextMetadata</a></dt>
+      <dd><p>Metadata related to url context retrieval tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UrlMetadata.html">UrlMetadata</a></dt>
+      <dd><p>Context for a single url retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UsageMetadata.html">UsageMetadata</a></dt>
+      <dd><p>Metadata on the generation request's token usage.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ValidateRewardRequest.html">ValidateRewardRequest</a></dt>
+      <dd><p>Request body of <code>tuningJobs:validateReinforcementTuningReward</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ValidateRewardResponse.html">ValidateRewardResponse</a></dt>
+      <dd><p>Response of <code>tuningJobs:validateReinforcementTuningReward</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VeoHyperParameters.html">VeoHyperParameters</a></dt>
+      <dd><p>Hyperparameters for Veo model tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VeoLoraTuningSpec.html">VeoLoraTuningSpec</a></dt>
+      <dd><p>Tuning spec for Veo LoRA tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VeoTuningSpec.html">VeoTuningSpec</a></dt>
+      <dd><p>Tuning specification for Veo video generation model tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexAIListBatchJobsResponse.html">VertexAIListBatchJobsResponse</a></dt>
+      <dd><p>Response for the list batch jobs method (Vertex AI wire format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexBatchEmbedContentsRequest.html">VertexBatchEmbedContentsRequest</a></dt>
+      <dd><p>Request body for the Vertex AI <code>batchEmbedContents</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexBatchRequest.html">VertexBatchRequest</a></dt>
+      <dd><p>Request for batch job creation (Vertex AI format).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbedContentConfig.html">VertexEmbedContentConfig</a></dt>
+      <dd><p>Embedding options sent in the Vertex AI <code>embedContent</code> request format.
+Built from <a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a> by the SDK; you normally do not create this directly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbedContentRequest.html">VertexEmbedContentRequest</a></dt>
+      <dd><p>Request body for the Vertex AI <code>embedContent</code> method, used by Gemini embedding models on Vertex AI.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbedContentResponse.html">VertexEmbedContentResponse</a></dt>
+      <dd><p>Response of the Vertex AI <code>embedContent</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbeddingInstance.html">VertexEmbeddingInstance</a></dt>
+      <dd><p>One text to embed with the Vertex AI <code>predict</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbeddingParameters.html">VertexEmbeddingParameters</a></dt>
+      <dd><p>Options for the Vertex AI embedding <code>predict</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbeddingPredictRequest.html">VertexEmbeddingPredictRequest</a></dt>
+      <dd><p>Request body for the Vertex AI <code>predict</code> method, used by text embedding models such as
+<code>text-embedding-005</code> and <code>textembedding-gecko</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbeddingPredictResponse.html">VertexEmbeddingPredictResponse</a></dt>
+      <dd><p>Response of the Vertex AI embedding <code>predict</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexEmbeddingPrediction.html">VertexEmbeddingPrediction</a></dt>
+      <dd><p>One prediction returned by the Vertex AI embedding <code>predict</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexGenerateVideosPayload.html">VertexGenerateVideosPayload</a></dt>
+      <dd><p>Internal representation of the payload for Vertex AI video generation requests.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexInputConfig.html">VertexInputConfig</a></dt>
+      <dd><p>Input configuration for Vertex AI batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexOutputConfig.html">VertexOutputConfig</a></dt>
+      <dd><p>Output configuration for Vertex AI batch jobs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexPredictEmbedding.html">VertexPredictEmbedding</a></dt>
+      <dd><p>An embedding returned by the Vertex AI embedding <code>predict</code> method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexPredictEmbeddingStatistics.html">VertexPredictEmbeddingStatistics</a></dt>
+      <dd><p>Input statistics returned by the Vertex AI embedding <code>predict</code> method (snake_case on the wire).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VertexRetrievalTool.html">VertexRetrievalTool</a></dt>
+      <dd><p>Represents a retrieval tool that can access data sources powered by Vertex AI Search or Vertex RAG store.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Video.html">Video</a></dt>
+      <dd><p>Represents a video resource, which can be referenced via a URI or contained as raw byte data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoGenerationMask.html">VideoGenerationMask</a></dt>
+      <dd><p>A mask for video generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoGenerationReferenceImage.html">VideoGenerationReferenceImage</a></dt>
+      <dd><p>A reference image for video generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoInstance.html">VideoInstance</a></dt>
+      <dd><p>Internal representation of a single instance within the Vertex AI payload.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoMetadata.html">VideoMetadata</a></dt>
+      <dd><p>Metadata for a video <code>File</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoMetadataResult.html">VideoMetadataResult</a></dt>
+      <dd><p>Metadata describes the input video content.
+Describes how the video in the Part should be used by the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoMetadataVideoGeneration.html">VideoMetadataVideoGeneration</a></dt>
+      <dd><p>Metadata describes the input video content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoParameters.html">VideoParameters</a></dt>
+      <dd><p>Internal representation of the parameters within the Vertex AI payload.
+Mirrors GenerateVideosConfig but ensures correct JsonPropertyNames for serialization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoResponseFormat.html">VideoResponseFormat</a></dt>
+      <dd><p>Format of video output.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VisionGenerativeModelResult.html">VisionGenerativeModelResult</a></dt>
+      <dd><p>Represents the result of a vision generative model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Voice.html">Voice</a></dt>
+      <dd><p>A voice: a custom voice created with <code>POST /voices</code> (designed from a prompt or replicated from audio) or a
+prebuilt system voice from Google's voice catalog (returned by <code>GET /voices</code>). Use its
+<a class="xref" href="GenerativeAI.Types.Voice.html#GenerativeAI_Types_Voice_Key">Key</a> / <a class="xref" href="GenerativeAI.Types.Voice.html#GenerativeAI_Types_Voice_Id">Id</a> as the voice of a text-to-speech request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceActivity.html">VoiceActivity</a></dt>
+      <dd><p>Voice activity signal sent by the server.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceActivityDetectionSignal.html">VoiceActivityDetectionSignal</a></dt>
+      <dd><p>Voice activity detection (VAD) signal sent by the server. Allowlisted only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceAudioData.html">VoiceAudioData</a></dt>
+      <dd><p>Inline audio data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceConfig.html">VoiceConfig</a></dt>
+      <dd><p>The configuration for the voice to use.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceConsentSignature.html">VoiceConsentSignature</a></dt>
+      <dd><p>Proof that voice-replication consent was verified.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoicePitches.html">VoicePitches</a></dt>
+      <dd><p>Known voice pitches.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceTypes.html">VoiceTypes</a></dt>
+      <dd><p>Known voice types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VqaImage.html">VqaImage</a></dt>
+      <dd><p>Represents the image data for the visual question answering request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VqaInstance.html">VqaInstance</a></dt>
+      <dd><p>Represents a single instance in the visual question answering request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VqaParameters.html">VqaParameters</a></dt>
+      <dd><p>Represents the parameters for the visual question answering request.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VqaRequest.html">VqaRequest</a></dt>
+      <dd><p>Represents the request body for the visual question answering API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VqaResponse.html">VqaResponse</a></dt>
+      <dd><p>Represents the response body for the visual question answering API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Web.html">Web</a></dt>
+      <dd><p>Chunk from the web.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebSearch.html">WebSearch</a></dt>
+      <dd><p>Web search settings. Currently has no options; set an instance to enable web search.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a></dt>
+      <dd><p>A Webhook resource: an endpoint that receives event notifications (for example when a batch job or a
+background interaction finishes). The Webhooks API uses snake_case field names on the wire.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookConfig.html">WebhookConfig</a></dt>
+      <dd><p>Per-request webhook configuration for long-running operations (e.g. batch jobs): notifications are sent when
+the operation completes. Only supported by the Gemini Developer API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookEvents.html">WebhookEvents</a></dt>
+      <dd><p>Known event types a <a class="xref" href="GenerativeAI.Types.Webhook.html">Webhook</a> can subscribe to (see <a class="xref" href="GenerativeAI.Types.Webhook.html#GenerativeAI_Types_Webhook_SubscribedEvents">SubscribedEvents</a>).
+The API may add new events, so events are exposed as strings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookListResponse.html">WebhookListResponse</a></dt>
+      <dd><p>Response of <code>GET /webhooks</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookPingResponse.html">WebhookPingResponse</a></dt>
+      <dd><p>Response of <code>POST /webhooks/{id}:ping</code>. Currently has no fields.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookRevocationBehaviors.html">WebhookRevocationBehaviors</a></dt>
+      <dd><p>Known values of <a class="xref" href="GenerativeAI.Types.RotateSigningSecretRequest.html#GenerativeAI_Types_RotateSigningSecretRequest_RevocationBehavior">RevocationBehavior</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookRotateSigningSecretResponse.html">WebhookRotateSigningSecretResponse</a></dt>
+      <dd><p>Response of <code>POST /webhooks/{id}:rotateSigningSecret</code>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookStates.html">WebhookStates</a></dt>
+      <dd><p>Known values of <a class="xref" href="GenerativeAI.Types.Webhook.html#GenerativeAI_Types_Webhook_State">State</a> and <a class="xref" href="GenerativeAI.Types.WebhookUpdate.html#GenerativeAI_Types_WebhookUpdate_State">State</a>. The API may return values
+that are not listed here, so the state is exposed as a string.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhookUpdate.html">WebhookUpdate</a></dt>
+      <dd><p>The request body of <code>PATCH /webhooks/{id}</code> (python-genai <code>WebhookUpdate</code>). Only the fields that are
+set are sent; combine with an update mask to control which fields are replaced.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WebhooksSerializerContext.html">WebhooksSerializerContext</a></dt>
+      <dd><p>Source-generated JSON metadata for the Webhooks API types. <a class="xref" href="GenerativeAI.Clients.WebhooksClient.html">WebhooksClient</a>
+puts it first in its resolver chain, so the Webhooks types also work with Native AOT and trimming.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WeightedPrompt.html">WeightedPrompt</a></dt>
+      <dd><p>Maps a prompt to a relative weight to steer music generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WhiteSpaceConfig.html">WhiteSpaceConfig</a></dt>
+      <dd><p>Configuration for the white space chunking algorithm.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.WordInfo.html">WordInfo</a></dt>
+      <dd><p>Information about a single recognized word in a <a class="xref" href="GenerativeAI.Types.Transcription.html">Transcription</a>.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.IContentsRequest.html">IContentsRequest</a></dt>
+      <dd><p>Represents a request containing a collection of contents.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ActivityHandling.html">ActivityHandling</a></dt>
+      <dd><p>The different ways of handling user activity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AdapterSize.html">AdapterSize</a></dt>
+      <dd><p>Optional. Adapter size for tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AnswerStyle.html">AnswerStyle</a></dt>
+      <dd><p>Style for grounded answers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ApiSpec.html">ApiSpec</a></dt>
+      <dd><p>The API spec that the external API implements.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AspectRatio.html">AspectRatio</a></dt>
+      <dd><p>Aspect ratio of generated images or video.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AudioTranscriptionConfigMode.html">AudioTranscriptionConfigMode</a></dt>
+      <dd><p>Transcription mode used by <a class="xref" href="GenerativeAI.Types.AudioTranscriptionConfig.html#GenerativeAI_Types_AudioTranscriptionConfig_Mode">Mode</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.AuthType.html">AuthType</a></dt>
+      <dd><p>Type of auth scheme.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Behavior.html">Behavior</a></dt>
+      <dd><p>Defines the function behavior. Defaults to BLOCKING.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.BlockReason.html">BlockReason</a></dt>
+      <dd><p>Specifies the reason why the prompt was blocked.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ChunkState.html">ChunkState</a></dt>
+      <dd><p>States for the lifecycle of a <a class="xref" href="GenerativeAI.Types.Chunk.html">Chunk</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Delivery.html">Delivery</a></dt>
+      <dd><p>How generated media is returned.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.DynamicRetrievalMode.html">DynamicRetrievalMode</a></dt>
+      <dd><p>The mode of the predictor to be used in dynamic retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.EndSensitivity.html">EndSensitivity</a></dt>
+      <dd><p>End of speech sensitivity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Environment.html">Environment</a></dt>
+      <dd><p>The environment being operated.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FeatureSelectionPreference.html">FeatureSelectionPreference</a></dt>
+      <dd><p>Options for feature selection preference.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileSearchDocumentState.html">FileSearchDocumentState</a></dt>
+      <dd><p>Processing state of a <a class="xref" href="GenerativeAI.Types.FileSearchDocument.html">FileSearchDocument</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FileState.html">FileState</a></dt>
+      <dd><p>States for the lifecycle of a File.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FinishReason.html">FinishReason</a></dt>
+      <dd><p>Defines the reason why the model stopped generating tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionCallingMode.html">FunctionCallingMode</a></dt>
+      <dd><p>Defines the execution behavior for function calling by defining the execution mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.FunctionResponseScheduling.html">FunctionResponseScheduling</a></dt>
+      <dd><p>Specifies how the response should be scheduled in the conversation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.GranteeType.html">GranteeType</a></dt>
+      <dd><p>Defines types of the grantee of this permission.
+<a href="https://ai.google.dev/api/semantic-retrieval/permissions#Permission.GranteeType">See Official API Documentation</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HarmBlockMethod.html">HarmBlockMethod</a></dt>
+      <dd><p>Specifies if the threshold is used for probability or severity score.
+If not specified, the threshold is used for probability score.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HarmBlockThreshold.html">HarmBlockThreshold</a></dt>
+      <dd><p>Block at and beyond a specified harm probability.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HarmCategory.html">HarmCategory</a></dt>
+      <dd><p>The category of a rating.
+These categories cover various kinds of harms that developers may wish to adjust.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HarmProbability.html">HarmProbability</a></dt>
+      <dd><p>The probability that a piece of content is harmful.
+The classification system gives the probability of the content being unsafe.
+This does not indicate the severity of harm for a piece of content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.HarmSeverity.html">HarmSeverity</a></dt>
+      <dd><p>Output only. Harm severity levels in the content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageSafetySetting.html">ImageSafetySetting</a></dt>
+      <dd><p>Represents the safety filter level.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ImageSize.html">ImageSize</a></dt>
+      <dd><p>Size of generated images.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.InteractionStatus.html">InteractionStatus</a></dt>
+      <dd><p>The different activity states of the live session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.JobState.html">JobState</a></dt>
+      <dd><p>Job state enumeration representing the lifecycle states of a job.
+Supports both BATCH_STATE_* (Google AI) and JOB_STATE_* (Vertex AI) formats.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Language.html">Language</a></dt>
+      <dd><p>Supported programming languages for the generated code.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.LiveMusicPlaybackControl.html">LiveMusicPlaybackControl</a></dt>
+      <dd><p>The playback control signal to apply to the music generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MatchOperation.html">MatchOperation</a></dt>
+      <dd><p>The match operation used by a reinforcement tuning string match expression.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MediaProcessing.html">MediaProcessing</a></dt>
+      <dd><p>How the model processes the media in a part.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MediaResolution.html">MediaResolution</a></dt>
+      <dd><p>Media resolution for the input media.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Modality.html">Modality</a></dt>
+      <dd><p>Content Part modality.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModelRoutingPreference.html">ModelRoutingPreference</a></dt>
+      <dd><p>Model routing preference options.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ModelStage.html">ModelStage</a></dt>
+      <dd><p>Lifecycle stage of a model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.MusicGenerationMode.html">MusicGenerationMode</a></dt>
+      <dd><p>The mode of music generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Operator.html">Operator</a></dt>
+      <dd><p>Defines the valid operators that can be applied to a key-value pair.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Outcome.html">Outcome</a></dt>
+      <dd><p>Enumeration of possible outcomes of the code execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PartMediaResolutionLevel.html">PartMediaResolutionLevel</a></dt>
+      <dd><p>Resolution level for the media in a single part.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PersonGeneration.html">PersonGeneration</a></dt>
+      <dd><p>Represents the allowed generation of people by the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.PhishBlockThreshold.html">PhishBlockThreshold</a></dt>
+      <dd><p>Confidence threshold for blocking phishing sites in search results. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ProminentPeople.html">ProminentPeople</a></dt>
+      <dd><p>Whether images of prominent people may be generated. Vertex AI only.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ReinforcementTuningThinkingLevel.html">ReinforcementTuningThinkingLevel</a></dt>
+      <dd><p>The maximum thinking depth used during reinforcement tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ResponseParseType.html">ResponseParseType</a></dt>
+      <dd><p>Defines how a sample response is parsed before scoring in reinforcement tuning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Role.html">Role</a></dt>
+      <dd><p>Defines the role granted by this permission.
+<a href="https://ai.google.dev/api/semantic-retrieval/permissions#Permission.Role">See Official API Documentation</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SafetyPolicy.html">SafetyPolicy</a></dt>
+      <dd><p>Computer Use safety policies that can be disabled through <a class="xref" href="GenerativeAI.Types.ComputerUse.html#GenerativeAI_Types_ComputerUse_DisabledSafetyPolicies">DisabledSafetyPolicies</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Scale.html">Scale</a></dt>
+      <dd><p>Scale of the generated music.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SchemaType.html">SchemaType</a></dt>
+      <dd><p>Type contains the list of OpenAPI data types as defined by
+<a href="https://spec.openapis.org/oas/v3.0.3#data-types">https://spec.openapis.org/oas/v3.0.3#data-types</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.SessionResumptionStatus.html">SessionResumptionStatus</a></dt>
+      <dd><p>Represents the status of a session resumption attempt.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.Source.html">Source</a></dt>
+      <dd><p>Source of the File.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.StartSensitivity.html">StartSensitivity</a></dt>
+      <dd><p>Start of speech sensitivity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TaskType.html">TaskType</a></dt>
+      <dd><p>Specifies the type of task for which the embedding will be used.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ThinkingLevel.html">ThinkingLevel</a></dt>
+      <dd><p>Controls the depth of thinking/reasoning for models that support thinking features.
+Used with Gemini 3 and later models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.ToolType.html">ToolType</a></dt>
+      <dd><p>Type of a server-side tool.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TrafficType.html">TrafficType</a></dt>
+      <dd><p>Output only. Traffic type. This shows whether a request consumes Pay-As-You-Go or Provisioned Throughput quota.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningJobState.html">TuningJobState</a></dt>
+      <dd><p>The detailed state of a tuning job while the overall <a class="xref" href="GenerativeAI.Types.JobState.html">JobState</a> is running.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningMethod.html">TuningMethod</a></dt>
+      <dd><p>The tuning method used by a tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningMode.html">TuningMode</a></dt>
+      <dd><p>Tuning mode enumeration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningSpeed.html">TuningSpeed</a></dt>
+      <dd><p>The speed of a Veo tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TuningState.html">TuningState</a></dt>
+      <dd><p>The state of the tuned model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TurnCompleteReason.html">TurnCompleteReason</a></dt>
+      <dd><p>The reason why the turn is complete.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.TurnCoverage.html">TurnCoverage</a></dt>
+      <dd><p>Options about which input is included in the user's turn.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.UrlRetrievalStatus.html">UrlRetrievalStatus</a></dt>
+      <dd><p>Status of the url retrieval.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VadSignalType.html">VadSignalType</a></dt>
+      <dd><p>The type of the VAD signal.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VeoTuningTask.html">VeoTuningTask</a></dt>
+      <dd><p>The tuning task of a Veo tuning job.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoAspectRatio.html">VideoAspectRatio</a></dt>
+      <dd><p>Defines the possible aspect ratios for generated videos.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoCompressionQuality.html">VideoCompressionQuality</a></dt>
+      <dd><p>Enum that controls the compression quality of the generated videos.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoGenerationMaskMode.html">VideoGenerationMaskMode</a></dt>
+      <dd><p>Enum for the mask mode of a video generation mask.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoGenerationReferenceType.html">VideoGenerationReferenceType</a></dt>
+      <dd><p>Enum for the reference type of a video generation reference image.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoOrientation.html">VideoOrientation</a></dt>
+      <dd><p>The orientation of the videos produced by a Veo LoRA tuned model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoPersonGeneration.html">VideoPersonGeneration</a></dt>
+      <dd><p>Allows the generation of all types of people, including unrestricted content, in videos.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VideoResolution.html">VideoResolution</a></dt>
+      <dd><p>Defines the possible resolutions for generated videos.
+Actual available values depend on the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Types.VoiceActivityType.html">VoiceActivityType</a></dt>
+      <dd><p>The type of the voice activity signal.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

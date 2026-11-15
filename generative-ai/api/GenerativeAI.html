@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace GenerativeAI | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace GenerativeAI | Google GenerativeAI .NET SDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI">
+
+  <h1 id="GenerativeAI" data-uid="GenerativeAI" class="text-break">Namespace GenerativeAI</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ApiVersions.html">ApiVersions</a></dt>
+      <dd><p>Represents a static class containing string constants for different versions of the API.
+These versions are to be used across the application for interacting with services
+or constructing API request URLs where versioning is required.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a></dt>
+      <dd><p>The BaseModel class is an abstract representation of the model interactions in the GenerativeAI library.
+It serves as a foundational implementation that enables derived classes to interact with the GenerativeAI platform.
+This class inherits from BaseClient. It provides protected methods for use by derived classes,
+allowing them to handle content generation, token management, and content embedding functionalities.
+BaseModel is designed for flexible extension, enabling the development of specific AI model implementations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.BaseUrls.html">BaseUrls</a></dt>
+      <dd><p>Provides constant URLs used as base endpoints for various AI platform services in the GenerativeAI namespace.
+This class contains static members that define the foundational endpoints required for API calls
+in services implementing generative and AI capabilities.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ChatSession.html">ChatSession</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ContentExtensions.html">ContentExtensions</a></dt>
+      <dd><p>Provides extension methods for the <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> class, allowing operations such as
+adding parts, handling inline and remote files, adding text, and extracting code or JSON blocks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ContentRequestExtensions.html">ContentRequestExtensions</a></dt>
+      <dd><p>Contains extension methods for working with objects implementing <a class="xref" href="GenerativeAI.Types.IContentsRequest.html">IContentsRequest</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.DefaultSerializerOptions.html">DefaultSerializerOptions</a></dt>
+      <dd><p>Represents a class providing default JSON serializer options for consistent
+serialization and deserialization behavior across the application.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.EmbeddingModel.html">EmbeddingModel</a></dt>
+      <dd><p>Represents a machine learning model for generating embeddings from input text or content.
+This model allows handling of single or batch embedding operations using various input types or formats.
+Inherits from the <a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a> class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.EnvironmentVariables.html">EnvironmentVariables</a></dt>
+      <dd><p>The EnvironmentVariables class provides access to various environment variables used for configuring
+Google AI services. These variables store information such as project ID, region, API keys,
+and authentication credentials. Default values are used for certain variables if they are not set.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.FilesConstants.html">FilesConstants</a></dt>
+      <dd><p>Defines a collection of constants representing supported MIME types for various file operations within the API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.FunctionCallExtensions.html">FunctionCallExtensions</a></dt>
+      <dd><p>Provides extension methods for working with function call-related types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GeminiModel.html">GeminiModel</a></dt>
+      <dd><p>The GeminiModel class is a specialized implementation of the GenerativeModel, designed to provide
+capabilities for generative AI tasks. It supports multiple constructors for flexibility, allowing users
+to configure the model according to their specific requirements, including platform, API key, configuration,
+safety settings, and various other parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenAI.html">GenAI</a></dt>
+      <dd><p>Represents the base class for generative AI services. This class provides a framework for generative AI capabilities, including
+the management of AI models, creation of generative and embedding models, and interacting with generative AI infrastructure.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerateAnswerResponseExtension.html">GenerateAnswerResponseExtension</a></dt>
+      <dd><p>Provides extension methods for <a class="xref" href="GenerativeAI.Types.GenerateAnswerResponse.html">GenerateAnswerResponse</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerateContentRequestExtensions.html">GenerateContentRequestExtensions</a></dt>
+      <dd><p>Provides extension methods for enhancing the functionality of the <a class="xref" href="GenerativeAI.Types.GenerateContentRequest.html">GenerateContentRequest</a> class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerateContentResponseExtensions.html">GenerateContentResponseExtensions</a></dt>
+      <dd><p>Provides extension methods for the GenerateContentResponse type in the GenerativeAI.Types namespace.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerateImageRequestExtensions.html">GenerateImageRequestExtensions</a></dt>
+      <dd><p>Provides extension methods for the <a class="xref" href="GenerativeAI.Types.GenerateImageRequest.html">GenerateImageRequest</a> class.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerativeModel.html">GenerativeModel</a></dt>
+      <dd><p>A Generative AI Model that extends BaseModel</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GenerativeModelTasks.html">GenerativeModelTasks</a></dt>
+      <dd><p>The GenerativeModelTasks class defines a set of constant task names used to interact with generative AI models.
+These tasks are used across various operations for processing and generating content, embeddings,
+and token analysis.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAICredentials.html">GoogleAICredentials</a></dt>
+      <dd><p>Represents the credentials required to authenticate with Google AI Generative APIs.
+This class encapsulates the API key and an optional access token necessary for making authorized API calls.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.html">GoogleAIModels</a></dt>
+      <dd><p>Provides constants for Gemini model variations and related information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.Agents.html">GoogleAIModels.Agents</a></dt>
+      <dd><p>Provides constants for Gemini agent models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.Experimental.html">GoogleAIModels.Experimental</a></dt>
+      <dd><p>Provides constants for experimental Gemini model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.Imagen.html">GoogleAIModels.Imagen</a></dt>
+      <dd><p>Provides constants for Imagen model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.Music.html">GoogleAIModels.Music</a></dt>
+      <dd><p>Provides constants for Lyria music generation models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIModels.Video.html">GoogleAIModels.Video</a></dt>
+      <dd><p>Provides constants for video generation model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAIPlatformAdapter.html">GoogleAIPlatformAdapter</a></dt>
+      <dd><p>The GoogleAIPlatformAdapter class provides an implementation of the IPlatformAdapter interface
+to integrate with Google AI Generative API. It handles authorization, URL generation, and
+credential management for making requests to the Google AI platform.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.GoogleAi.html">GoogleAi</a></dt>
+      <dd><p>The GoogleAI class serves as the main entry point for interacting with Google's AI models.
+It provides methods to create generative and embedding models, as well as manage and retrieve model details.
+This class integrates Google's AI platform capabilities by utilizing appropriate models
+and configurations to handle generative AI tasks, embeddings, and other related operations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImageCaptioningRequestExtensions.html">ImageCaptioningRequestExtensions</a></dt>
+      <dd><p>Extension methods for configuring <a class="xref" href="GenerativeAI.Types.ImageCaptioningRequest.html">ImageCaptioningRequest</a> objects
+with image data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImageConfigValues.html">ImageConfigValues</a></dt>
+      <dd><p>Provides common values for image generation configuration.
+These constants are provided for convenience and discoverability but are not restrictive;
+any valid string value accepted by the API can be used.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImageConfigValues.AspectRatios.html">ImageConfigValues.AspectRatios</a></dt>
+      <dd><p>Common aspect ratios for image generation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImageConfigValues.ImageSizes.html">ImageConfigValues.ImageSizes</a></dt>
+      <dd><p>Output resolutions for image generation.
+Only supported on certain models like gemini-3-pro-image-preview.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImageConfigValues.OutputMimeTypes.html">ImageConfigValues.OutputMimeTypes</a></dt>
+      <dd><p>Output MIME types for generated images.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ImportRagFilesRequestExtensions.html">ImportRagFilesRequestExtensions</a></dt>
+      <dd><p>Extension methods for adding various data sources to an <a class="xref" href="GenerativeAI.Types.RagEngine.ImportRagFilesRequest.html">ImportRagFilesRequest</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.InlineMimeTypes.html">InlineMimeTypes</a></dt>
+      <dd><p>Contains constants and configurations for inline file handling,
+including file size limitations and allowed MIME types.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.JsonElementExtensions.html">JsonElementExtensions</a></dt>
+      <dd><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a> objects.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.MarkdownCodeExtractorExtension.html">MarkdownCodeExtractorExtension</a></dt>
+      <dd><p>Provides extension methods for extracting structured data, such as code blocks and JSON blocks,
+from markdown strings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.ObjectExtensions.html">ObjectExtensions</a></dt>
+      <dd><p>Provides extension methods for working with objects in the GenerativeAI library.
+Includes utilities for converting objects into schema representations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.RagCorpusExtensions.html">RagCorpusExtensions</a></dt>
+      <dd><p>Extension methods for configuring the <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> with different vector database configurations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.RequestExtensions.html">RequestExtensions</a></dt>
+      <dd><p>A static class providing extension methods for formatting request contents used in generative AI models.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.Roles.html">Roles</a></dt>
+      <dd><p>Defines constant role identifiers used in the Generative AI system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.SemanticRetrieverChatSession.html">SemanticRetrieverChatSession</a></dt>
+      <dd><p>Represents a chat session that interacts with a semantic retriever model to generate answers
+based on user queries. Includes functionality for maintaining session history, managing configurations,
+and handling responses from the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.SemanticRetrieverModel.html">SemanticRetrieverModel</a></dt>
+      <dd><p>Represents a semantic retriever model used for working with documents, corpora, chunks,
+and corpus permissions. This model requires a platform adapter with authentication for initialization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.StringExtensions.html">StringExtensions</a></dt>
+      <dd><p>Provides extension methods for string-related model manipulations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.SupportedEmbedingModels.html">SupportedEmbedingModels</a></dt>
+      <dd><p>Provides a centralized collection of supported embedding model identifiers for use in the GenerativeAI namespace.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAI.html">VertexAI</a></dt>
+      <dd><p>Represents the Vertex AI implementation of the generative AI platform.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModel.html">VertexAIModel</a></dt>
+      <dd><p>VertexAIModel is a specialized class for interacting with Google's Vertex AI generative models.
+It extends the functionality of the GenerativeModel class and serves as a concrete implementation
+for initializing and utilizing Vertex AI's capabilities for content generation tasks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.html">VertexAIModels</a></dt>
+      <dd><p>Provides constants for Vertex AI model variations and related information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Codey.html">VertexAIModels.Codey</a></dt>
+      <dd><p>Provides constants for Codey model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Embeddings.html">VertexAIModels.Embeddings</a></dt>
+      <dd><p>Provides constants for Embeddings model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Gemini.html">VertexAIModels.Gemini</a></dt>
+      <dd><p>Provides constants for Gemini model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Gemma.html">VertexAIModels.Gemma</a></dt>
+      <dd><p>Provides constants for Gemma model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Imagen.html">VertexAIModels.Imagen</a></dt>
+      <dd><p>Provides constants for Imagen model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.MedLM.html">VertexAIModels.MedLM</a></dt>
+      <dd><p>Provides constants for MedLM model variations.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertexAIModels.Video.html">VertexAIModels.Video</a></dt>
+      <dd><p>Provides constants for video generation model names.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VertextPlatformAdapter.html">VertextPlatformAdapter</a></dt>
+      <dd><p>The VertextPlatformAdapter class provides authentication, configuration, and utility methods for interacting with Vertex AI.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VideoGenerationModel.html">VideoGenerationModel</a></dt>
+      <dd><p>A client for interacting with the Gemini API for video generation tasks.
+Note: Video generation capabilities might be specific to certain API versions or platforms (e.g., Vertex AI).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.VqaRequestExtensions.html">VqaRequestExtensions</a></dt>
+      <dd><p>Extension methods for adding image data to a <a class="xref" href="GenerativeAI.Types.VqaRequest.html">VqaRequest</a> object.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.IGenerativeAI.html">IGenerativeAI</a></dt>
+      <dd><p>Represents an interface defining operations for generative AI systems, including
+initializing models, retrieving model details, listing available models, and accessing
+platform-specific adapters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="GenerativeAI.IGenerativeModel.html">IGenerativeModel</a></dt>
+      <dd><p>Defines the contract for a generative AI model. This interface provides methods for generating
+answers and content, streaming content, and counting tokens within inputs or outputs.
+It also includes properties for configuring behavior related to grounding, external tools,
+and advanced options such as JSON mode or function calling.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

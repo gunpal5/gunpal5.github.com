@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TuningClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TuningClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A client for model tuning, mirroring client.tunings of the google-genai SDK.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_TuningClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.TuningClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.TuningClient">
+
+
+
+  <h1 id="GenerativeAI_Clients_TuningClient" data-uid="GenerativeAI.Clients.TuningClient" class="text-break">
+Class TuningClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A client for model tuning, mirroring <code>client.tunings</code> of the google-genai SDK.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TuningClient : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">TuningClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="GenerativeAI_Clients_TuningClient_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+On Vertex AI it uses the <code>projects/{project}/locations/{location}/tuningJobs</code> resource and supports
+supervised fine tuning, preference tuning, distillation and reinforcement tuning, listing, cancellation
+and reward validation.
+</p>
+<p>
+On the Gemini Developer API it uses the <code>tunedModels</code> resource: <a class="xref" href="GenerativeAI.Clients.TuningClient.html#GenerativeAI_Clients_TuningClient_TuneAsync_System_String_GenerativeAI_Types_TuningDataset_GenerativeAI_Types_CreateTuningJobConfig_System_Threading_CancellationToken_">TuneAsync(string, TuningDataset, CreateTuningJobConfig?, CancellationToken)</a>,
+<a class="xref" href="GenerativeAI.Clients.TuningClient.html#GenerativeAI_Clients_TuningClient_GetAsync_System_String_System_Threading_CancellationToken_">GetAsync(string, CancellationToken)</a>, <a class="xref" href="GenerativeAI.Clients.TuningClient.html#GenerativeAI_Clients_TuningClient_CancelAsync_System_String_System_Threading_CancellationToken_">CancelAsync(string, CancellationToken)</a> and
+<a class="xref" href="GenerativeAI.Clients.TuningClient.html#GenerativeAI_Clients_TuningClient_WaitForCompletionAsync_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_">WaitForCompletionAsync(string, TimeSpan?, TimeSpan?, CancellationToken)</a> are supported, and tuned models are reported as <a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>s.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_TuningClient__ctor_" data-uid="GenerativeAI.Clients.TuningClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.TuningClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  TuningClient(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Clients.TuningClient.html">TuningClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TuningClient(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter used to manage API endpoints and authentication.</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>The HTTP client instance used for making API requests.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>An optional logger instance for logging operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_TuningClient_CancelAsync_" data-uid="GenerativeAI.Clients.TuningClient.CancelAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_CancelAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.CancelAsync(System.String,System.Threading.CancellationToken)">
+  CancelAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cancels a tuning job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CancelAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The tuning job (Vertex AI) or tuned model (Gemini API) name.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes when the cancellation request was accepted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_GetAsync_" data-uid="GenerativeAI.Clients.TuningClient.GetAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_GetAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.GetAsync(System.String,System.Threading.CancellationToken)">
+  GetAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a tuning job (Vertex AI) or a tuned model reported as a tuning job (Gemini API).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TuningJob&gt; GetAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The tuning job resource name (<code>projects/.../tuningJobs/...</code>, <code>tuningJobs/...</code> or the job id) on
+Vertex AI, or the tuned model name (<code>tunedModels/...</code> or the id) on the Gemini API.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>&gt;</dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_ListAllAsync_" data-uid="GenerativeAI.Clients.TuningClient.ListAllAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_ListAllAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.ListAllAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListAllAsync(int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists all tuning jobs, fetching further pages as needed (Vertex AI only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;TuningJob&gt; ListAllAsync(int? pageSize = null, string? filter = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The page size used for each request.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional list filter.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>&gt;</dt>
+    <dd><p>An async sequence of tuning jobs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_ListAsync_" data-uid="GenerativeAI.Clients.TuningClient.ListAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_ListAsync_System_Nullable_System_Int32__System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.ListAsync(System.Nullable{System.Int32},System.String,System.String,System.Threading.CancellationToken)">
+  ListAsync(int?, string?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists tuning jobs (Vertex AI only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListTuningJobsResponse&gt; ListAsync(int? pageSize = null, string? pageToken = null, string? filter = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of tuning jobs to return.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A page token from a previous call.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional list filter.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListTuningJobsResponse.html">ListTuningJobsResponse</a>&gt;</dt>
+    <dd><p>A page of tuning jobs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Called on the Gemini Developer API.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_TuneAsync_" data-uid="GenerativeAI.Clients.TuningClient.TuneAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_TuneAsync_System_String_GenerativeAI_Types_TuningDataset_GenerativeAI_Types_CreateTuningJobConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.TuneAsync(System.String,GenerativeAI.Types.TuningDataset,GenerativeAI.Types.CreateTuningJobConfig,System.Threading.CancellationToken)">
+  TuneAsync(string, TuningDataset, CreateTuningJobConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a tuning job (Vertex AI) or a tuned model (Gemini API) and returns it as a <a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TuningJob&gt; TuneAsync(string baseModel, TuningDataset trainingDataset, CreateTuningJobConfig? config = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model to tune. On Vertex AI, a tuned model resource name (<code>projects/.../models/...</code>) continues
+tuning from that model (with <a class="xref" href="GenerativeAI.Types.CreateTuningJobConfig.html#GenerativeAI_Types_CreateTuningJobConfig_PreTunedModelCheckpointId">PreTunedModelCheckpointId</a> as checkpoint).</p>
+</dd>
+    <dt><code>trainingDataset</code> <a class="xref" href="GenerativeAI.Types.TuningDataset.html">TuningDataset</a></dt>
+    <dd><p>The training dataset.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.CreateTuningJobConfig.html">CreateTuningJobConfig</a></dt>
+    <dd><p>Optional tuning configuration.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>&gt;</dt>
+    <dd><p>The created <a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>. On the Gemini API only <a class="xref" href="GenerativeAI.Types.TuningJob.html#GenerativeAI_Types_TuningJob_Name">Name</a> (the tuned model name)
+and <a class="xref" href="GenerativeAI.Types.TuningJob.html#GenerativeAI_Types_TuningJob_State">State</a> (<a class="xref" href="GenerativeAI.Types.JobState.html#GenerativeAI_Types_JobState_JOB_STATE_QUEUED">JOB_STATE_QUEUED</a>) are set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>An option is not supported on the current platform.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_ValidateRewardAsync_" data-uid="GenerativeAI.Clients.TuningClient.ValidateRewardAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_ValidateRewardAsync_GenerativeAI_Types_Content_GenerativeAI_Types_ReinforcementTuningExample_GenerativeAI_Types_SingleReinforcementTuningRewardConfig_GenerativeAI_Types_CompositeReinforcementTuningRewardConfig_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.ValidateRewardAsync(GenerativeAI.Types.Content,GenerativeAI.Types.ReinforcementTuningExample,GenerativeAI.Types.SingleReinforcementTuningRewardConfig,GenerativeAI.Types.CompositeReinforcementTuningRewardConfig,System.String,System.Threading.CancellationToken)">
+  ValidateRewardAsync(Content, ReinforcementTuningExample, SingleReinforcementTuningRewardConfig?, CompositeReinforcementTuningRewardConfig?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates a reinforcement tuning reward configuration against a sample response and example, without
+creating a tuning job (Vertex AI only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ValidateRewardResponse&gt; ValidateRewardAsync(Content sampleResponse, ReinforcementTuningExample example, SingleReinforcementTuningRewardConfig? singleRewardConfig = null, CompositeReinforcementTuningRewardConfig? compositeRewardConfig = null, string? parent = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sampleResponse</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The sample model response to score.</p>
+</dd>
+    <dt><code>example</code> <a class="xref" href="GenerativeAI.Types.ReinforcementTuningExample.html">ReinforcementTuningExample</a></dt>
+    <dd><p>The example (prompt and references) the response belongs to.</p>
+</dd>
+    <dt><code>singleRewardConfig</code> <a class="xref" href="GenerativeAI.Types.SingleReinforcementTuningRewardConfig.html">SingleReinforcementTuningRewardConfig</a></dt>
+    <dd><p>A single reward configuration. Mutually exclusive with <code class="paramref">compositeRewardConfig</code>.</p>
+</dd>
+    <dt><code>compositeRewardConfig</code> <a class="xref" href="GenerativeAI.Types.CompositeReinforcementTuningRewardConfig.html">CompositeReinforcementTuningRewardConfig</a></dt>
+    <dd><p>A composite reward configuration. Mutually exclusive with <code class="paramref">singleRewardConfig</code>.</p>
+</dd>
+    <dt><code>parent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The location to validate in, <code>projects/{project}/locations/{location}</code>. Defaults to the platform's
+project and location.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ValidateRewardResponse.html">ValidateRewardResponse</a>&gt;</dt>
+    <dd><p>The computed reward(s).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Called on the Gemini Developer API.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="GenerativeAI_Clients_TuningClient_WaitForCompletionAsync_" data-uid="GenerativeAI.Clients.TuningClient.WaitForCompletionAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_TuningClient_WaitForCompletionAsync_System_String_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.TuningClient.WaitForCompletionAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
+  WaitForCompletionAsync(string, TimeSpan?, TimeSpan?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Polls a tuning job until it reaches a terminal state (succeeded, partially succeeded, failed, cancelled
+or expired).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TuningJob&gt; WaitForCompletionAsync(string name, TimeSpan? pollInterval = null, TimeSpan? timeout = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The tuning job (Vertex AI) or tuned model (Gemini API) name.</p>
+</dd>
+    <dt><code>pollInterval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dd><p>The delay between polls. Defaults to 30 seconds.</p>
+</dd>
+    <dt><code>timeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dd><p>The maximum time to wait. Defaults to no limit.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>&gt;</dt>
+    <dd><p>The completed <a class="xref" href="GenerativeAI.Types.TuningJob.html">TuningJob</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></dt>
+    <dd><p>The job did not complete within <code class="paramref">timeout</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/tuning">See Official API Documentation</a></span></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/TuningClient.cs/#L27" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

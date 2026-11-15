@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EnvironmentsClient | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EnvironmentsClient | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="A client for the Environments API (/environments): sandbox environments used by agent interactions, with mounted sources (e.g. your own GCS bucket, inline files, repositories) and workspace files that can be listed, uploaded (resumable upload, optionally extracting a tar archive) and downloaded. Follows python-genai&#39;s client.environments (experimental).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Clients_EnvironmentsClient.md&amp;value=---%0Auid%3A%20GenerativeAI.Clients.EnvironmentsClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Clients.EnvironmentsClient">
+
+
+
+  <h1 id="GenerativeAI_Clients_EnvironmentsClient" data-uid="GenerativeAI.Clients.EnvironmentsClient" class="text-break">
+Class EnvironmentsClient  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Clients.html">Clients</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A client for the Environments API (<code>/environments</code>): sandbox environments used by agent interactions, with
+mounted sources (e.g. your own GCS bucket, inline files, repositories) and workspace files that can be listed,
+uploaded (resumable upload, optionally extracting a tar archive) and downloaded. Follows python-genai's
+<code>client.environments</code> (experimental).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnvironmentsClient : AgentApiClientBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html">AgentApiClientBase</a></div>
+      <div><span class="xref">EnvironmentsClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_GetCollectionUrl_System_String_">AgentApiClientBase.GetCollectionUrl(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_GetResourceUrl_System_String_System_String_">AgentApiClientBase.GetResourceUrl(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_NormalizeId_System_String_System_String_">AgentApiClientBase.NormalizeId(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync__1_System_Net_Http_HttpMethod_System_String_System_Threading_CancellationToken_">AgentApiClientBase.SendRequestAsync&lt;TResponse&gt;(HttpMethod, string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_SendRequestAsync__2_System_Net_Http_HttpMethod_System_String___0_System_Threading_CancellationToken_">AgentApiClientBase.SendRequestAsync&lt;TRequest, TResponse&gt;(HttpMethod, string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_SendRawAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">AgentApiClientBase.SendRawAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_DeserializeJson__1_System_String_">AgentApiClientBase.DeserializeJson&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_BuildQuery_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">AgentApiClientBase.BuildQuery(IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_PageParameters_System_Nullable_System_Int32__System_String_">AgentApiClientBase.PageParameters(int?, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_FormatBool_System_Nullable_System_Boolean__">AgentApiClientBase.FormatBool(bool?)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_PaginateAsync__2_System_Func_System_String_System_Threading_CancellationToken_System_Threading_Tasks_Task___0___System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0_System_String__System_Threading_CancellationToken_">AgentApiClientBase.PaginateAsync&lt;TPage, TItem&gt;(Func&lt;string, CancellationToken, Task&lt;TPage&gt;&gt;, Func&lt;TPage, IEnumerable&lt;TItem&gt;&gt;, Func&lt;TPage, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_Options">AgentApiClientBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.AgentApiClientBase.html#GenerativeAI_Clients_AgentApiClientBase_ReadContentAsStringAsync_System_Net_Http_HttpContent_System_Threading_CancellationToken_">AgentApiClientBase.ReadContentAsStringAsync(HttpContent, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient__ctor_" data-uid="GenerativeAI.Clients.EnvironmentsClient.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Clients.EnvironmentsClient.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  EnvironmentsClient(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="GenerativeAI.Clients.EnvironmentsClient.html">EnvironmentsClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentsClient(IPlatformAdapter platform, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd><p>The platform adapter (Google AI or Vertex AI).</p>
+</dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd><p>Optional HTTP client.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>Optional logger.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_CreateAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.CreateAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_CreateAsync_GenerativeAI_Types_CreateEnvironmentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.CreateAsync(GenerativeAI.Types.CreateEnvironmentRequest,System.Threading.CancellationToken)">
+  CreateAsync(CreateEnvironmentRequest?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an environment (<code>POST /environments</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AgentEnvironment&gt; CreateAsync(CreateEnvironmentRequest? request = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.CreateEnvironmentRequest.html">CreateEnvironmentRequest</a></dt>
+    <dd><p>The request (all fields optional).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.AgentEnvironment.html">AgentEnvironment</a>&gt;</dt>
+    <dd><p>The created environment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_DeleteAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.DeleteAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+  DeleteAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes an environment (<code>DELETE /environments/{id}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes when the environment has been deleted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_DownloadFileAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.DownloadFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_DownloadFileAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.DownloadFileAsync(System.String,System.String,System.Threading.CancellationToken)">
+  DownloadFileAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Downloads a file from an environment workspace
+(<code>GET /environments/{environment}/files/{path}?alt=media</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; DownloadFileAsync(string environmentId, string path, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>environmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file path relative to the workspace root.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>The file content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_GetAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.GetAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_GetAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.GetAsync(System.String,System.Threading.CancellationToken)">
+  GetAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an environment (<code>GET /environments/{id}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AgentEnvironment&gt; GetAsync(string id, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID (an <code>environments/</code> prefix is accepted).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.AgentEnvironment.html">AgentEnvironment</a>&gt;</dt>
+    <dd><p>The environment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_ListAllAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAllAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_ListAllAsync_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAllAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)">
+  ListAllAsync(int?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists all environments, following page tokens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;AgentEnvironment&gt; ListAllAsync(int? pageSize = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The page size.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.AgentEnvironment.html">AgentEnvironment</a>&gt;</dt>
+    <dd><p>The environments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_ListAllFilesAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAllFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_ListAllFilesAsync_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAllFilesAsync(System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Threading.CancellationToken)">
+  ListAllFilesAsync(string, string?, bool?, int?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists all entries under a path in an environment workspace, following page tokens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsyncEnumerable&lt;EnvironmentFile&gt; ListAllFilesAsync(string environmentId, string? path = null, bool? recursive = null, int? pageSize = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>environmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path relative to the workspace root (empty for the root).</p>
+</dd>
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to list subdirectories recursively.</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The page size.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.EnvironmentFile.html">EnvironmentFile</a>&gt;</dt>
+    <dd><p>The entries.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_ListAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_ListAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListAsync(int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists one page of environments (<code>GET /environments</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListEnvironmentsResponse&gt; ListAsync(int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of environments per page.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The page token of a previous call.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListEnvironmentsResponse.html">ListEnvironmentsResponse</a>&gt;</dt>
+    <dd><p>The page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_ListFilesAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_ListFilesAsync_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.ListFilesAsync(System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListFilesAsync(string, string?, bool?, int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists one page of the contents of a directory (or a single file) in an environment workspace
+(<code>GET /environments/{environment}/files/{path}</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListEnvironmentFilesResponse&gt; ListFilesAsync(string environmentId, string? path = null, bool? recursive = null, int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>environmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path relative to the workspace root (empty for the root).</p>
+</dd>
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to list subdirectories recursively.</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of entries per page.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The page token of a previous call.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListEnvironmentFilesResponse.html">ListEnvironmentFilesResponse</a>&gt;</dt>
+    <dd><p>The page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_UploadFileAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.UploadFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_UploadFileAsync_System_String_System_String_System_IO_Stream_System_String_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_System_Double__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.UploadFileAsync(System.String,System.String,System.IO.Stream,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Action{System.Double},System.Threading.CancellationToken)">
+  UploadFileAsync(string, string, Stream, string?, bool?, bool?, Action&lt;double&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uploads a file into an environment workspace with the resumable upload protocol: a <code>start</code> request to
+<code>PUT /upload/{version}/environments/{environment}/files/{path}</code> followed by an <code>upload, finalize</code>
+request with the bytes to the returned session URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListEnvironmentFilesResponse&gt; UploadFileAsync(string environmentId, string path, Stream content, string? mimeType = null, bool? overwrite = null, bool? extract = null, Action&lt;double&gt;? progressCallback = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>environmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination path relative to the workspace root.</p>
+</dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The content, read from its current position. Like the other upload methods of this SDK, the stream is disposed once the upload request completes.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type (default <code>application/octet-stream</code>).</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to overwrite an existing file.</p>
+</dd>
+    <dt><code>extract</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to treat the content as a tar/tar.gz archive and unpack it into <code class="paramref">path</code>.</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Optional upload progress callback (percentage).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListEnvironmentFilesResponse.html">ListEnvironmentFilesResponse</a>&gt;</dt>
+    <dd><p>The uploaded file(s).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Clients_EnvironmentsClient_UploadFileAsync_" data-uid="GenerativeAI.Clients.EnvironmentsClient.UploadFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Clients_EnvironmentsClient_UploadFileAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_System_Double__System_Threading_CancellationToken_" data-uid="GenerativeAI.Clients.EnvironmentsClient.UploadFileAsync(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Action{System.Double},System.Threading.CancellationToken)">
+  UploadFileAsync(string, string, string, string?, bool?, bool?, Action&lt;double&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uploads a local file into an environment workspace (see
+<a class="xref" href="GenerativeAI.Clients.EnvironmentsClient.html#GenerativeAI_Clients_EnvironmentsClient_UploadFileAsync_System_String_System_String_System_IO_Stream_System_String_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Action_System_Double__System_Threading_CancellationToken_">UploadFileAsync(string, string, Stream, string?, bool?, bool?, Action&lt;double&gt;?, CancellationToken)</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListEnvironmentFilesResponse&gt; UploadFileAsync(string environmentId, string path, string filePath, string? mimeType = null, bool? overwrite = null, bool? extract = null, Action&lt;double&gt;? progressCallback = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>environmentId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The environment ID.</p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination path relative to the workspace root.</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The local file.</p>
+</dd>
+    <dt><code>mimeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The MIME type (guessed from the file name when omitted).</p>
+</dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to overwrite an existing file.</p>
+</dd>
+    <dt><code>extract</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p>Whether to treat the file as a tar/tar.gz archive and unpack it into <code class="paramref">path</code>.</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Optional upload progress callback (percentage).</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.ListEnvironmentFilesResponse.html">ListEnvironmentFilesResponse</a>&gt;</dt>
+    <dd><p>The uploaded file(s).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/EnvironmentsClient.cs/#L19" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

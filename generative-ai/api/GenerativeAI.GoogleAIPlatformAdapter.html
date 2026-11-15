@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GoogleAIPlatformAdapter | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GoogleAIPlatformAdapter | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="The GoogleAIPlatformAdapter class provides an implementation of the IPlatformAdapter interface to integrate with Google AI Generative API. It handles authorization, URL generation, and credential management for making requests to the Google AI platform.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_GoogleAIPlatformAdapter.md&amp;value=---%0Auid%3A%20GenerativeAI.GoogleAIPlatformAdapter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.GoogleAIPlatformAdapter">
+
+
+
+  <h1 id="GenerativeAI_GoogleAIPlatformAdapter" data-uid="GenerativeAI.GoogleAIPlatformAdapter" class="text-break">
+Class GoogleAIPlatformAdapter  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The GoogleAIPlatformAdapter class provides an implementation of the IPlatformAdapter interface
+to integrate with Google AI Generative API. It handles authorization, URL generation, and
+credential management for making requests to the Google AI platform.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GoogleAIPlatformAdapter : IPlatformAdapter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GoogleAIPlatformAdapter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_AsEmbeddingGenerator_GenerativeAI_Core_IPlatformAdapter_System_String_">MicrosoftExtensions.AsEmbeddingGenerator(IPlatformAdapter, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter__ctor_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.#ctor*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter__ctor_System_String_System_String_System_String_GenerativeAI_Core_IGoogleAuthenticator_System_Boolean_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.#ctor(System.String,System.String,System.String,GenerativeAI.Core.IGoogleAuthenticator,System.Boolean,Microsoft.Extensions.Logging.ILogger)">
+  GoogleAIPlatformAdapter(string?, string?, string?, IGoogleAuthenticator?, bool, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GoogleAIPlatformAdapter(string? googleApiKey, string? apiVersion = null, string? accessToken = null, IGoogleAuthenticator? authenticator = null, bool validateAccessToken = true, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>googleApiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>apiVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>authenticator</code> <a class="xref" href="GenerativeAI.Core.IGoogleAuthenticator.html">IGoogleAuthenticator</a></dt>
+    <dd></dd>
+    <dt><code>validateAccessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_Authenticator_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.Authenticator*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_Authenticator" data-uid="GenerativeAI.GoogleAIPlatformAdapter.Authenticator">
+  Authenticator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the authenticator used for handling Google API authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGoogleAuthenticator? Authenticator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Core.IGoogleAuthenticator.html">IGoogleAuthenticator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_Credentials_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.Credentials*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_Credentials" data-uid="GenerativeAI.GoogleAIPlatformAdapter.Credentials">
+  Credentials
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the credentials used for authentication when making requests to the Google AI platform.
+This property provides an instance of <a class="xref" href="GenerativeAI.GoogleAICredentials.html">GoogleAICredentials</a> which encapsulates
+the API key and optionally an access token required for authorization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GoogleAICredentials Credentials { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.GoogleAICredentials.html">GoogleAICredentials</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_DefaultApiVersion_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.DefaultApiVersion*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_DefaultApiVersion" data-uid="GenerativeAI.GoogleAIPlatformAdapter.DefaultApiVersion">
+  DefaultApiVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the default API version used for constructing API request URLs in the integration
+with the Google AI platform. This property must be set to a valid version string defined in <a class="xref" href="GenerativeAI.ApiVersions.html">ApiVersions</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DefaultApiVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_AddAuthorizationAsync_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.AddAuthorizationAsync*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_AddAuthorizationAsync_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.AddAuthorizationAsync(System.Net.Http.HttpRequestMessage,System.Boolean,System.Threading.CancellationToken)">
+  AddAuthorizationAsync(HttpRequestMessage, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the necessary authorization headers to the given HTTP request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddAuthorizationAsync(HttpRequestMessage request, bool requireAccessToken, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd><p>The HTTP request to which authorization headers will be added.</p>
+</dd>
+    <dt><code>requireAccessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Specifies whether an access token is required for the request.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_AuthorizeAsync_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.AuthorizeAsync*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_AuthorizeAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.AuthorizeAsync(System.Threading.CancellationToken)">
+  AuthorizeAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Authorizes the user by acquiring necessary tokens or credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AuthorizeAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_CreateUrlForModel_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.CreateUrlForModel*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_CreateUrlForModel_System_String_System_String_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.CreateUrlForModel(System.String,System.String)">
+  CreateUrlForModel(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a URL for a specific AI model operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateUrlForModel(string modelId, string task)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the model.</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The specific task for the model (e.g., training or evaluation).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The constructed URL as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_CreateUrlForTunedModel_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.CreateUrlForTunedModel*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_CreateUrlForTunedModel_System_String_System_String_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.CreateUrlForTunedModel(System.String,System.String)">
+  CreateUrlForTunedModel(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a URL for operations involving a fine-tuned model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateUrlForTunedModel(string modelId, string task)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the fine-tuned model.</p>
+</dd>
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The specific task involving the fine-tuned model.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The constructed URL as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetAccessTokenAsync_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetAccessTokenAsync*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetAccessTokenAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetAccessTokenAsync(System.Threading.CancellationToken)">
+  GetAccessTokenAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the access token required for making authenticated API requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AuthTokens?&gt; GetAccessTokenAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation if needed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Core.AuthTokens.html">AuthTokens</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation, containing the authentication tokens.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetApiVersion_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetApiVersion*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetApiVersion" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetApiVersion">
+  GetApiVersion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the current API version used by the platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetApiVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API version as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetApiVersionForFile_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetApiVersionForFile*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetApiVersionForFile" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetApiVersionForFile">
+  GetApiVersionForFile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the API version related to file operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetApiVersionForFile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API version for file operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetBaseUrl_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetBaseUrl*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetBaseUrl_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetBaseUrl(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  GetBaseUrl(bool, bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the base URL of the platform's API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBaseUrl(bool appendVersion = true, bool appendPublisher = true, bool appendLocation = true, bool appendProject = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appendVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Determines whether to append the API version to the URL.</p>
+</dd>
+    <dt><code>appendPublisher</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Determines whether to append the publisher identifier to the URL.</p>
+</dd>
+    <dt><code>appendLocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>appendProject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base URL as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetBaseUrlForFile_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetBaseUrlForFile*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetBaseUrlForFile" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetBaseUrlForFile">
+  GetBaseUrlForFile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the base URL for file-related API operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBaseUrlForFile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base URL for file operations as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetFullyQualifiedModelName_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetFullyQualifiedModelName*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetFullyQualifiedModelName_System_String_System_Boolean_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetFullyQualifiedModelName(System.String,System.Boolean)">
+  GetFullyQualifiedModelName(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the formatted model name for multi-modal live sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetFullyQualifiedModelName(string modelName, bool appendLocation = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base model name to format.</p>
+</dd>
+    <dt><code>appendLocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to include the location segment in the qualified name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The formatted model name for multi-modal live sessions, or null if not applicable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_GetMultiModalLiveUrl_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetMultiModalLiveUrl*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_GetMultiModalLiveUrl_System_String_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.GetMultiModalLiveUrl(System.String)">
+  GetMultiModalLiveUrl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the WebSocket URL for multi-modal live sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMultiModalLiveUrl(string version = &quot;v1alpha&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The API version to use (default: &quot;v1alpha&quot;).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The WebSocket URL for multi-modal live sessions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_SetAuthenticator_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.SetAuthenticator*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_SetAuthenticator_GenerativeAI_Core_IGoogleAuthenticator_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.SetAuthenticator(GenerativeAI.Core.IGoogleAuthenticator)">
+  SetAuthenticator(IGoogleAuthenticator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the Google authenticator responsible for managing authentication processes for Google services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAuthenticator(IGoogleAuthenticator authenticator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>authenticator</code> <a class="xref" href="GenerativeAI.Core.IGoogleAuthenticator.html">IGoogleAuthenticator</a></dt>
+    <dd><p>The Google authenticator to be used for handling authentication operations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_ValidateCredentialsAsync_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.ValidateCredentialsAsync*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_ValidateCredentialsAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.ValidateCredentialsAsync(System.Boolean,System.Threading.CancellationToken)">
+  ValidateCredentialsAsync(bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ValidateCredentialsAsync(bool requireAccessToken, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requireAccessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_GoogleAIPlatformAdapter_ValidateCredentialsAsync_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.ValidateCredentialsAsync*"></a>
+
+  <h3 id="GenerativeAI_GoogleAIPlatformAdapter_ValidateCredentialsAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.GoogleAIPlatformAdapter.ValidateCredentialsAsync(System.Threading.CancellationToken)">
+  ValidateCredentialsAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates user credentials before making API requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ValidateCredentialsAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Platforms/GoogleAIPlatformAdapter.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

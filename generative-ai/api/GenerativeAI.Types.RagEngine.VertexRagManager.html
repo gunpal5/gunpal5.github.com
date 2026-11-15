@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VertexRagManager | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VertexRagManager | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="VertexRagManager provides management and interaction capabilities for RAG (Retrieval-Augmented Generation) resources. It is designed to facilitate operations involving file management and RAG corpus resources. This class serves as a specialized client built upon the BaseClient, leveraging shared functionality like authorization handling and HTTP communication. The manager provides direct access to:  File management operations via FileManagementClient. RAG corpus operations via RagCorpusClient.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Types_RagEngine_VertexRagManager.md&amp;value=---%0Auid%3A%20GenerativeAI.Types.RagEngine.VertexRagManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Types.RagEngine.VertexRagManager">
+
+
+
+  <h1 id="GenerativeAI_Types_RagEngine_VertexRagManager" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager" class="text-break">
+Class VertexRagManager  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Types.html">Types</a>.<a class="xref" href="GenerativeAI.Types.RagEngine.html">RagEngine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>VertexRagManager provides management and interaction capabilities for RAG (Retrieval-Augmented Generation)
+resources. It is designed to facilitate operations involving file management and RAG corpus resources.
+This class serves as a specialized client built upon the BaseClient, leveraging shared functionality
+like authorization handling and HTTP communication.
+The manager provides direct access to:</p>
+<ul>
+<li>File management operations via FileManagementClient.</li>
+<li>RAG corpus operations via RagCorpusClient.</li>
+</ul>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VertexRagManager : BaseClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><span class="xref">VertexRagManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager__ctor_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.#ctor*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.#ctor(GenerativeAI.Core.IPlatformAdapter,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  VertexRagManager(IPlatformAdapter, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>VertexRagManager provides management and interaction capabilities for RAG (Retrieval-Augmented Generation)
+resources. It is designed to facilitate operations involving file management and RAG corpus resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexRagManager(IPlatformAdapter platform, HttpClient? httpClient, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd></dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Types_RagEngine_VertexRagManager__ctor_GenerativeAI_Core_IPlatformAdapter_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Inherits functionality from BaseClient, leveraging its shared features such as
+authorization handling and HTTP communication.
+The VertexRagManager provides:</p>
+<ul>
+<li>File management operations via the FileManager property.</li>
+<li>RAG corpus operations via the RagCorpus property.</li>
+</ul>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_FileManager_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.FileManager*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_FileManager" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.FileManager">
+  FileManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to file management operations within the VertexRagManager context.
+This property is an instance of the <a class="xref" href="GenerativeAI.Types.RagEngine.FileManagementClient.html">FileManagementClient</a> class and enables
+methods for uploading, importing, listing, retrieving, and deleting RAG (Retrieval-Augmented Generation)
+files. These operations are essential for managing file resources in RAG-based workflows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileManagementClient FileManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.RagEngine.FileManagementClient.html">FileManagementClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_LongRunningOperationTimeout_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.LongRunningOperationTimeout*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_LongRunningOperationTimeout" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.LongRunningOperationTimeout">
+  LongRunningOperationTimeout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the timeout duration, in milliseconds, for long-running operations initiated within the
+VertexRagManager. This property determines the maximum amount of time that the system will wait
+for such operations to complete before considering them as timed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LongRunningOperationTimeout { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_OperationsClient_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.OperationsClient*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_OperationsClient" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.OperationsClient">
+  OperationsClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to manage long-running operations within the VertexRagManager context.
+This property is an instance of the <a class="xref" href="GenerativeAI.Types.RagEngine.VertexRagManager.html#GenerativeAI_Types_RagEngine_VertexRagManager_OperationsClient">OperationsClient</a> class and facilitates
+tracking, retrieving, and controlling asynchronous operations performed by the manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OperationsClient OperationsClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Clients.OperationsClient.html">OperationsClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_RagCorpusClient_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.RagCorpusClient*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_RagCorpusClient" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.RagCorpusClient">
+  RagCorpusClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to RAG (Retrieval-Augmented Generation) corpus management operations within the VertexRagManager context.
+This property is an instance of the <a class="xref" href="GenerativeAI.Types.RagEngine.VertexRagManager.html#GenerativeAI_Types_RagEngine_VertexRagManager_RagCorpusClient">RagCorpusClient</a> class. It enables creating, listing, retrieving,
+updating, and deleting RAG corpus resources. These capabilities are crucial for managing data corpora used in
+generation and retrieval workflows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RagCorpusClient RagCorpusClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpusClient.html">RagCorpusClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_AwaitForLongRunningOperation_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.AwaitForLongRunningOperation*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_AwaitForLongRunningOperation_System_String_System_Nullable_System_Int32__System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.AwaitForLongRunningOperation(System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+  AwaitForLongRunningOperation(string, int?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Awaits the completion of a long-running operation specified by its operation ID.
+This method repeatedly checks the operation's progress until it's complete or until the specified timeout is reached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; AwaitForLongRunningOperation(string operationId, int? timeOut = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operationId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the long-running operation to monitor.</p>
+</dd>
+    <dt><code>timeOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>Optional timeout (in milliseconds) for awaiting the operation. If not provided, the default timeout specified by LongRunningOperationTimeout is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to observe and respond to cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>Returns a <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> instance representing the final state of the long-running operation upon completion.
+Throws an exception if the operation encounters an error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_GenerativeAI_Types_RagEngine_RagCorpus_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(GenerativeAI.Types.RagEngine.RagCorpus,System.Threading.CancellationToken)">
+  CreateCorpusAsync(RagCorpus, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously creates a new RAG corpus and returns the resulting <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> object upon completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(RagCorpus corpus, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpus</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a></dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance representing the corpus configuration to be created.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Optional token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>,
+or null if the operation fails or cannot determine the result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_System_String_System_String_GenerativeAI_Types_RagEngine_RagVectorDbConfigPinecone_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(System.String,System.String,GenerativeAI.Types.RagEngine.RagVectorDbConfigPinecone,System.String,System.String,System.Threading.CancellationToken)">
+  CreateCorpusAsync(string, string?, RagVectorDbConfigPinecone, string, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>creates a new RAG (Retrieval-Augmented Generation) corpus with the specified parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(string displayName, string? description, RagVectorDbConfigPinecone pineconeConfig, string apiKeyResourceName, string? embeddingModelName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name of the corpus to be created.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A brief description of the corpus being created.</p>
+</dd>
+    <dt><code>pineconeConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagVectorDbConfigPinecone.html">RagVectorDbConfigPinecone</a></dt>
+    <dd><p>The configuration for the Pinecone vector database to be associated with the corpus.</p>
+</dd>
+    <dt><code>apiKeyResourceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>This the full resource name of the secret that is stored in Secret Manager, which contains your Weaviate or Pinecone API key that depends on your choice of vector database. <br>Format: projects/{PROJECT_NUMBER}/secrets/{SECRET_ID}/versions/{VERSION_ID}</p>
+</dd>
+    <dt><code>embeddingModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the embedding model to be used for the corpus. If not provided, Vertex AI's default embedding model is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation, if needed. Defaults to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous operation, containing the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_System_String_System_String_GenerativeAI_Types_RagEngine_RagVectorDbConfigVertexFeatureStore_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(System.String,System.String,GenerativeAI.Types.RagEngine.RagVectorDbConfigVertexFeatureStore,System.String,System.Threading.CancellationToken)">
+  CreateCorpusAsync(string, string?, RagVectorDbConfigVertexFeatureStore, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously creates a new RAG (Retrieval-Augmented Generation) corpus with the provided parameters and configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(string displayName, string? description, RagVectorDbConfigVertexFeatureStore vertexFeatureStoreConfig, string? embeddingModelName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name for the new corpus.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional description of the corpus to provide additional context.</p>
+</dd>
+    <dt><code>vertexFeatureStoreConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagVectorDbConfigVertexFeatureStore.html">RagVectorDbConfigVertexFeatureStore</a></dt>
+    <dd><p>The configuration details for the Vertex feature store to be associated with the corpus.</p>
+</dd>
+    <dt><code>embeddingModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The embedding model's name to be used for the corpus, If not provided, Vertex AI's default embedding model is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to cancel the operation before completion. Defaults to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous operation and returns the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance, or null if the operation fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_System_String_System_String_GenerativeAI_Types_RagEngine_RagVectorDbConfigVertexVectorSearch_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(System.String,System.String,GenerativeAI.Types.RagEngine.RagVectorDbConfigVertexVectorSearch,System.String,System.Threading.CancellationToken)">
+  CreateCorpusAsync(string, string?, RagVectorDbConfigVertexVectorSearch, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously creates a new RAG (Retrieval-Augmented Generation) corpus with the specified parameters and configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(string displayName, string? description, RagVectorDbConfigVertexVectorSearch vertexSearchStoreConfig, string? embeddingModelName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name of the RAG corpus to be created.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional description of the RAG corpus to provide additional context or details.</p>
+</dd>
+    <dt><code>vertexSearchStoreConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagVectorDbConfigVertexVectorSearch.html">RagVectorDbConfigVertexVectorSearch</a></dt>
+    <dd><p>The configuration parameters for the Vertex feature store to associate with the new corpus.</p>
+</dd>
+    <dt><code>embeddingModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the embedding model to use with the corpus. If not provided, Vertex AI's default embedding model is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to cancel the operation. Defaults to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a> if not specified.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous operation, containing the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance, or null if the operation fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_System_String_System_String_GenerativeAI_Types_RagEngine_RagVectorDbConfigWeaviate_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(System.String,System.String,GenerativeAI.Types.RagEngine.RagVectorDbConfigWeaviate,System.String,System.String,System.Threading.CancellationToken)">
+  CreateCorpusAsync(string, string?, RagVectorDbConfigWeaviate, string, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new RAG (Retrieval-Augmented Generation) corpus with the specified parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(string displayName, string? description, RagVectorDbConfigWeaviate weaviateConfig, string apiKeyResourceName, string? embeddingModelName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name of the corpus to be created.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A brief description of the corpus being created.</p>
+</dd>
+    <dt><code>weaviateConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagVectorDbConfigWeaviate.html">RagVectorDbConfigWeaviate</a></dt>
+    <dd><p>The configuration for the Weaviate vector database to be associated with the corpus.</p>
+</dd>
+    <dt><code>apiKeyResourceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full resource name of the secret stored in Secret Manager, which contains the API key for the vector database.
+Format: projects/{PROJECT_NUMBER}/secrets/{SECRET_ID}/versions/{VERSION_ID}</p>
+</dd>
+    <dt><code>embeddingModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the embedding model to be used for the corpus. If not provided, Vertex AI's default embedding model is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation, if needed. Defaults to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous operation, containing the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_CreateCorpusAsync_System_String_System_String_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.CreateCorpusAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+  CreateCorpusAsync(string, string?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new RAG (Retrieval-Augmented Generation) corpus with the specified parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; CreateCorpusAsync(string displayName, string? description, string? embeddingModelName = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name of the corpus to be created.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A brief description of the corpus being created.</p>
+</dd>
+    <dt><code>embeddingModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the embedding model to be used for the corpus. If not provided, Vertex AI's default embedding model is used.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to cancel the operation, if needed. Defaults to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous operation, containing the created <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_DeleteFileAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.DeleteFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_DeleteFileAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.DeleteFileAsync(System.String,System.Threading.CancellationToken)">
+  DeleteFileAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a specified RAG (Retrieval-Augmented Generation) file by its unique file identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteFileAsync(string fileId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the RAG file to be deleted.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation. No value is returned upon completion.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_DeleteRagCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.DeleteRagCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_DeleteRagCorpusAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.DeleteRagCorpusAsync(System.String,System.Threading.CancellationToken)">
+  DeleteRagCorpusAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteRagCorpusAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource name of the <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> to delete.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/rag-api">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_GetCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_GetCorpusAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetCorpusAsync(System.String,System.Threading.CancellationToken)">
+  GetCorpusAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a specific <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus?&gt; GetCorpusAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resource name of the <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>The <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resource.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/rag-api">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_GetEngineConfigAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetEngineConfigAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_GetEngineConfigAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetEngineConfigAsync(System.Threading.CancellationToken)">
+  GetEngineConfigAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the RAG Engine configuration (Serverless or Spanner mode) for the platform's location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagEngineConfig?&gt; GetEngineConfigAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to observe and respond to cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>&gt;</dt>
+    <dd><p>The current <a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_GetFileAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_GetFileAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.GetFileAsync(System.String,System.Threading.CancellationToken)">
+  GetFileAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a specified RAG file by its unique file identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagFile?&gt; GetFileAsync(string fileId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the RAG file to retrieve.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagFile.html">RagFile</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.RagEngine.RagFile.html">RagFile</a> instance representing the requested RAG file, or null if the file is not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_GcsSource_GenerativeAI_Types_RagEngine_RagFileParsingConfig_GenerativeAI_Types_RagEngine_RagFileTransformationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.GcsSource,GenerativeAI.Types.RagEngine.RagFileParsingConfig,GenerativeAI.Types.RagEngine.RagFileTransformationConfig,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, GcsSource, RagFileParsingConfig?, RagFileTransformationConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports files into a specified RAG corpus using Google Cloud Storage (GCS) as a source, with optional parsing and transformation configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, GcsSource source, RagFileParsingConfig? parsingConfig = null, RagFileTransformationConfig? transformationConfig = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus where the files are to be imported.</p>
+</dd>
+    <dt><code>source</code> <a class="xref" href="GenerativeAI.Types.RagEngine.GcsSource.html">GcsSource</a></dt>
+    <dd><p>The Google Cloud Storage (GCS) source containing the files to be imported.</p>
+</dd>
+    <dt><code>parsingConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileParsingConfig.html">RagFileParsingConfig</a></dt>
+    <dd><p>Optional configuration to define how the files should be parsed upon import.</p>
+</dd>
+    <dt><code>transformationConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileTransformationConfig.html">RagFileTransformationConfig</a></dt>
+    <dd><p>Optional configuration to define how the files should be transformed during the import process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor and handle request cancellation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>An asynchronous operation of type <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> representing the import process.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_GoogleDriveSource_GenerativeAI_Types_RagEngine_RagFileParsingConfig_GenerativeAI_Types_RagEngine_RagFileTransformationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.GoogleDriveSource,GenerativeAI.Types.RagEngine.RagFileParsingConfig,GenerativeAI.Types.RagEngine.RagFileTransformationConfig,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, GoogleDriveSource, RagFileParsingConfig?, RagFileTransformationConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports files from a Google Drive source to a specified RAG corpus with optional configurations for parsing and transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, GoogleDriveSource googleDriveSource, RagFileParsingConfig? parsingConfig = null, RagFileTransformationConfig? transformationConfig = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus where the files are to be imported.</p>
+</dd>
+    <dt><code>googleDriveSource</code> <a class="xref" href="GenerativeAI.Types.RagEngine.GoogleDriveSource.html">GoogleDriveSource</a></dt>
+    <dd><p>The Google Drive source from which the files will be imported.</p>
+</dd>
+    <dt><code>parsingConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileParsingConfig.html">RagFileParsingConfig</a></dt>
+    <dd><p>Optional configuration specifying how the files should be parsed.</p>
+</dd>
+    <dt><code>transformationConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileTransformationConfig.html">RagFileTransformationConfig</a></dt>
+    <dd><p>Optional configuration specifying how the files should be transformed during the import process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Token to monitor and respond to cancellation requests for the import operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>An asynchronous operation of type <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> representing the status of the import process.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_ImportRagFilesRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.ImportRagFilesRequest,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, ImportRagFilesRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously imports files to a specified RAG corpus using the provided request details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, ImportRagFilesRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the corpus to which the files will be imported.</p>
+</dd>
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.RagEngine.ImportRagFilesRequest.html">ImportRagFilesRequest</a></dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.RagEngine.ImportRagFilesRequest.html">ImportRagFilesRequest</a> containing the details of files to import.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to cancel the operation, if necessary.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> instance that represents the long-running import operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_JiraSource_GenerativeAI_Types_RagEngine_RagFileParsingConfig_GenerativeAI_Types_RagEngine_RagFileTransformationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.JiraSource,GenerativeAI.Types.RagEngine.RagFileParsingConfig,GenerativeAI.Types.RagEngine.RagFileTransformationConfig,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, JiraSource, RagFileParsingConfig?, RagFileTransformationConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously imports files into a specified Retrieval-Augmented Generation (RAG) corpus
+from a Jira source, with optional parsing and transformation configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, JiraSource jiraSource, RagFileParsingConfig? parsingConfig = null, RagFileTransformationConfig? transformationConfig = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus into which the files will be imported.</p>
+</dd>
+    <dt><code>jiraSource</code> <a class="xref" href="GenerativeAI.Types.RagEngine.JiraSource.html">JiraSource</a></dt>
+    <dd><p>The Jira source containing the files to be imported into the RAG corpus.</p>
+</dd>
+    <dt><code>parsingConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileParsingConfig.html">RagFileParsingConfig</a></dt>
+    <dd><p>Optional configuration for parsing the files during the import process.</p>
+</dd>
+    <dt><code>transformationConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileTransformationConfig.html">RagFileTransformationConfig</a></dt>
+    <dd><p>Optional configuration for applying transformations to the files during the import process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token that allows the operation to be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> that represents the ongoing asynchronous import operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_SharePointSources_GenerativeAI_Types_RagEngine_RagFileParsingConfig_GenerativeAI_Types_RagEngine_RagFileTransformationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.SharePointSources,GenerativeAI.Types.RagEngine.RagFileParsingConfig,GenerativeAI.Types.RagEngine.RagFileTransformationConfig,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, SharePointSources, RagFileParsingConfig?, RagFileTransformationConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously imports files into a specified Retrieval-Augmented Generation (RAG) corpus
+from a SharePoint source, with optional parsing and transformation configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, SharePointSources sharePointSources, RagFileParsingConfig? parsingConfig = null, RagFileTransformationConfig? transformationConfig = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus into which the files will be imported.</p>
+</dd>
+    <dt><code>sharePointSources</code> <a class="xref" href="GenerativeAI.Types.RagEngine.SharePointSources.html">SharePointSources</a></dt>
+    <dd><p>The SharePoint source containing the files to be imported into the RAG corpus.</p>
+</dd>
+    <dt><code>parsingConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileParsingConfig.html">RagFileParsingConfig</a></dt>
+    <dd><p>Optional configuration for parsing the files during the import process.</p>
+</dd>
+    <dt><code>transformationConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileTransformationConfig.html">RagFileTransformationConfig</a></dt>
+    <dd><p>Optional configuration for applying transformations to the files during the import process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token that allows the operation to be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> that represents the ongoing asynchronous import operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ImportFilesAsync_System_String_GenerativeAI_Types_RagEngine_SlackSource_GenerativeAI_Types_RagEngine_RagFileParsingConfig_GenerativeAI_Types_RagEngine_RagFileTransformationConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ImportFilesAsync(System.String,GenerativeAI.Types.RagEngine.SlackSource,GenerativeAI.Types.RagEngine.RagFileParsingConfig,GenerativeAI.Types.RagEngine.RagFileTransformationConfig,System.Threading.CancellationToken)">
+  ImportFilesAsync(string, SlackSource, RagFileParsingConfig?, RagFileTransformationConfig?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously imports files into a specified Retrieval-Augmented Generation (RAG) corpus
+from a Slack source, with optional parsing and transformation configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GoogleLongRunningOperation?&gt; ImportFilesAsync(string corpusName, SlackSource slackSource, RagFileParsingConfig? parsingConfig = null, RagFileTransformationConfig? transformationConfig = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus into which the files will be imported.</p>
+</dd>
+    <dt><code>slackSource</code> <a class="xref" href="GenerativeAI.Types.RagEngine.SlackSource.html">SlackSource</a></dt>
+    <dd><p>The Slack source containing the files to be imported into the RAG corpus.</p>
+</dd>
+    <dt><code>parsingConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileParsingConfig.html">RagFileParsingConfig</a></dt>
+    <dd><p>Optional configuration for parsing the files during the import process.</p>
+</dd>
+    <dt><code>transformationConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagFileTransformationConfig.html">RagFileTransformationConfig</a></dt>
+    <dd><p>Optional configuration for applying transformations to the files during the import process.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token that allows the operation to be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a>&gt;</dt>
+    <dd><p>An instance of <a class="xref" href="GenerativeAI.Types.GoogleLongRunningOperation.html">GoogleLongRunningOperation</a> that represents the ongoing asynchronous import operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ListCorporaAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ListCorporaAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ListCorporaAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ListCorporaAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListCorporaAsync(int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lists available <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListRagCorporaResponse?&gt; ListCorporaAsync(int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resources to return.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A page token, received from a previous <a class="xref" href="GenerativeAI.Types.RagEngine.VertexRagManager.html#GenerativeAI_Types_RagEngine_VertexRagManager_ListCorporaAsync_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_">ListCorporaAsync(int?, string?, CancellationToken)</a> call.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token to cancel the operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.ListRagCorporaResponse.html">ListRagCorporaResponse</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a> resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><span><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/rag-api">See Official API Documentation</a></span></div>
+    </dd>
+  </dl>
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_ListFilesAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ListFilesAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_ListFilesAsync_System_String_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.ListFilesAsync(System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  ListFilesAsync(string, int?, string?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a paginated list of RAG (Retrieval-Augmented Generation) files within the specified corpus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ListRagFilesResponse?&gt; ListFilesAsync(string corpusId, int? pageSize = null, string? pageToken = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the corpus containing the RAG files.</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The desired number of files to retrieve per page. If null, the default server-defined page size is used.</p>
+</dd>
+    <dt><code>pageToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The token for continuing the listing from a specific point in the pagination.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.ListRagFilesResponse.html">ListRagFilesResponse</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="GenerativeAI.Types.RagEngine.ListRagFilesResponse.html">ListRagFilesResponse</a> object containing the list of RAG files and pagination details, or null if no files are found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_SwitchToServerlessModeAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.SwitchToServerlessModeAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_SwitchToServerlessModeAsync_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.SwitchToServerlessModeAsync(System.Threading.CancellationToken)">
+  SwitchToServerlessModeAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Switches the RAG Engine for the platform's location to Serverless mode and waits for the change to complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagEngineConfig?&gt; SwitchToServerlessModeAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to observe and respond to cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>&gt;</dt>
+    <dd><p>The updated <a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateCorpusAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UpdateCorpusAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateCorpusAsync_GenerativeAI_Types_RagEngine_RagCorpus_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UpdateCorpusAsync(GenerativeAI.Types.RagEngine.RagCorpus,System.Threading.CancellationToken)">
+  UpdateCorpusAsync(RagCorpus, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates an existing RAG corpus asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagCorpus&gt; UpdateCorpusAsync(RagCorpus corpus, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpus</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a></dt>
+    <dd><p>The RagCorpus object containing the updated information for the RAG corpus.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagCorpus.html">RagCorpus</a>&gt;</dt>
+    <dd><p>The updated RagCorpus object if the operation is successful, or null if the operation fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateCorpusAsync_GenerativeAI_Types_RagEngine_RagCorpus_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates an existing RAG corpus by sending the desired modifications,
+waits for the long-running operation to complete, and retrieves the updated corpus upon completion.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateEngineConfigAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UpdateEngineConfigAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateEngineConfigAsync_GenerativeAI_Types_RagEngine_RagEngineConfig_System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UpdateEngineConfigAsync(GenerativeAI.Types.RagEngine.RagEngineConfig,System.Threading.CancellationToken)">
+  UpdateEngineConfigAsync(RagEngineConfig, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the RAG Engine configuration for the platform's location and waits for the change to complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagEngineConfig?&gt; UpdateEngineConfigAsync(RagEngineConfig config, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a></dt>
+    <dd><p>The new configuration, for example <code>new RagEngineConfig { RagManagedDbConfig = RagManagedDbConfig.CreateServerless() }</code>.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>An optional token to observe and respond to cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>&gt;</dt>
+    <dd><p>The updated <a class="xref" href="GenerativeAI.Types.RagEngine.RagEngineConfig.html">RagEngineConfig</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_Types_RagEngine_VertexRagManager_UpdateEngineConfigAsync_GenerativeAI_Types_RagEngine_RagEngineConfig_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Choosing <a class="xref" href="GenerativeAI.Types.RagEngine.RagManagedDbSpanner.html#GenerativeAI_Types_RagEngine_RagManagedDbSpanner_Unprovisioned">Unprovisioned</a> disables the RAG Engine and permanently deletes its data.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_Types_RagEngine_VertexRagManager_UploadLocalFileAsync_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UploadLocalFileAsync*"></a>
+
+  <h3 id="GenerativeAI_Types_RagEngine_VertexRagManager_UploadLocalFileAsync_System_String_System_String_System_String_System_String_GenerativeAI_Types_RagEngine_UploadRagFileConfig_System_Action_System_Double__System_Threading_CancellationToken_" data-uid="GenerativeAI.Types.RagEngine.VertexRagManager.UploadLocalFileAsync(System.String,System.String,System.String,System.String,GenerativeAI.Types.RagEngine.UploadRagFileConfig,System.Action{System.Double},System.Threading.CancellationToken)">
+  UploadLocalFileAsync(string, string, string?, string?, UploadRagFileConfig?, Action&lt;double&gt;?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uploads a local file to the specified RAG corpus with optional progress tracking and metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RagFile?&gt; UploadLocalFileAsync(string corpusName, string localFilePath, string? displayName = null, string? description = null, UploadRagFileConfig? uploadRagFileConfig = null, Action&lt;double&gt;? progressCallback = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>corpusName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the RAG corpus to upload the file to.</p>
+</dd>
+    <dt><code>localFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full path to the local file to be uploaded.</p>
+</dd>
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A user-friendly name for the uploaded file.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional description of the file being uploaded.</p>
+</dd>
+    <dt><code>uploadRagFileConfig</code> <a class="xref" href="GenerativeAI.Types.RagEngine.UploadRagFileConfig.html">UploadRagFileConfig</a></dt>
+    <dd><p>Optional configuration settings for uploading the RAG file.</p>
+</dd>
+    <dt><code>progressCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An optional callback to monitor the upload progress, represented as a percentage value.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor and handle request cancellation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.RagEngine.RagFile.html">RagFile</a>&gt;</dt>
+    <dd><p>An <a class="xref" href="GenerativeAI.Types.RagEngine.UploadRagFileResponse.html">UploadRagFileResponse</a> containing details about the uploaded file, or null if the operation fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Clients/RagEngine/VertexRagManager.cs/#L19" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

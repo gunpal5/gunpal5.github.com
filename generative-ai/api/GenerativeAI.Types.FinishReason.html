@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum FinishReason | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum FinishReason | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Defines the reason why the model stopped generating tokens.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Types_FinishReason.md&amp;value=---%0Auid%3A%20GenerativeAI.Types.FinishReason%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Types.FinishReason">
+
+
+
+
+  <h1 id="GenerativeAI_Types_FinishReason" data-uid="GenerativeAI.Types.FinishReason" class="text-break">
+Enum FinishReason  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/ContentGeneration/Outputs/FinishReason.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines the reason why the model stopped generating tokens.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(LenientFinishReasonConverter))]
+public enum FinishReason</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="GenerativeAI_Types_FinishReason_FINISH_REASON_UNSPECIFIED"><code>FINISH_REASON_UNSPECIFIED = 0</code></dt>
+  
+  <dd><p>Default value. This value is unused.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_STOP"><code>STOP = 1</code></dt>
+  
+  <dd><p>Natural stop point of the model or provided stop sequence.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_MAX_TOKENS"><code>MAX_TOKENS = 2</code></dt>
+  
+  <dd><p>The maximum number of tokens as specified in the request was reached.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_SAFETY"><code>SAFETY = 3</code></dt>
+  
+  <dd><p>The response candidate content was flagged for safety reasons.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_RECITATION"><code>RECITATION = 4</code></dt>
+  
+  <dd><p>The response candidate content was flagged for recitation reasons.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_LANGUAGE"><code>LANGUAGE = 5</code></dt>
+  
+  <dd><p>The response candidate content was flagged for using an unsupported language.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_OTHER"><code>OTHER = 6</code></dt>
+  
+  <dd><p>Unknown reason.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_BLOCKLIST"><code>BLOCKLIST = 7</code></dt>
+  
+  <dd><p>Token generation stopped because the content contains forbidden terms.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_PROHIBITED_CONTENT"><code>PROHIBITED_CONTENT = 8</code></dt>
+  
+  <dd><p>Token generation stopped for potentially containing prohibited content.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_SPII"><code>SPII = 9</code></dt>
+  
+  <dd><p>Token generation stopped because the content potentially contains Sensitive Personally
+Identifiable Information (SPII).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_MALFORMED_FUNCTION_CALL"><code>MALFORMED_FUNCTION_CALL = 10</code></dt>
+  
+  <dd><p>The function call generated by the model is invalid.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_IMAGE_SAFETY"><code>IMAGE_SAFETY = 11</code></dt>
+  
+  <dd><p>Token generation stopped because generated images contain safety violations.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_MODEL_ARMOR"><code>MODEL_ARMOR = 12</code></dt>
+  
+  <dd><p>Token generation stopped due to model armor protection mechanisms.
+Documented in Vertex AI (google.cloud.aiplatform.v1).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_IMAGE_PROHIBITED_CONTENT"><code>IMAGE_PROHIBITED_CONTENT = 13</code></dt>
+  
+  <dd><p>Image generation stopped because generated images have prohibited content.
+Documented in Vertex AI (google.cloud.aiplatform.v1).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_IMAGE_RECITATION"><code>IMAGE_RECITATION = 14</code></dt>
+  
+  <dd><p>Image generation stopped because generated images were flagged for recitation.
+Documented in Vertex AI (google.cloud.aiplatform.v1).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_IMAGE_OTHER"><code>IMAGE_OTHER = 15</code></dt>
+  
+  <dd><p>Image generation stopped because of other miscellaneous issues.
+Documented in Vertex AI (google.cloud.aiplatform.v1).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_UNEXPECTED_TOOL_CALL"><code>UNEXPECTED_TOOL_CALL = 16</code></dt>
+  
+  <dd><p>Model generated a tool call but no tools were enabled in the request.
+Documented in Gemini API and Vertex AI.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_NO_IMAGE"><code>NO_IMAGE = 17</code></dt>
+  
+  <dd><p>The model was expected to generate an image, but none was generated.
+Documented in Vertex AI (google.cloud.aiplatform.v1).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_TOO_MANY_TOOL_CALLS"><code>TOO_MANY_TOOL_CALLS = 18</code></dt>
+  
+  <dd><p>Model called too many tools consecutively, thus the system exited execution.
+Documented in generativelanguagepb (SDK/proto contract).</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_MISSING_THOUGHT_SIGNATURE"><code>MISSING_THOUGHT_SIGNATURE = 19</code></dt>
+  
+  <dd><p>The request is missing a required thought signature from a previous turn.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_MALFORMED_RESPONSE"><code>MALFORMED_RESPONSE = 20</code></dt>
+  
+  <dd><p>The model produced a malformed response.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_ESCALATION"><code>ESCALATION = 21</code></dt>
+  
+  <dd><p>Generation stopped because the request was escalated.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_PUP_LIMITED_DISABLED"><code>PUP_LIMITED_DISABLED = 22</code></dt>
+  
+  <dd><p>Generation stopped because the feature is limited or disabled for this project.</p>
+</dd>
+    <dt id="GenerativeAI_Types_FinishReason_CONTINUATION"><code>CONTINUATION = 23</code></dt>
+  
+  <dd><p>The response is incomplete; pass the candidate's continuation token in a follow-up request to resume it.</p>
+</dd>
+  </dl>
+
+
+  <h2 id="GenerativeAI_Types_FinishReason_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This enum uses a lenient JSON converter that gracefully handles unknown values
+by falling back to <a class="xref" href="GenerativeAI.Types.FinishReason.html#GenerativeAI_Types_FinishReason_OTHER">OTHER</a> instead of throwing an exception.
+This prevents crashes when Google adds new FinishReason values to their API.</p>
+</div>
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><span><a href="https://ai.google.dev/api/generate-content#FinishReason">See Official API Documentation</a></span></div>
+  </div>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/ContentGeneration/Outputs/FinishReason.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

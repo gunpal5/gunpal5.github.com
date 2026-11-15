@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EmbeddingModel | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EmbeddingModel | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Represents a machine learning model for generating embeddings from input text or content. This model allows handling of single or batch embedding operations using various input types or formats. Inherits from the  class.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_EmbeddingModel.md&amp;value=---%0Auid%3A%20GenerativeAI.EmbeddingModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.EmbeddingModel">
+
+
+
+  <h1 id="GenerativeAI_EmbeddingModel" data-uid="GenerativeAI.EmbeddingModel" class="text-break">
+Class EmbeddingModel  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a machine learning model for generating embeddings from input text or content.
+This model allows handling of single or batch embedding operations using various input types or formats.
+Inherits from the <a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a> class.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EmbeddingModel : BaseModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="GenerativeAI.Core.ApiBase.html">ApiBase</a></div>
+      <div><a class="xref" href="GenerativeAI.Clients.BaseClient.html">BaseClient</a></div>
+      <div><a class="xref" href="GenerativeAI.BaseModel.html">BaseModel</a></div>
+      <div><span class="xref">EmbeddingModel</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_String_">BaseModel.CheckBlockedResponse(GenerateContentResponse, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateContentStreamAsync_System_String_GenerativeAI_Types_GenerateContentRequest_System_Threading_CancellationToken_">BaseModel.GenerateContentStreamAsync(string, GenerateContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CountTokensAsync_System_String_GenerativeAI_Types_CountTokensRequest_System_Threading_CancellationToken_">BaseModel.CountTokensAsync(string, CountTokensRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_BatchEmbedContentAsync_System_String_GenerativeAI_Types_BatchEmbedContentRequest_System_Threading_CancellationToken_">BaseModel.BatchEmbedContentAsync(string, BatchEmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_EmbedContentAsync_System_String_GenerativeAI_Types_EmbedContentRequest_System_Threading_CancellationToken_">BaseModel.EmbedContentAsync(string, EmbedContentRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_GenerateAnswerAsync_System_String_GenerativeAI_Types_GenerateAnswerRequest_System_Threading_CancellationToken_">BaseModel.GenerateAnswerAsync(string, GenerateAnswerRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.BaseModel.html#GenerativeAI_BaseModel_CheckBlockedResponse_GenerativeAI_Types_GenerateContentResponse_System_Uri_">BaseModel.CheckBlockedResponse(GenerateContentResponse, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_Platform">BaseClient.Platform</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Clients.BaseClient.html#GenerativeAI_Clients_BaseClient_AddAuthorizationHeader_System_Net_Http_HttpRequestMessage_System_Boolean_System_Threading_CancellationToken_">BaseClient.AddAuthorizationHeader(HttpRequestMessage, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Logger">ApiBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_HttpClient">ApiBase.HttpClient</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SerializerOptions">ApiBase.SerializerOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_GetAsync__1_System_String_System_Threading_CancellationToken_">ApiBase.GetAsync&lt;T&gt;(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_SendAsync__2_System_String___0_System_Net_Http_HttpMethod_System_Threading_CancellationToken_">ApiBase.SendAsync&lt;TRequest, TResponse&gt;(string, TRequest, HttpMethod, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_CheckAndHandleErrors_System_Net_Http_HttpResponseMessage_System_String_">ApiBase.CheckAndHandleErrors(HttpResponseMessage, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_Net_Http_HttpResponseMessage_">ApiBase.Deserialize&lt;T&gt;(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_Deserialize__1_System_String_">ApiBase.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_DeleteAsync_System_String_System_Threading_CancellationToken_">ApiBase.DeleteAsync(string, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_UploadFileWithProgressAsync_System_IO_Stream_System_String_System_String_System_String_System_Action_System_Double__System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">ApiBase.UploadFileWithProgressAsync(Stream, string, string, string, Action&lt;double&gt;, Dictionary&lt;string, string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GenerativeAI.Core.ApiBase.html#GenerativeAI_Core_ApiBase_StreamAsync__2_System_String___0_System_Threading_CancellationToken_">ApiBase.StreamAsync&lt;TRequest, TResponse&gt;(string, TRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="GenerativeAI_EmbeddingModel__ctor_" data-uid="GenerativeAI.EmbeddingModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.EmbeddingModel.#ctor(GenerativeAI.Core.IPlatformAdapter,System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  EmbeddingModel(IPlatformAdapter, string, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A class that represents an embedding model used for generating vector embeddings
+from input content such as text or files. This model supports both single and batch
+operations for processing multiple inputs and generates high-dimensional embeddings
+compatible with various downstream applications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbeddingModel(IPlatformAdapter platform, string model, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="GenerativeAI.Core.IPlatformAdapter.html">IPlatformAdapter</a></dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_EmbeddingModel__ctor_GenerativeAI_Core_IPlatformAdapter_System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This class provides multiple overloads of the <code>EmbedContentAsync</code> method to handle different
+input types, including strings, content objects, and batch requests. It is designed to be flexible
+for integration with machine learning workflows.</p>
+</div>
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel__ctor_" data-uid="GenerativeAI.EmbeddingModel.#ctor*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel__ctor_System_String_System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="GenerativeAI.EmbeddingModel.#ctor(System.String,System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">
+  EmbeddingModel(string, string, HttpClient?, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A class that represents an embedding model designed to generate vector representations (embeddings)
+from input text or content. Supports operations for both single inputs and batch processing using
+multiple input types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbeddingModel(string apiKey, string model, HttpClient? httpClient = null, ILogger? logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>httpClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="GenerativeAI_EmbeddingModel__ctor_System_String_System_String_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The class provides several overloads of the <code>EmbedContentAsync</code> method to allow flexibility in embedding
+generation based on the input structure, such as individual strings, content objects, or collections.
+It also supports batch operations through <code>BatchEmbedContentAsync</code> methods for efficiency in processing
+multiple inputs simultaneously. This model integrates functionality inherited from the <code>BaseModel</code> class.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_EmbeddingModel_Model_" data-uid="GenerativeAI.EmbeddingModel.Model*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_Model" data-uid="GenerativeAI.EmbeddingModel.Model">
+  Model
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the name or identifier of the embedding model to be used for generating embeddings.
+The model name typically represents a specific configuration or version of the machine learning model.
+This property is utilized in embedding operations to define which model to apply for processing the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Model { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_EmbeddingModel_BatchEmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.BatchEmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_BatchEmbedContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Content__System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.BatchEmbedContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Content},System.Threading.CancellationToken)">
+  BatchEmbedContentAsync(IEnumerable&lt;Content&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds a batch of content based on a collection of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BatchEmbedContentsResponse&gt; BatchEmbedContentAsync(IEnumerable&lt;Content&gt; contents, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Content.html">Content</a>&gt;</dt>
+    <dd><p>The collection of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> objects to embed.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.BatchEmbedContentsResponse.html">BatchEmbedContentsResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the batch embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_BatchEmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.BatchEmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_BatchEmbedContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_EmbedContentRequest__System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.BatchEmbedContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.EmbedContentRequest},System.Threading.CancellationToken)">
+  BatchEmbedContentAsync(IEnumerable&lt;EmbedContentRequest&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds a batch of content based on a collection of <a class="xref" href="GenerativeAI.Types.Content.html">Content</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BatchEmbedContentsResponse&gt; BatchEmbedContentAsync(IEnumerable&lt;EmbedContentRequest&gt; requests, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requests</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a>&gt;</dt>
+    <dd><p>The collection of <a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a> requests to embed.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.BatchEmbedContentsResponse.html">BatchEmbedContentsResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the batch embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_EmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_EmbedContentAsync_GenerativeAI_Types_Content_System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync(GenerativeAI.Types.Content,System.Threading.CancellationToken)">
+  EmbedContentAsync(Content, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds content based on a text input message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EmbedContentResponse&gt; EmbedContentAsync(Content content, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="GenerativeAI.Types.Content.html">Content</a></dt>
+    <dd><p>The content object to generate embeddings from.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_EmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_EmbedContentAsync_GenerativeAI_Types_EmbedContentRequest_System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync(GenerativeAI.Types.EmbedContentRequest,System.Threading.CancellationToken)">
+  EmbedContentAsync(EmbedContentRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds content based on the provided text input message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EmbedContentResponse&gt; EmbedContentAsync(EmbedContentRequest request, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="GenerativeAI.Types.EmbedContentRequest.html">EmbedContentRequest</a></dt>
+    <dd><p>The request object to generate embeddings from.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_EmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_EmbedContentAsync_System_Collections_Generic_IEnumerable_GenerativeAI_Types_Part__System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync(System.Collections.Generic.IEnumerable{GenerativeAI.Types.Part},System.Threading.CancellationToken)">
+  EmbedContentAsync(IEnumerable&lt;Part&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds content based on a sequence of Part objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EmbedContentResponse&gt; EmbedContentAsync(IEnumerable&lt;Part&gt; parts, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="GenerativeAI.Types.Part.html">Part</a>&gt;</dt>
+    <dd><p>The sequence of Part objects to be used for embedding content.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token for cancelling the operation, if needed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a>&gt;</dt>
+    <dd><p>Returns an instance of EmbedContentResponse containing the embeddings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_EmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_EmbedContentAsync_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+  EmbedContentAsync(IEnumerable&lt;string&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds content based on a collection of strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EmbedContentResponse&gt; EmbedContentAsync(IEnumerable&lt;string&gt; messages, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The collection of text strings to generate embeddings from.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_EmbeddingModel_EmbedContentAsync_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync*"></a>
+
+  <h3 id="GenerativeAI_EmbeddingModel_EmbedContentAsync_System_String_System_Threading_CancellationToken_" data-uid="GenerativeAI.EmbeddingModel.EmbedContentAsync(System.String,System.Threading.CancellationToken)">
+  EmbedContentAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Embeds content based on a text input message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EmbedContentResponse&gt; EmbedContentAsync(string message, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text input to generate embeddings from.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A token to monitor for cancellation requests.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="GenerativeAI.Types.EmbedContentResponse.html">EmbedContentResponse</a>&gt;</dt>
+    <dd><p>A task representing the asynchronous operation, containing the embedding response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/AiModels/EmbeddingModel.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

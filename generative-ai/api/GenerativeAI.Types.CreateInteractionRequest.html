@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CreateInteractionRequest | Google GenerativeAI .NET SDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CreateInteractionRequest | Google GenerativeAI .NET SDK ">
+      
+      <meta name="description" content="Request body of POST /interactions. Set either  (model interaction) or  (agent interaction, e.g. Deep Research or Antigravity), not both.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/gunpal5/Google_GenerativeAI/new/main/apiSpec/new?filename=GenerativeAI_Types_CreateInteractionRequest.md&amp;value=---%0Auid%3A%20GenerativeAI.Types.CreateInteractionRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Google GenerativeAI .NET SDK">
+            Google GenerativeAI .NET SDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GenerativeAI.Types.CreateInteractionRequest">
+
+
+
+  <h1 id="GenerativeAI_Types_CreateInteractionRequest" data-uid="GenerativeAI.Types.CreateInteractionRequest" class="text-break">
+Class CreateInteractionRequest  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GenerativeAI.html">GenerativeAI</a>.<a class="xref" href="GenerativeAI.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GenerativeAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Request body of <code>POST /interactions</code>. Set either <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Model">Model</a> (model interaction) or
+<a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Agent">Agent</a> (agent interaction, e.g. Deep Research or Antigravity), not both.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CreateInteractionRequest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CreateInteractionRequest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="GenerativeAI.Microsoft.Extensions.MicrosoftExtensions.html#GenerativeAI_Microsoft_Extensions_MicrosoftExtensions_ToJsonNodeResponse_System_Object_">MicrosoftExtensions.ToJsonNodeResponse(object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="GenerativeAI.ObjectExtensions.html#GenerativeAI_ObjectExtensions_ToSchema_System_Object_System_Text_Json_JsonSerializerOptions_">ObjectExtensions.ToSchema(object, JsonSerializerOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Agent_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Agent*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Agent" data-uid="GenerativeAI.Types.CreateInteractionRequest.Agent">
+  Agent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The agent to interact with (see <a class="xref" href="GenerativeAI.Types.InteractionAgents.html">InteractionAgents</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;agent&quot;)]
+public string? Agent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_AgentConfig_" data-uid="GenerativeAI.Types.CreateInteractionRequest.AgentConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_AgentConfig" data-uid="GenerativeAI.Types.CreateInteractionRequest.AgentConfig">
+  AgentConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configuration of the agent. Only valid with <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Agent">Agent</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;agent_config&quot;)]
+public InteractionAgentConfig? AgentConfig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.InteractionAgentConfig.html">InteractionAgentConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Background_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Background*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Background" data-uid="GenerativeAI.Types.CreateInteractionRequest.Background">
+  Background
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Input only. Run the interaction in the background; poll it with <code>GetAsync</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;background&quot;)]
+public bool? Background { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_CachedContent_" data-uid="GenerativeAI.Types.CreateInteractionRequest.CachedContent*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_CachedContent" data-uid="GenerativeAI.Types.CreateInteractionRequest.CachedContent">
+  CachedContent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deprecated in the API. The cached content used as context (<code>cachedContents/{id}</code>). Only valid with
+<a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Model">Model</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;cached_content&quot;)]
+public string? CachedContent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ContinuationToken_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ContinuationToken*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ContinuationToken" data-uid="GenerativeAI.Types.CreateInteractionRequest.ContinuationToken">
+  ContinuationToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opaque token to resume a long decode: pass back the <a class="xref" href="GenerativeAI.Types.Interaction.html#GenerativeAI_Types_Interaction_ContinuationToken">ContinuationToken</a> of an
+interaction whose status is <a class="xref" href="GenerativeAI.Types.InteractionStatuses.html#GenerativeAI_Types_InteractionStatuses_RequiresContinuation">RequiresContinuation</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;continuation_token&quot;)]
+public string? ContinuationToken { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Environment_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Environment*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Environment" data-uid="GenerativeAI.Types.CreateInteractionRequest.Environment">
+  Environment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The environment: an existing environment ID or a remote environment configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;environment&quot;)]
+public InteractionEnvironmentReference? Environment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.InteractionEnvironmentReference.html">InteractionEnvironmentReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ExtensionData_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ExtensionData*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ExtensionData" data-uid="GenerativeAI.Types.CreateInteractionRequest.ExtensionData">
+  ExtensionData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Additional body fields to send (for API features this SDK does not model yet).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonExtensionData]
+public Dictionary&lt;string, JsonElement&gt;? ExtensionData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonelement">JsonElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_GenerationConfig_" data-uid="GenerativeAI.Types.CreateInteractionRequest.GenerationConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_GenerationConfig" data-uid="GenerativeAI.Types.CreateInteractionRequest.GenerationConfig">
+  GenerationConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generation parameters. Only valid with <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_Model">Model</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;generation_config&quot;)]
+public InteractionGenerationConfig? GenerationConfig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.InteractionGenerationConfig.html">InteractionGenerationConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Input_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Input*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Input" data-uid="GenerativeAI.Types.CreateInteractionRequest.Input">
+  Input
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The input of the interaction: a string, content blocks, or steps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;input&quot;)]
+public InteractionInput? Input { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.InteractionInput.html">InteractionInput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Labels_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Labels*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Labels" data-uid="GenerativeAI.Types.CreateInteractionRequest.Labels">
+  Labels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>User-defined labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;labels&quot;)]
+public Dictionary&lt;string, string&gt;? Labels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Model_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Model*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Model" data-uid="GenerativeAI.Types.CreateInteractionRequest.Model">
+  Model
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The model that will complete the prompt (see <a class="xref" href="GenerativeAI.Types.InteractionModels.html">InteractionModels</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;model&quot;)]
+public string? Model { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_PreviousInteractionId_" data-uid="GenerativeAI.Types.CreateInteractionRequest.PreviousInteractionId*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_PreviousInteractionId" data-uid="GenerativeAI.Types.CreateInteractionRequest.PreviousInteractionId">
+  PreviousInteractionId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the previous interaction, to continue a conversation with server-side state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;previous_interaction_id&quot;)]
+public string? PreviousInteractionId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ResponseFormat_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseFormat*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ResponseFormat" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseFormat">
+  ResponseFormat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The requested output format(s): structured text, image, audio and/or video. A single entry is sent as an
+object, several as an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;response_format&quot;)]
+[JsonConverter(typeof(InteractionResponseFormatListConverter))]
+public List&lt;InteractionResponseFormat&gt;? ResponseFormat { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.InteractionResponseFormat.html">InteractionResponseFormat</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ResponseMimeType_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseMimeType*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ResponseMimeType" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseMimeType">
+  ResponseMimeType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deprecated in the API in favour of <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_ResponseFormat">ResponseFormat</a>. The MIME type of the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;response_mime_type&quot;)]
+public string? ResponseMimeType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ResponseModalities_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseModalities*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ResponseModalities" data-uid="GenerativeAI.Types.CreateInteractionRequest.ResponseModalities">
+  ResponseModalities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deprecated in the API in favour of <a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html#GenerativeAI_Types_CreateInteractionRequest_ResponseFormat">ResponseFormat</a>. The requested response modalities
+(see <a class="xref" href="GenerativeAI.Types.InteractionModalities.html">InteractionModalities</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;response_modalities&quot;)]
+public List&lt;string&gt;? ResponseModalities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_SafetySettings_" data-uid="GenerativeAI.Types.CreateInteractionRequest.SafetySettings*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_SafetySettings" data-uid="GenerativeAI.Types.CreateInteractionRequest.SafetySettings">
+  SafetySettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Safety settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;safety_settings&quot;)]
+public List&lt;InteractionSafetySetting&gt;? SafetySettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.InteractionSafetySetting.html">InteractionSafetySetting</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_ServiceTier_" data-uid="GenerativeAI.Types.CreateInteractionRequest.ServiceTier*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_ServiceTier" data-uid="GenerativeAI.Types.CreateInteractionRequest.ServiceTier">
+  ServiceTier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The service tier (see <a class="xref" href="GenerativeAI.Types.InteractionServiceTiers.html">InteractionServiceTiers</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;service_tier&quot;)]
+public string? ServiceTier { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Store_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Store*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Store" data-uid="GenerativeAI.Types.CreateInteractionRequest.Store">
+  Store
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Input only. Whether to store the request and response for later retrieval (default true).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;store&quot;)]
+public bool? Store { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Stream_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Stream*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Stream" data-uid="GenerativeAI.Types.CreateInteractionRequest.Stream">
+  Stream
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Input only. Whether the response is streamed as Server-Sent Events. Set by <code>StreamAsync</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;stream&quot;)]
+public bool? Stream { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_SystemInstruction_" data-uid="GenerativeAI.Types.CreateInteractionRequest.SystemInstruction*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_SystemInstruction" data-uid="GenerativeAI.Types.CreateInteractionRequest.SystemInstruction">
+  SystemInstruction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>System instruction for the interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;system_instruction&quot;)]
+public string? SystemInstruction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Tools_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Tools*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Tools" data-uid="GenerativeAI.Types.CreateInteractionRequest.Tools">
+  Tools
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tools the model may call during the interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;tools&quot;)]
+public List&lt;InteractionTool&gt;? Tools { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="GenerativeAI.Types.InteractionTool.html">InteractionTool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_WebhookConfig_" data-uid="GenerativeAI.Types.CreateInteractionRequest.WebhookConfig*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_WebhookConfig" data-uid="GenerativeAI.Types.CreateInteractionRequest.WebhookConfig">
+  WebhookConfig
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Webhook configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;webhook_config&quot;)]
+public InteractionWebhookConfig? WebhookConfig { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.InteractionWebhookConfig.html">InteractionWebhookConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GenerativeAI_Types_CreateInteractionRequest_Clone_" data-uid="GenerativeAI.Types.CreateInteractionRequest.Clone*"></a>
+
+  <h3 id="GenerativeAI_Types_CreateInteractionRequest_Clone" data-uid="GenerativeAI.Types.CreateInteractionRequest.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a shallow copy of this request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreateInteractionRequest Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenerativeAI.Types.CreateInteractionRequest.html">CreateInteractionRequest</a></dt>
+    <dd><p>The copy.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/gunpal5/Google_GenerativeAI/blob/docs/api-reference-docfx/src/GenerativeAI/Types/Interactions/CreateInteractionRequest.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Unofficial .NET SDK for Google Gemini and Vertex AI. <a href="https://github.com/gunpal5/Google_GenerativeAI">GitHub</a> · <a href="https://github.com/gunpal5/Google_GenerativeAI/wiki">Documentation</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
